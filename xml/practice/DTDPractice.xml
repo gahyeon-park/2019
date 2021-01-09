@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE monthBestSeller [
+	<!ELEMENT monthBestSeller (bestSeller)>
+		<!ELEMENT bestSeller (type, kind, title, author, company)>
+			<!ELEMENT type (#PCDATA)>
+			<!ELEMENT kind (#PCDATA)>
+			<!ELEMENT title (#PCDATA)>
+			<!ELEMENT author (#PCDATA)>
+			<!ELEMENT company (#PCDATA)>
+]>
+
+<monthBestSeller>
+	<bestSeller>
+		<type>경제, 경영</type>
+		<kind>금융, 증권</kind>
+		<title>부자 아빠, 가난한 아빠</title>
+		<author>로버트 기요사키</author>
+		<company>황금가지</company>
+	</bestSeller>
+</monthBestSeller>

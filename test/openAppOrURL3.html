@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <div id="os_name"></div>
+        <h1><a href="#" onclick="appStart()" data-role="button">App Start (onclick event)</a></h1>
+    </body>
+
+<script>
+
+// OS 확인
+var uAgent = navigator.userAgent.toLocaleLowerCase();
+if(uAgent.indexOf("android") != -1)  
+    OSName = "android";
+else if(uAgent.indexOf("iphone") != -1 || uAgent.indexOf("ipad") != -1 || uAgent.indexOf("ipod") != -1) 
+    OSName="ios";
+else 
+    OSName="is not mobile";
+
+// 확인한 OS이름을 HTML에 표시 
+document.getElementById("os_name").innerHTML="<h1>Your os : "+OSName+"</h1>";
+
+// 어플 실행
+function appStart(){
+    if("ios" == OSName || "android" == OSName){
+        document.checkframe.location = "googlechrome://";
+        setTimeout("checkApplicationInstall_callback()", 1500);
+    }else{
+        // 어플 실행하지 않고 종료 
+        return;
+    } 
+}
+
+</script>
+
+</html> 

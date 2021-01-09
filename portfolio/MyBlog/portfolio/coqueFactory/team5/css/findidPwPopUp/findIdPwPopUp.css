@@ -1,0 +1,116 @@
+﻿@charset "UTF-8";
+
+*{margin:0px; padding:0px;}
+/*아이디 찾기 박스*/
+section.findIdPwBaseBox{
+	width:840px;
+	height:400px;
+	position:absolute;
+	left:50%;
+	top:100px;
+	margin-left:-420px;
+	z-index:200;
+	display:none;
+	/*background-color : red;*/
+}
+section.findIdBaseBox{
+	width:400px;
+	height:400px;
+	background-color:white;
+	position:absolute;
+	top:0px;
+	left:50%;
+	margin-left:-420px;	
+}
+	/*제목 아이디 찾기 설정값*/
+	h2.findIdTitle{
+		text-align:center;
+		font-size:28px;
+		font-weight:lighter;
+		color:#e5bea8;
+		margin-top:13px;
+	}
+	/*경계선은 hr 태그를 사용*/
+	hr.findIdPw_topBorderLine{
+		background-color:#e5bea8;
+		margin:auto;
+		margin-top:10px;
+		width:320px;
+		height:1.5px;
+		border:0px;
+	}
+	/*input 기입 양식 form 박스*/
+	form.inputValueFindIdBox{
+		width:320px;
+		height:210px;
+		margin:auto;
+		margin-top:60px;
+	}
+		/*공통된 p 파라그래프 기본 속성값*/
+		p.commonParagraphValue{
+			font-size:25px;
+			color:#b5b6b8;
+			margin-top:20px;
+		}
+		/*공통된 input의 박스 설정값*/
+		input.commonTextBoxValue{
+			border:0px solid white;
+			outline:0px;
+			font-size:18px;
+		}
+	/*경계선을 hr태그를 이용*/
+	hr.findIdPw_boundaryLine{
+		background-color:rgba(0,0,0,0.1);
+		width:400px;
+		height:1px;
+		border:0px;
+	}
+	/*공통된 cancel 버튼 설정값*/
+	a.findIdPw_cancelButton{
+		//border:1px solid red;
+		font-size:12px;		
+		position:absolute;
+		bottom:40px;
+		left:70px;
+		color:#b5b6b8;
+		text-decoration:none;
+	}
+	/*공통된 submit 버튼 설정값*/
+	a.findIdPw_submitButton{
+		//border:1px solid red;
+		font-size:12px;
+		position:absolute;
+		bottom:40px;
+		right:70px;
+		color:#b5b6b8;
+		text-decoration:none;
+	}
+/*비밀번호 찾기 박스*/
+section.findPwBaseBox{
+	width:400px;
+	height:400px;
+	background-color:white;
+	position:absolute;
+	top:0px;
+	left:50%;
+	margin-left:20px;		
+}
+	/*부제목 비밀번호 찾기*/
+	h2.findPwTitle{
+		text-align:center;
+		font-size:28px;
+		font-weight:lighter;
+		color:#e5bea8;
+		margin-top:13px;	
+	}
+	/*input 기입 양식 form 박스 다른것은 위에서 동일하게 적용되었음*/
+	form.inputValueFindPwBox{
+		width:320px;
+		height:240px;
+		margin:auto;
+		margin-top:30px;
+	}
+	
+	
+	
+	

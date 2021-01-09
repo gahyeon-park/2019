@@ -1,0 +1,287 @@
+$myCartHeight: 500px;
+$myCartHeaderHeight: 60px;
+$myCartInputHeight: 100px;
+
+/* Set Font Style */
+@mixin fontStyle($size, $bold, $color, $align, $line) {
+    font-size: $size;
+    font-weight: $bold;
+    color: $color;
+    text-align: $align;
+    line-height: $line;
+}
+
+/* My Cart */
+.footerBox {
+    width: 100%;
+    height: $myCartHeight;
+
+    position: fixed;
+    bottom: $myCartHeaderHeight - $myCartHeight + 10;
+    /* $myCartHeaderHeight - $myCartHeight */
+
+    transition: all 0.3s 0s ease;
+
+    /* My Cart Header */
+    .myCartHeader {
+        background-color: rgb(111, 123, 136);
+
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+
+        .myCartHeaderIcon {
+            display: inline-block;
+    
+            width: 50%;
+            height: $myCartHeaderHeight;
+    
+            text-align: right;
+            color: #ffffff;
+            line-height: $myCartHeaderHeight + 10;
+    
+            float: left;
+    
+            cursor: pointer;
+        }
+        .myCartHeaderTitle {
+            display: inline-block;
+    
+            width: 50%;
+            height: $myCartHeaderHeight;
+    
+            @include fontStyle(25px, bold, #ffffff, right, $myCartHeaderHeight + 15);
+        
+        }
+    }
+
+    /* My Cart List and Input */
+    .inputCartBox {
+        width: 100%;
+        height: $myCartInputHeight;
+
+        background-color: #ffffff;
+
+        margin: auto;
+        
+        .myCartForm {
+            width: 1250px;
+            height: 100px;
+            
+            border-bottom: 1px solid rgb(199, 203, 207);
+            margin: auto;
+        }
+        .selectInput {
+            display: inline-block;
+
+            width: 150px;
+            height: 50px;
+
+            float: left;
+
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        .radioInputBox {
+            display: inline-block;
+
+            width: 100px;
+            height: 50px;
+
+            float: left;
+
+            margin-top: 10px;
+            margin-left: 100px;
+
+            .radioInput {
+                width: 100px;
+                height: 25px;
+
+                outline: none;
+            }
+        }
+        .numberInput {
+            display: inline-block;
+
+            width: 50px;
+            height: 50px;
+
+            border: 1px solid rgb(199, 203, 207);
+            border-radius: 5px;
+            float: left;
+            
+            margin-top: 20px;
+            margin-right: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .colorBox {
+            display: inline-block;
+
+            width: 48px;
+            height: 48px;
+            border: 1px solid rgb(199, 203, 207);
+            border-radius: 5px;
+            float: left;
+            
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .colorSelected {
+            border: 3px solid rgb(240, 103, 85);
+        }
+
+        .plusButton {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    }
+
+    /* My Cart List */
+    .myCartListBox {
+        width: 100%;
+        height: $myCartHeight - $myCartHeaderHeight - $myCartInputHeight;
+
+        background-color: #ffffff;
+
+        
+        .myCartList {
+            
+            width: 1260px;
+            height: $myCartHeight - $myCartHeaderHeight - $myCartInputHeight - 50;
+            
+            margin: auto;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            border-bottom: 1px solid rgb(199, 203, 207);
+            
+            .myProduct {
+                width: 1230px;
+                height: 50px;
+    
+                border: 1px solid rgb(199, 203, 207);
+                margin-top: 10px;
+
+                .product {
+                    display: inline-block;
+                    width: 190px;
+                    height: 40px;
+
+                    @include fontStyle(15px, normal, black, center, 50px);
+                    float: left;
+                }
+                .productNum {
+                    font-weight: bold;
+                }
+                .productColor {
+                    width: 38px;
+                    height: 38px;
+
+                    border: 1px solid rgb(199, 203, 207);
+                    border-radius: 5px;
+
+                    margin-top: 5px;
+                }
+                .deleteButton {
+                    margin-top: 8px;
+                    
+                }
+            }
+        }
+
+        /* Total Price */
+        .myCartTotalPriceBox {
+            display: inline-block;
+            width: 250px;
+            height: 100px;
+
+            float: right;
+
+            margin-top: -250px;
+            margin-right: 50px;
+
+            
+            border-top: 3px solid rgb(199, 203, 207);
+            border-bottom: 3px solid rgb(199, 203, 207);
+
+            .myCartTotalPriceText {
+                width: 250px;
+                height: 50px;
+
+                @include fontStyle(25px, normal, black, left, 48px);
+            }
+            .myCartTotalPrice {
+                width: 250px;
+                height: 50px;
+                @include fontStyle(30px, bold, black, right, 20px);
+            }
+        }
+
+        /* Purchase Button */
+        .allDeleteBox {
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+
+            float: right;
+
+            margin-top: -110px;
+            margin-right: 50px;
+
+            .allDeleteButton {
+                width: 250px;
+                height: 50px;
+
+                border-radius: 5px;
+                background-color: rgb(216, 58, 37);
+                @include fontStyle(25px, normal, #ffffff, center, 48px);
+
+                transition: all 0.3s 0s ease;
+            }
+
+            .allDeleteButton:hover {
+
+                color: rgb(216, 58, 37);
+                background-color: #ffffff;
+
+                border: 2px solid rgb(216, 58, 37);
+            }
+        }
+
+        /* Purchase Button */
+        .purchaseBox {
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+
+            float: right;
+
+            margin-top: -50px;
+            margin-right: 50px;
+
+            .purchaseButton {
+                width: 250px;
+                height: 50px;
+
+                border-radius: 5px;
+                background-color: rgb(28, 64, 100);
+                @include fontStyle(25px, normal, #ffffff, center, 48px);
+
+                transition: all 0.3s 0s ease;
+            }
+            
+            .purchaseButton:hover {
+
+                color: rgb(28, 64, 100);
+                background-color: #ffffff;
+
+                border: 2px solid rgb(28, 64, 100);
+            }
+        }
+    }
+}

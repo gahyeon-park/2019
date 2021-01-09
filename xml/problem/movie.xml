@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./movie.xsl"?>
+<movieTable>
+	<movie>
+		<title>스파이더맨 파프롬홈(Spider-Man: Far From Home)</title>
+		<assessment>
+			<spectator>9.05</spectator>
+			<critic>6.56</critic>
+		</assessment>
+		<genre>
+			<action/>
+			<adventure/>
+			<comic/>
+		</genre>
+		<date year="2019" month="07" day="02"/>
+		<running_time mtime="129"/>
+		<nation>
+			<USA/>
+		</nation>
+		<director>존 왓츠</director>
+		<spectator_num>6685329</spectator_num>
+	</movie>
+</movieTable>

@@ -1,0 +1,532 @@
+@charset "UTF-8";
+	/* 전체사이즈 */
+	#wrap {
+		
+	}
+	/*공통요소*/
+	.clearFix { 
+		display: block;
+		clear: both;
+		content: '';
+	}/*float 뒤에 포지션이 뭉개지는 현상 버그현상 없애기*/	
+
+	/* 헤더 CSS */
+	header {
+		
+		height: 400px;
+	}
+		.pinkBar {			
+			height : 50px;
+			line-height: 50px;
+			background-color : #ffe0e0;
+		}
+			.topNav {
+				position: relative;
+				top: 10px;
+				width: 800px;
+				height: 30px;
+				margin: 0 auto;
+			}
+				.topMenu {
+					display: inline-block;
+					width: 397px;
+					height: 25px;
+					padding-left: 180px;
+				}
+					.basicMenu {
+						float: left;
+						width: 82px;
+						height: 15px;
+						line-height: 15px;
+						font-size: 13px;
+						margin-top: 3px;
+						margin-right: 10px;
+						padding-right: 10px;
+						border-right: 1px solid #515151;
+					}			
+						.basicMenu a {
+							display:block;
+							width: 100%;
+							color: #515151;
+							text-align: center;
+						}
+					.topMenu .InfoFind {
+						width:89px;
+						border: 0;
+						
+					}						
+					.cartButton {
+						height: 25px; 					
+						border-radius: 5px;
+						background-color: #ffa2a2;
+						color: white;
+						font-weight: bold;
+						text-align: center;
+						line-height: 25px;
+						border: 0;
+						margin-top: -2px;
+						margin-right: 0;
+						padding-right: 0;
+					}
+					/*a 태그 폰트색상 버그현상 장바구니*/
+					.cartButton a:link    {color: #fff; }
+					.cartButton a:visited {color: #fff; }
+					.cartButton a:hover   {color: #fff; }
+					.cartButton a:active  {color: #fff; }
+				
+				.searchBox {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 210px;
+					height: 30px;
+					line-height: 30px;
+				}
+					
+					.searchBar {
+						width: 170px;
+						background-color: #ffe0e0;
+						border: 0px;
+						border-bottom: 2px solid #ffa2a2;
+					}
+					.searchButton {
+						width: 30px;
+						border: 0px;
+						outline: 0px;
+						background-color: #ffe0e0;
+						color: #ffa2a2;
+						cursor: pointer;
+					}			
+					
+		.coqueLogo {
+			width: 170px;
+			height: 170px;
+
+			background-color: white;
+			background-size: 170px 170px;
+			background-image: url("../../images/coqueLogoImg.jpg");
+
+			position: absolute;
+			left: 50%;
+
+			margin-left: -85px;
+
+		}
+			.coqueLogo a {
+				width: 170px;
+				height: 170px;
+
+				display: inline-block;
+			}
+		.bottomNav {
+			width: 1580px;
+			height: 325px;
+
+			background-image: url("../../images/bottomNavBackground.png");
+			background-size: 1580px;
+			background-repeat: no-repeat;
+			
+			position: absolute;
+			top: 230px;
+			left: 50%;
+			margin-left: -790px;
+		}
+			.bottomMenu {
+				width: 825px;
+				height: 30px;				
+				display: inline-block;
+				margin-top: 55px;
+				margin-left:377px;
+				
+			}
+				.mainMenu {
+					width: 161px;
+					height: 30px;
+					display: inline-block;
+					margin-right:5px;					
+					color: white;
+					font-size: 20px;
+					font-weight: 900;
+					float: left;
+					text-align: center;
+					line-height: 28px;
+					
+				}
+				.lastMenu {
+					margin-right:0px;
+					
+				}
+					/*a 태그 폰트색상 버그현상 메인메뉴*/
+					.mainMenu a:link    {color: #fff; }
+					.mainMenu a:visited {color: #fff; }
+					.mainMenu a:hover   {color: #fff; }
+					.mainMenu a:active  {color: #fff; }
+					
+					.subMenu:not(subMenu_5){
+						width: 161px;
+						height: 120px;
+						padding : 30px 5px 0px 0px;
+						display : none;	
+						line-height:40px;						
+						
+					}
+						subMenu_5 {
+							width: 161px;
+							height: 120px;
+							padding : 30px 0px 0px 0px;	
+							display : none;
+							line-height:40px;	
+						}
+						.subMenu a{
+						font-size:15px;
+						font-weight:bold;						
+						}
+						/*a 태그 폰트색상 버그현상 서브메뉴*/
+						.subMenu a:link    {color: #982323; }
+						.subMenu a:visited {color: #982323; }
+						.subMenu a:hover   {color: #982323; }
+						.subMenu a:active  {color: #982323; }
+	/* 팝업 백그라운드 설정 */
+	.popUpBackground { 
+		width : 100%;
+		height : 100%;
+		position:fixed;
+		background-color: rgba( 0, 0, 0, 0.7 );
+		z-index:100;
+		display : none;
+	}
+	/* 섹션 CSS */
+	.mainContentsBox {
+		width : 1000px;
+		height : 730px;
+		margin : auto;
+	}
+		.mainContent {
+			//background-color : red;
+
+			color : black;
+			margin-top : 200px;
+		}
+			.mainTitle {
+				//background-color : blue;
+				width : 1000px;
+				height : 50px;	
+
+				font-size : 35px;
+				line-height : 48px;
+				font-weight : bold;
+			
+				border-bottom : 5px solid #c0c0c0;
+
+				margin-top : 150px;
+				//margin-bottom : 30px;
+			}
+
+			/* 삭제 버튼 */
+			.productDeleteButtonBox {
+				width : 300px;
+				height : 50px;
+				//background-color : red;
+
+				//margin-top : -30px;
+				//margin-bottom : 30px;
+				margin-left : 700px;
+				
+			}
+				/* 선택상품 삭제 버튼 */
+				.selectProductDeleteButton {
+					width : 145px;
+					height : 35px;
+					background-color : #e9e9e9;
+
+					font-size: 15px;
+					
+					margin-top : 7.5px;
+	
+					border-radius : 5px;
+				}
+				/* 전체상품 삭제 버튼 */
+				.allProductDeleteButton {
+					width : 145px;
+					height : 35px;
+					background-color : #e9e9e9;
+
+					font-size: 15px;
+					
+					border-radius : 5px;
+					margin-left : 5px;
+				}
+			/* 상세 정보 BOX 부분 */
+			.orderDetailContents {
+	
+			}
+				.orderDetailContentsList {
+					background-color : #e9e9e9;
+
+					border-radius : 10px;
+					//margin-top : 50px;
+				}
+					.basicOrderDetailMenu {
+						width : 900px;
+						height : 50px;
+						//background-color : blue;
+						margin : auto;
+					}
+						.commonOrderDetailContents {
+							display : inline-block;
+							font-weight : bold;
+						}
+						.orderDetailCheckBox {
+							width : 20px;
+							height : 20px;
+							
+							float : left;
+							margin-top : 20px;
+
+							border : 1px solid black;
+						}
+						.basicOrderDetailContent1 {
+							
+							margin-left : -20px;
+							//background-color : green;
+						}
+						.basicOrderDetailContent2 {
+							width : 405px;
+
+							text-align : center;
+							font-weight : bold;
+							line-height : 60px;
+
+							//background-color : green;
+						}
+						.basicOrderDetailContent3 {
+							width : 227px;
+
+							text-align : center;
+							font-weight : bold;
+				
+							//background-color : green;
+						}
+						.basicOrderDetailContent4 {
+							width : 170px;
+
+							text-align : center;
+							//font-weight : bold;
+							//background-color : green;
+						}
+					.orderDetailMenu {
+						width : 935px;
+						height : 200px;
+					
+						margin : auto;
+						margin-top : 20px;
+						//background-color : blue;
+					}
+						.commonOrderDetailContent {
+							margin-top : 90px;
+						
+						}
+						.orderDetailContentImg {
+							//display : inline-block;
+							width : 150px;
+							height : 150px;
+		
+							background-image :  url("../../images/MYPAGE/macaroon_04.png");
+							background-repeat: no-repeat;
+							background-position: center;
+							background-color : white;
+							background-size : 100px 100px;
+				
+							float : left;
+							margin-top : 25px;
+							margin-left : 70px;
+						}
+						.orderDetailDisc {
+							width : 150px;
+							float : right;
+							//position : absolute;
+							font-weight : bold;
+							//top : -50px;
+							margin-left : 20px;
+						}
+						.firstContent {
+							//float : left;
+
+							margin-top : 30px;
+							line-height : 20px;
+						}
+							.fontStyleNormal {
+								font-weight : normal;
+							}
+						.moveLeft { float : left;}
+						.moveRight { clear : both; float : right; }
+						.orderDetailDiscContent1 {
+							margin-left : 120px;
+						}
+						.orderDetailDiscContent2 {
+							margin-left : 38px;
+							color : #ff9090;
+						}
+
+			/* 주문하기 버튼 스타일 */
+			.orderPriceBox { 
+				//background-color :red;
+				width : 740px;
+				height : 130px;
+
+				float : right;
+				clear : both;
+				position : relative;
+				margin-top : 20px;
+			}
+				.cartButtonBox { display : inline-block; }
+					.orderButton {
+						width : 230px;
+						height : 60px;	
+
+						border-radius : 7px;
+	
+						color : white;
+						font-weight : bold;
+						font-size : 19px;
+
+
+						background-color : #a7a7a7;
+					}
+					.moreShoppingButton {
+						display : block;
+						width : 230px;
+						height : 60px;
+	
+						border-radius : 7px;
+	
+						color : white;
+						font-weight : bold;
+						font-size : 19px;
+						line-height : 60px;
+						text-align : center;
+
+						margin-top : 10px;
+						//margin-bottom : -5px;
+						background-color : #e9e9e9;
+					}
+				/* 총 결제 금액 부분 */
+				.totalPriceBox {
+					display : inline-block;
+					width : 500px;
+					height : 130px;
+					background-color : #e9e9e9;
+					border-radius : 10px;
+
+					//margin : auto;
+					//margin-top : -5px;
+					margin-left : 5px;
+
+					position : absolute;
+				
+	
+				}
+					/* 결제 금액 LIST 박스 */
+					.priceTextList {
+						width : 500px;
+						height : 30px;
+						
+						margin-top : 10px;
+						margin-left : 10px;
+				
+					}
+					/* 텍스트 전체 설정 */
+					.totalPriceBox .commonTextStyle {
+						display : inline-block;
+					
+						font-weight : bold;
+
+						
+					}
+					.totalPriceBox .textTitle {
+						width : 150px;
+						height : 30px;
+				
+						float : left;
+
+						
+					}
+					.totalPriceBox .textTitleValue {
+						float : right;
+						margin-right : 30px;
+					}
+
+					/* 총 결제금액 LIST 위치 & 색 조정 */
+					.totalPriceBox .fixPosition {
+						color : #ff9090;
+
+						font-size : 23px;
+
+						margin-top : 10px;
+					}
+			
+	/* 풋터 CSS */
+	.footerBox {
+		width: 1280px;
+		height: 220px;
+
+		margin: auto;
+
+		background-color: #ffe0e0;
+	}
+		.footerContentsBox {
+			width: 1180px;
+			height: 100px;
+
+			padding-top: 30px;
+			margin-left: 50px;
+
+		}
+			.coqueAddress {
+				display: inline-block;
+			
+				font-style: normal;
+				line-height: 23px;
+		
+				color: #838383;
+
+			}
+			.clientBox {
+				
+				display: inline-block;
+				
+				line-height: 26px;	
+				float: right;
+		
+				color: #838383;
+
+			}
+				.telSpan {
+					font-size: 30px;
+					color: #ff7d7d;
+					font-weight: bold;
+				}
+				.discSpan {
+					font-weight: bold;
+					font-size: 18px;
+					color: #838383;
+				}
+			.snsBox {
+				margin-top: 5px;
+			}
+				.sns {
+				
+				}
+	
+					.snsList {
+						width: 40px;
+						height: 40px;
+				
+						color: white;
+						text-align: center;
+						line-height: 53px;
+						border-radius: 20px;
+						display: inline-block;
+						background-color: #ffa2a2;
+					}
+		

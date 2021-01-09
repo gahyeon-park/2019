@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ENTITY name SYSTEM "허진경">
+<!ENTITY web SYSTEM "http://xml.new21.net">
+<!ENTITY title SYSTEM "자바와 xml 정복">
+
+<!ELEMENT bookInfo (nameString, webPage, bookTitle)>
+	<!ELEMENT nameString (#PCDATA)>
+	<!ELEMENT webPage (#PCDATA)>
+	<!ELEMENT bookTitle (#PCDATA)>
+

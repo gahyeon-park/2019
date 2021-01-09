@@ -1,0 +1,138 @@
+.sectionBox {
+    width: 1910px;
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -955px;
+    z-index: 10;
+}
+/* fixed image */
+.backgroundImg {
+    width: 100%;
+
+    position: fixed;
+    z-index: 0;
+}
+/* fixed image overlay */
+.overlay {
+    width: 100%;
+    height: 1800px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    z-index: 0;
+}
+    .mainText {
+        width: 500px;
+        height: 50px;
+
+        line-height: 48px;
+        font-size: 35px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 100;
+    
+        margin: auto;
+        margin-top: 200px;
+    }
+    .subText {
+        width: 500px;
+        height: 50px;
+
+        line-height: 48px;
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 100;
+
+        margin: auto;
+    }
+
+    /* contents */
+    .mapContents {
+        width: 1000px;
+        height: 300px;
+
+        background-color: #ffffff;
+
+        margin: auto;
+    }
+    .aboutMapBox { margin-top: -120px; }
+    .contentsBox {
+        width: 1000px;
+        height: 1200px;
+
+        background-color: #ffffff;
+        margin: auto;
+        margin-top: 30px;
+    }
+        /* row Contents */
+        .contentsList {
+            display: inline-block;
+            float: left;
+        }
+            /* contents Image, map Contents */
+            .contentsImg, .mapBox {
+                display: inline-block;
+                
+                /* 1930 1080 */
+                width: 500px;
+                height: 300px;
+
+                float: left;
+            }
+            /* contents Text */
+            .contentsTextBox {
+                display: inline-block;
+
+                width: 500px;
+                height: 300px;
+
+                float: left;
+
+                overflow-y: hidden;
+            }
+                .contentsSubtitle {
+                    width: 500px;
+                    height: 30px;
+
+                    font-size: 15px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    margin-top: 90px;
+                    overflow-y: hidden;
+                }
+                .contentsTitle {
+                    width: 500px;
+                    height: 50px;
+
+                    font-size: 30px;
+                    line-height: 48px;
+                    text-align: center;
+                    font-weight: 600;
+
+                    margin-top: 60px;
+
+                }
+                .locationTitle {
+                    width: 500px;
+                    height: 50px;
+
+                    font-size: 30px;
+                    line-height: 48px;
+                    text-align: center;
+                    font-weight: 600;           
+                }
+                .contentsDisc {
+                    width: 500px;
+                    height: 120px;
+
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: center;
+
+                    margin-top: 10px;
+                }

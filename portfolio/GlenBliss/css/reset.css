@@ -1,0 +1,19 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  font-family: 'Noto Sans KR', 'Raleway', '굴림체', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border-style: none;
+  background-color: transparent;
+  color: #5a6b47;
+  color: #a0a38e;
+  color: #f8f8f8;
+  color: #a19385;
+  color: #9e8e79;
+  color: #3f3222; }
+
+/*# sourceMappingURL=reset.css.map */

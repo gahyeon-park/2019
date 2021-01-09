@@ -1,0 +1,113 @@
+
+.footerButton {
+    width: 100px;
+}
+.footerButtonBox {
+    width: 250px;
+
+    margin: auto;
+}
+.bookInfoCommon {
+    display: none;
+}
+
+.pageTitle {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 300px;
+}
+
+#loginButton {
+    margin-right: 15px;
+    margin-left: 20px;
+}
+#logoutButton {
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.searchTypeDropDown {
+    display: inline-block;
+    width: 100px;
+}
+.searchText {
+    display: inline-block;
+    width: 200px;
+}
+
+.searchModalBox {
+    width: 1000px;
+
+    margin-left: -250px;
+}
+
+#addBookSummary {
+    width: 500px;
+}
+
+.bookImg {
+    display: inline-block;
+    width: 200px;
+    height: 290px;
+
+    float: left;
+
+    margin-left: 130px;
+}
+.summaryText {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+
+    background-color: #ffffff;
+
+    margin-left: 40px;
+}
+.bookImgBox {
+    display: inline-block;
+    width: 330px;
+    height: 350px;
+
+}
+.bookImgPath {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+
+    text-align: center;
+
+}
+.bookImgDownLoad {
+    display: inline-block;
+
+    margin-top: 10px;
+    width: 70px;
+    height: 40px;
+}
+
+.manageMentBox {
+    width: 1500px;
+    margin-left: -500px;
+}
+.addBanIDText {
+    width: 85%;
+    display: inline-block;
+    float: left;
+}
+.addBanIDButton {
+    display: inline-block;
+    float: right;
+}
+.addbanIDBox {
+    width: 100%;
+}
+
+.rentalListButton {
+    position: absolute;
+    top: 10px;
+}
+.rentalListBox {
+    width: 1500px;
+    margin-left: -500px;
+}

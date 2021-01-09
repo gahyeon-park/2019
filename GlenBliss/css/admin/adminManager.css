@@ -1,0 +1,31 @@
+
+table{
+    width: 1500px;
+    margin: 60px 0 0 80px;
+    border-collapse: collapse;
+  }
+
+tr{ height: 50px; text-align: center; }
+
+tr:first-child { background-color: #a19385; }
+
+tr>td{ color: #fff; text-align: center; border: 1px solid #bdbdbd;}
+
+.id{ width: 60px; margin: auto; text-align: center; }
+.userid{ width: 120px; margin: auto; text-align: center; }
+.name{ width: 120px; margin: auto; text-align: center; }
+.nick{ width: 140px; margin: auto; text-align: center; }
+
+.create>form>input:last-child{
+    padding: 10px; color: #fff;
+    background-color: #4a6b57; text-align: center;
+}
+
+.manager_update{
+    padding: 10px; color: #fff;
+    background-color: #9e8e79; text-align: center;
+}
+.manager_delete{
+    padding: 10px; color: #fff;
+    background-color: #3f3222; text-align: center;
+}

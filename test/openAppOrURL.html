@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a id="facebookLink" class="intent"   
+    href="fb://page/113742649218866">facebook</a>
+</body>
+<script>
+    $("#facebookLink").on("click", function(e) {
+        var visitedAt = (new Date()).getTime();
+
+        setTimeout(function() {
+            if(new Date().getTime() - visitedAt < 2000 ) {
+                window.open("https://www.facebook.com/E9PAY/");
+                $("#facebookLink").attr("href", "https://www.facebook.com/E9PAY/");
+            }
+        }, 500);
+        setTimeout(function() {
+            window.open("fb://page/113742649218866");
+            $("#facebookLink").attr("href", "fb://page/113742649218866");
+        }, 0);
+
+    });
+</script>
+</html>
+
+

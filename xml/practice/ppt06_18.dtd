@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT todayNews (news)*>
+	<!ELEMENT news (kind+, title, contents)>
+		<!ELEMENT kind (#PCDATA)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT contents ANY>

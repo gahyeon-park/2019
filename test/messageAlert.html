@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Message Alert</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 100%;
+
+            text-decoration: none;
+            color: #101010;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        #wrap { display: inline-block; width: 100%; height: 100%; position: relative; top: 0; left: 0; background: pink; }
+
+        .msg_alert_box { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; z-index: 100; }
+        .msg_alert_box .msg_alert { width: 70%; position: absolute; top: 50%; left: 10%; padding: 2% 5% 2% 5%; background: #ffffff; }
+
+        .msg_alert_box .msg_alert .msg_alert_title { width: 100%; height: 60px; border-bottom: 2px solid #7f7f7f; }
+        .msg_alert_box .msg_alert .msg_alert_title h2 { display: inline-block; float: left; font-size: 22px; line-height: 58px;}
+        .msg_alert_box .msg_alert .msg_alert_title img { display: inline-block; height: 25px; float: right; margin-top: 17.5px; }
+
+        .msg_alert_box .msg_alert .msg_alert_contents { padding: 10px; }
+        .msg_alert_box .msg_alert .msg_alert_contents p { font-size: 15px; word-break: break-all;}
+
+        .msg_alert_box .msg_alert .msg_alert_button { width: 100%; }
+        .msg_alert_box .msg_alert .msg_alert_button .button { display: inline-block; width: 40%; height: 50px; font-size: 22px; color: #ffffff; line-height: 48px; text-align: center; padding: 0 5px 0 5px; background: red; margin: 5px; }
+        .msg_alert_box .msg_alert .msg_alert_button .button.cancle { background: #7f7f7f; }
+        .msg_alert_box .msg_alert .msg_alert_button .button.confirm { background: #0e75bc; }
+
+        
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <a href="javascript:void(0)" onclick="openMsgAlert();">메세지 창 열기</a>
+
+        <section id="msg_alert_box" class="msg_alert_box" style="display: none;">
+            <div id="msg_alert" class="msg_alert">
+                <article class="msg_alert_title">
+                    <h2>[TITLE]</h2>
+                    <a href="javascript:void(0)" onclick="closeMsgAlert();"><img src="./closeIcon.png" alt="닫기"></a>
+                </article>
+                <article class="msg_alert_contents">
+                    <p>[CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...][CONTENTS]<br>[CONTENTS...]</p>
+                </article>
+                <article class="msg_alert_button">
+                    <p style="text-align: center;">
+                        <a class="button cancle" href="javascript:void(0)" onclick="closeMsgAlert();">취소</a>
+                        <a class="button confirm" href="javascript:void(0)" onclick="closeMsgAlert();">확인</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script>
+    function openMsgAlert() {
+        // 메세지창 띄우기
+        document.getElementById('msg_alert_box').style.display = 'block';
+
+        // 가운데 정렬
+        var msgAlert = document.getElementById("msg_alert");
+        msgAlert.style.marginTop = (String)(-1 * (msgAlert.offsetHeight / 2)) + "px";
+    }
+    function closeMsgAlert() {
+        // 메세지창 닫기
+        document.getElementById('msg_alert_box').style.display = 'none';
+    }
+</script>
+</html>

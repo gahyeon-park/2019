@@ -1,0 +1,324 @@
+﻿<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">	
+		<link rel="stylesheet" href="../../css/mypage/orderFinder.css" />
+		<link rel="stylesheet" href="../../css/reset.css" />
+		
+		<link rel="stylesheet" href="../../css/loginPopUp/loginPopUp.css" />
+		<link rel="stylesheet" href="../../css/findidPwPopUp/findIdPwPopUp.css" />
+		<link rel="stylesheet" href="../../css/signUpPopUp/signUpPopUp.css" />
+		<script type="text/javascript" src="../../js/mypage/orderFinder.js"></script>
+
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+		<title>orderFinderPage</title>
+
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="popUpBackground" class="popUpBackground"></div>
+			<!-- 헤더-->
+			<header>
+				<div class="pinkBar">
+					<nav class="topNav clearfix">
+						<ol class="topMenu clearFix">
+							<li class="basicMenu"><a href="#" onclick="popUpLogin()">로그인</a></li>
+							<li class="basicMenu"><a href="#" onclick="popUpSignUp()">회원가입</a></li>
+							<li class="basicMenu InfoFind"><a href="#" onclick="popUpFind()">&nbsp ID / PW 찾기</a></li>
+							<li class="basicMenu cartButton"><a class="fontWhite" href="../../html/MYPAGE/shoppingCart2.html">장바구니</a></li>
+						</ol>
+						<div class="searchBox">
+							<input class="searchBar" type="text">
+							<button class="searchButton"><i class="xi-search xi-x"></i></button>
+						</div>
+					</nav>
+				</div>
+				<h1 class="coqueLogo"><a href="../../coqueFactory_main.html"></a></h1>
+				<nav id="bottomMenuImg" class="bottomNav">
+					<ol id="bottomMenu" class="bottomMenu" onmousemove="dropMenu()" onmouseout="undropMenu()">
+						<li class="mainMenu">
+							<a href="#">FACTORY</a>
+							<div class="subMenu subMenu_1">
+								<ul>
+									<li><a href="../../html/FACTORY/coqueFactory_introduceCompany.html">회사소개</a></li>
+									<li><a href="../../html/FACTORY/coqueFactory_notice.html">공지사항</a></li>
+									<li><a href="../../html/Directions/Directions.html">오시는길</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mainMenu">
+							<a href="#">SHOPPING</a>
+							<div class="subMenu subMenu_2">
+								<ul>
+									<li><a href="../../html/SHOPPING/coqueFactory_macaroon.html">마카롱</a></li>
+									<li><a href="../../html/customOrder/customOrder.html">주문제작</a></li>									
+								</ul>
+							</div>
+						</li>
+						<li class="mainMenu">
+							<a href="#">EVENT</a>
+							<div class="subMenu subMenu_3">
+								<ul>
+									<li><a href="../../html/eventPage/eventPage.html">이벤트</a></li>
+									<li><a href="../../html/eventResultPage/eventResultPage.html">당첨자 발표</a></li>									
+								</ul>
+							</div>
+						</li>
+						<li class="mainMenu">
+							<a href="#">ABOUT</a>
+							<div class="subMenu subMenu_4">
+								<ul>
+									<li><a href="../../html/ABOUT/coqueFactory_review.html">이용후기</a></li>
+									<li><a href="../../html/serviceCenter/serviceCenter.html">고객센터</a></li>									
+								</ul>
+							</div>
+						</li>
+						<li class="mainMenu lastMenu">
+							<a href="#"><span class="currentPageCategoryColor">MY PAGE</span></a>
+							<div class="subMenu subMenu_5">
+								<ul>
+									<li><a href="../..//html/mypage/myInformation.html">내정보</a></li>
+									<li><a href="../../html/mypage/shoppingCart2.html">장바구니</a></li>
+									<li><a href="../../html/mypage/orderFinder.html">주문조회</a></li>
+								</ul>
+							</div>
+						</li>
+					</ol>
+				</nav>		
+			</header>
+			<!-- 로그인창-->
+ 			<!-- 로그인,회원가입,ID/PW 찾기 팝업창 모두 가장 위에서부터 100px 떨어져있다.-->			
+			<section id="loginBox" class="loginBox">
+				<h2 class="loginTitle">로그인</h2>
+				<hr class="loginPopUp_topBorderLine" />
+				<form class="id_pw_inputValueBox">
+					<p class="id_pw_fontValue">아이디</p>
+					<input class="id_pw_inputBox" type="text" name="inputId" placeholder="ID" value="">
+					<p class="id_pw_fontValue pw_positionValue">비밀번호</p>
+					<input class="id_pw_inputBox" type="password" name="inputPassWord" placeholder="PASSWORD" value="">
+					<p class="forgotIdPwText">아이디/비밀번호를 잊어버리셨습니까</p>
+					<!-- 여기를 클릭하면 현재 팝업은 사라지고 display:none 하고 ID/PW 찾기 팝업이 띄워지도록 해야한다. id/pw 팝업을 display:block 될수있도록 자바스크립트에서 css속성값을 준다.-->
+					<!-- 그러기 위해 a 태그가 적절하지 않다면 다른것으로 고려하겠음. div박스 or button 태그-->
+					<a class="forgotIdPwButton" href="#" onclick="forgotIdPwClickHere()">여기를 클릭해 주세요.</a>
+				</form>
+				<hr class="loginPopUp_bottomBorderLine">
+				<hr class="loginPopUp_boundaryLine">
+				<!--cancel을 누르면 팝업이 다시 dispaly:none이 되도록 함. 메인링크이동을 생각했지만 onclick으로 자바스크립트에서 css 속성을 줘야할것같음.-->
+				<a id="loginPopUp_cancelButton" class="loginPopUp_cancelButton" href="#" onclick="exitPopUp()">CANCEL</a>
+				<!-- 로그인 완료 후 기능은 구현하지않음. 페이지가 없음. 작동하지않음.-->
+				<a id="loginPopUp_submitButton" class="loginPopUp_submitButton" href="#">SUBMIT</a>
+			</section>
+			
+			<!-- 아이디 비밀번호 찾기-->
+			<!-- 로그인,회원가입,ID/PW찾기 팝업창은 모두 최상단에서 100px 떨어져있음-->
+			<section id="findIdPwBaseBox" class="findIdPwBaseBox">
+				<section class="findIdBaseBox">
+					<h2 class="findIdTitle">아이디 찾기</h2>
+					<hr class="findIdPw_topBorderLine" / >
+					<form class="inputValueFindIdBox">
+						<p class="commonParagraphValue">이름</p>
+						<input class="commonTextBoxValue" type="text" placeholder="이름" name="fullName" value="" / >
+						<p class="commonParagraphValue">가입 메일 주소</p>
+						<input class="commonTextBoxValue" type="email" placeholder="E-MAIL" name="email" value="" / >
+					</form>
+					<hr class="findIdPw_boundaryLine"  / >
+					<!-- cancel 버튼을 누르면 메인페이지로 링크이동을 생각했었음. 하지만 display:none을 줘야한다면 a태그말고 div 또는 button 태그를 이용해서 자바스크립트에서 css 속성을 줘야한다고 생각함.-->
+					<a class="findIdPw_cancelButton" href="">CANCEL</a>
+					<!-- submit 구현 페이지는 없음 기능 무-->
+					<a class="findIdPw_submitButton" href="">SUBMIT</a>
+				</section>
+				<section class="findPwBaseBox">
+					<h2 class="findPwTitle">비밀번호 찾기</h2>
+					<hr class="findIdPw_topBorderLine" / >
+					<form class="inputValueFindPwBox">
+						<p class="commonParagraphValue">이름</p>
+						<input class="commonTextBoxValue" type="text" placeholder="이름" name="fullName" value="" / >
+						<p class="commonParagraphValue">아이디</p>
+						<input class="commonTextBoxValue" type="text" placeholder="ID" name="inputId" value="" / >
+						<p class="commonParagraphValue">가입 메일 주소</p>
+						<input class="commonTextBoxValue" type="email" placeholder="E-MAIL" name="email" value="" / >
+					</form>	
+					<hr class="findIdPw_boundaryLine" / >
+					<!-- cancel 버튼을 누르면 메인페이지로 링크이동을 생각했었음. 하지만 display:none을 줘야한다면 a태그말고 div 또는 button 태그를 이용해서 자바스크립트에서 css 속성을 줘야한다고 생각함.-->
+					<a class="findIdPw_cancelButton" href="">CANCEL</a>
+					<!-- submit 구현 페이지는 없음 기능 무-->
+					<a class="findIdPw_submitButton" href="">SUBMIT</a>
+				</section>
+			</section>
+			<!-- 회원가입-->
+			<!--로그인,회원가입,ID/PW 찾기 팝업창은 모두 가장 상단에서 100px 떨어져있음.-->
+			<section id="signUpBox" class="signUpBox">
+				<h2 class="signUpTitle">회원가입</h2>
+				<hr class="signUpPopUp_topBorderLine" >
+				<section class="inputBaseBox_left">
+					<form class="leftInputBox">
+						<p class="commonFontValue paragraphPositionReset">이름</p>
+						<input class="commonBoxValue" type="text" name="fullname" placeholder="이름" value="">
+						<p class="commonFontValue">성별</p>
+						<input type="radio" name="gender" value="male" checked>남성
+						<input type="radio" name="gender" value="female"> 여성
+						<p class="commonFontValue">생년월일</p>
+						<input class="commonBoxValue" type="text" name="birthday" placeholder="0000.00.00" value="">
+						<p class="commonFontValue">이메일</p>
+						<input class="commonBoxValue" type="email" name="email" placeholder="E-MAIL" value="">
+					</form>
+				</section>
+				<section class="inputBaseBox_right">
+					<div class="centerBorderBar">
+						<form class="rightInputBox">
+							<p class="commonFontValue paragraphPositionReset inputIdParagraphPositionValue">아이디</p>
+							<!-- 여기 중복확인 기능은 구현 생각을 안함.-->
+							<button class="buttonValue">중복확인</button>
+							<input class="commonBoxValue" type="text" name="inputId" placeholder="ID" value="">
+							<p class="commonFontValue">비밀번호</p>
+							<input class="commonBoxValue" type="password" name="inputPw" placeholder="PASSWORD" value="">
+							<p class="commonFontValue">전화번호</p>
+							<input class="commonBoxValue" type="tel" name="userTel" placeholder="000-0000-0000" value="">
+							<p class="addExplanationFontValue">로그인 후 핸드폰 인증을 해주세요.</p>
+						</form>
+					</div>
+				</section>
+				<hr class="signUpPopUp_boundaryLine" >
+				<!-- cancel을 누르면 메인페이지로 링크이동을 생각했었음. 그게 아니라 display:none 을 때리는 자바스크립에서 css 속성을 준다면-->
+				<!-- a 태그 말고 다른것으로 바꿀 필요가 있다면 말해주기 바랍니다.-->
+				<a class="signUpPopUp_cancelButton" href="#" onclick="exitPopUp()">CANCEL</a>
+				<!-- 회원가입 정보입력후 다음 페이지 구현안되어있음. submit 아이콘은 기능없음-->
+				<a class="signUpPopUp_submitButton" href="#">SUBMIT</a>
+			</section>
+			<!-- 메인섹션-->
+			<section class="mainContentsBox">
+				<article class="mainContent">
+					<h1 class="mainTitle">&nbsp;&nbsp;&nbsp;&nbsp;주문조회</h1>
+					<nav class="orderMenu">
+						<div class="orderMenuContents">
+							<dl class="commonOrderMenu orderMenuMoveLeft">
+								<dt class="commonOrderMenu orderMenu1">조회기간
+									<dd class="commonOrderMenu orderMenu1Sub">오늘</dd>
+									<dd class="commonOrderMenu orderMenu1Sub clickedContent">1개월</dd>
+									<dd class="commonOrderMenu orderMenu1Sub">2개월</dd>
+									<dd class="commonOrderMenu orderMenu1Sub">3개월</dd>
+								</dt>
+							</dl>
+							<input class="commonOrderMenu orderMenu2" type="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+							<input class="commonOrderMenu orderMenu2" type="date">
+							<button class="commonOrderMenu orderMenuSubmit" onclick="goOrderFinderEmpty()">조회하기</button>
+						</div>
+					</nav>
+
+					<div class="orderContents">
+						
+						<ol class="basicOrderContentsMenu">
+							<div class="basicOrderContents">
+								<li class="basicOrderContent basicOrderContent1">주문번호</li>
+								<li class="basicOrderContent basicOrderContent2">주문일자</li>
+								<li class="basicOrderContent basicOrderContent3">주문요약</li>								
+								<li class="basicOrderContent basicOrderContent4">금액</li>
+								<li class="basicOrderContent basicOrderContent5">상태</li>
+							</div>
+						</ol>	
+						<ol class="listOrderContentsMenu">
+							<div class="listOrderContents" onclick="goOrderFinderDetail()">
+								<li class="listOrderContent listOrderContent1" onclick="goOrderFinderDetail()">9605052</li>
+								<li class="listOrderContent listOrderContent2" onclick="goOrderFinderDetail()">19.04.29</li>
+								<li class="listOrderContent listOrderContent3" onclick="goOrderFinderDetail()">[주문제작] [오리지널] 외...</li>
+								<li class="listOrderContent listOrderContent4" onclick="goOrderFinderDetail()">20,000원</li>
+								<li class="listOrderContent listOrderContent5">배송중
+									<div class="orderContentButtons">
+										<button class="orderContentButton">주문취소</button>
+										<button class="orderContentButton">배송조회</button>
+									</div>								
+								</li>
+							</div>
+						</ol>	
+						
+						
+						<ol class="listOrderContentsMenu">
+							<div class="listOrderContents">
+								<li class="listOrderContent listOrderContent1">7312012</li>
+								<li class="listOrderContent listOrderContent2">19.03.29</li>
+								<li class="listOrderContent listOrderContent3">[오리지널] [세트상품] 외...</li>								
+								<li class="listOrderContent listOrderContent4">45,000원</li>
+								<li class="listOrderContent listOrderContent5">배송완료
+									<div class="orderContentButtons">
+										<button class="orderContentButton">주문취소</button>
+										<button class="orderContentButton">배송조회</button>
+									</div>
+								</li>
+							</div>
+						</ol>
+						<ol class="listOrderContentsMenu listOrderContentsNone">
+							<div class="listOrderContents">
+								<li class="listOrderContent listOrderContent1">7312012</li>
+								<li class="listOrderContent listOrderContent2">19.03.29</li>
+								<li class="listOrderContent listOrderContent3">[오리지널] [세트상품] 외...</li>								
+								<li class="listOrderContent listOrderContent4">45,000원</li>
+								<li class="listOrderContent listOrderContent5">배송완료
+									<div class="orderContentButtons">
+										<button class="orderContentButton">주문취소</button>
+										<button class="orderContentButton">배송조회</button>
+									</div>
+								</li>
+							</div>
+						</ol>
+						<ol class="listOrderContentsMenu listOrderContentsNone">
+							<div class="listOrderContents">
+								<li class="listOrderContent listOrderContent1">7312012</li>
+								<li class="listOrderContent listOrderContent2">19.03.29</li>
+								<li class="listOrderContent listOrderContent3">[오리지널] [세트상품] 외...</li>								
+								<li class="listOrderContent listOrderContent4">45,000원</li>
+								<li class="listOrderContent listOrderContent5">배송완료
+									<div class="orderContentButtons">
+										<button class="orderContentButton">주문취소</button>
+										<button class="orderContentButton">배송조회</button>
+									</div>
+								</li>
+							</div>
+						</ol>
+					</div>
+
+					<nav class="pageNav">
+					<div class="pageNavBoxSetting">
+						<button class="leftButton"><i class="xi-angle-left xi-2x"></i></button>
+						<ol class="pageNumber">
+							<li class="pageButton clickedPageButton">1</li>
+							<li class="pageButton">2</li>
+							<li class="pageButton">3</li>
+							<li class="pageButton">4</li>
+							<li class="pageButton">5</li>
+						</ol>
+						<button class="rightButton"><i class="xi-angle-right xi-2x"></i></buttom>
+					</div>
+					</nav>
+				</article>
+			</section>
+			<footer class="footerBox">
+				<div class="footerContentsBox">
+					<address class="coqueAddress">	
+						본사 : 경기 안산시 단원구 예술대학로 17 안산중앙노블레스 1층 꼬끄팩토리<br>
+						상호 : 꼬끄팩토리  |  대표자 : 박가현  |  사업자등록번호 : 000-00-00000<br>
+						개인정보관리책임자 : 유가연  |  연락처 : 010-0000-0000<br>
+						통신판매업신고 : 제2019-경기안산-0000호<br>
+						TEL : 1588-2019  |  FAX : 031-0000-0000  |  이메일 : coque_factory@gmail.com<br>
+					</address>
+					<p class="clientBox">
+						<span class="telSpan">1588-2019</span><br>
+						<span class="discSpan">고객센터 & 단체구매문의</span><br>
+						<br>
+						평일 : 9:00 ~ 18:00<br>
+						점심시간 : 12:00 ~ 13:00<br>
+						(토/일/공휴일은 휴무)<br>
+					</p>
+					<aside class="snsBox">
+						<ol class="sns">
+							<li class="snsList"><i class="xi-facebook xi-2x"></i></li>
+							<li class="snsList"><i class="xi-instagram xi-2x"></i></li>
+							<li class="snsList"><i class="xi-bold xi-2x"></i></li>
+						</ol>
+					</aside>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

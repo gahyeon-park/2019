@@ -1,0 +1,392 @@
+﻿@charset "UTF-8";
+	/*공통요소*/
+	.clearFix { 
+		display: block;
+		clear: both;
+		content: '';
+	}/*float 뒤에 포지션이 뭉개지는 현상 버그현상 없애기*/
+		/* 헤더 CSS */
+	header {
+		
+		height: 400px;
+	}
+		.pinkBar {			
+			height : 50px;
+			line-height: 50px;
+			background-color : #ffe0e0;
+		}
+			.topNav {
+				position: relative;
+				top: 10px;
+				width: 800px;
+				height: 30px;
+				margin: 0 auto;
+			}
+				.topMenu {
+					display: inline-block;
+					width: 397px;
+					height: 25px;
+					padding-left: 180px;
+				}
+					.basicMenu {
+						float: left;
+						width: 82px;
+						height: 15px;
+						line-height: 15px;
+						font-size: 13px;
+						margin-top: 3px;
+						margin-right: 10px;
+						padding-right: 10px;
+						border-right: 1px solid #515151;
+					}			
+						.basicMenu a {
+							display:block;
+							width: 100%;
+							color: #515151;
+							text-align: center;
+						}
+					.topMenu .InfoFind {
+						width:89px;
+						border: 0;
+						
+					}						
+					.cartButton {
+						height: 25px; 					
+						border-radius: 5px;
+						background-color: #ffa2a2;
+						color: white;
+						font-weight: bold;
+						text-align: center;
+						line-height: 25px;
+						border: 0;
+						margin-top: -2px;
+						margin-right: 0;
+						padding-right: 0;
+					}
+					/*a 태그 폰트색상 버그현상 장바구니*/
+					.cartButton a:link    {color: #fff; }
+					.cartButton a:visited {color: #fff; }
+					.cartButton a:hover   {color: #fff; }
+					.cartButton a:active  {color: #fff; }
+				
+				.searchBox {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 210px;
+					height: 30px;
+					line-height: 30px;
+				}
+					
+					.searchBar {
+						width: 170px;
+						background-color: #ffe0e0;
+						border: 0px;
+						border-bottom: 2px solid #ffa2a2;
+					}
+					.searchButton {
+						width: 30px;
+						border: 0px;
+						outline: 0px;
+						background-color: #ffe0e0;
+						color: #ffa2a2;
+						cursor: pointer;
+					}			
+					
+		.coqueLogo {
+			width: 170px;
+			height: 170px;
+
+			background-color: white;
+			background-size: 170px 170px;
+			background-image: url("../../images/coqueLogoImg.jpg");
+
+			position: absolute;
+			left: 50%;
+
+			margin-left: -85px;
+
+		}
+			.coqueLogo a {
+				width: 170px;
+				height: 170px;
+
+				display: inline-block;
+			}
+		.bottomNav {
+			width: 1580px;
+			height: 325px;
+
+			background-image: url("../../images/bottomNavBackground.png");
+			background-size: 1580px;
+			background-repeat: no-repeat;
+			
+			position: absolute;
+			top: 230px;
+			left: 50%;
+			margin-left: -790px;
+		}
+			.bottomMenu {
+				width: 825px;
+				height: 30px;				
+				display: inline-block;
+				margin-top: 55px;
+				margin-left:377px;
+				
+			}
+				.mainMenu {
+					width: 161px;
+					height: 30px;
+					display: inline-block;
+					margin-right:5px;					
+					color: white;
+					font-size: 20px;
+					font-weight: 900;
+					float: left;
+					text-align: center;
+					line-height: 28px;
+					
+				}
+					.currentPageCategoryColor {
+						color : #f94769;
+					}
+				.lastMenu {
+					margin-right:0px;
+					
+				}
+					/*a 태그 폰트색상 버그현상 메인메뉴*/
+					.mainMenu a:link    {color: #fff; }
+					.mainMenu a:visited {color: #fff; }
+					.mainMenu a:hover   {color: #fff; }
+					.mainMenu a:active  {color: #fff; }
+					
+					.subMenu:not(subMenu_5){
+						width: 161px;
+						height: 120px;
+						padding : 30px 5px 0px 0px;
+						display : none;	
+						line-height:40px;						
+						
+					}
+						subMenu_5 {
+							width: 161px;
+							height: 120px;
+							padding : 30px 0px 0px 0px;	
+							display : none;
+							line-height:40px;	
+						}
+						.subMenu a{
+						font-size:15px;
+						font-weight:bold;						
+						}
+						/*a 태그 폰트색상 버그현상 서브메뉴*/
+						.subMenu a:link    {color: #982323; }
+						.subMenu a:visited {color: #982323; }
+						.subMenu a:hover   {color: #982323; }
+						.subMenu a:active  {color: #982323; }
+	/* 팝업 백그라운드 설정 */
+	.popUpBackground { 
+		width : 100%;
+		height : 100%;
+		position:fixed;
+		background-color: rgba( 0, 0, 0, 0.7 );
+		z-index:100;
+		display : none;
+	}
+	/* 섹션 CSS */
+	.noticeBox {
+			width : 1000px;
+			margin : auto;
+			margin-top : 150px;
+			margin-bottom : 200px;
+	}
+			.mainTitle {
+				width : 1000px;
+				height : 50px;	
+
+				font-size : 35px;
+				line-height : 48px;
+				font-weight : bold;
+			
+				border-bottom : 5px solid #c0c0c0;
+
+				margin-bottom : 30px;
+			}
+			.noticeDivision {
+				width : 1000px;
+				/*margin안먹어서 padding적용*/
+				padding-top : 40px;
+				padding-bottom : 10px;
+			}
+				/*구분*/
+				.noticeDivision1 {
+				}
+				/*제목*/
+				.noticeDivision2 {
+					text-align : center;
+				}
+				/*작성일자*/
+				.noticeDivision3 {
+				}
+				/*조회수*/
+				.noticeDivision4 {
+				}
+				.noticeDivisionFont {
+					font-weight : bold;
+				}
+			/*백그라운드 회색컬러 준 부분*/
+			.noticeList1 {
+				width : 1000px;
+				padding-top : 20px;
+				padding-bottom : 10px;
+				border-top : 1px solid #6F6F6F;
+				background-color : #EBEBEB;
+			}
+			/*백그라운드 컬러 없는 부분*/
+			.noticeList2{
+				width : 1000px;
+				margin-bottom : 35px;
+				padding-bottom : 22px;
+				border-bottom : 1px solid #6F6F6F;
+			}
+			/*세로(열)로 첫줄=first, 두번째줄=second, 세번째줄=third, 네번째줄=fourth*/
+			.first {
+				width : 45px;
+				margin-left : 20px;
+				text-align : center;
+			}
+			.second {
+				width : 400px;
+				margin-left : 100px;
+			}
+			.second:hover { cursor : pointer;}
+			.third {
+				width : 100px;
+				margin-left : 100px;
+				text-align : center;
+			}
+			.fourth {
+				width : 50px;
+				margin-right : 30px;
+				float : right;
+				text-align : center;
+			}
+			/*ol은 가로(행)*/
+			.noticeList1 ol, .noticeList2 ol {
+				margin-top : 10px;
+			}
+			/*모든 li들 inline-block으로 가로정렬해주고 간격맞춰줌*/
+			.noticeDivision li, .noticeList1 ol>li, .noticeList2 ol>li {
+				display : inline-block;
+				line-height : 25px;
+			}
+				/*위에 second들에게 hover-cursor:pointer 주고
+				noticeDivision2(제목)에게도 pointer잡혀서 default로
+				noticeDivision li들은 cursor 해제시킴*/
+				.noticeDivision li:hover { cursor : default;}
+			/*페이지넘버*/
+			.pageNumberNav{
+				width:1000px;
+				height:52px;
+				margin-top : 50px;
+				margin-bottom : 50px;
+			}	
+			div.pageNavBox{
+				width : 346px;
+				font-size : 20px;
+				margin-left: 327px; /*중앙정렬(계산함)*/
+			}
+				button.leftButtonIcon {
+					display : inline-block;
+					border : 0px;
+					background-color : white;
+					cursor : pointer;
+					line-height : 48px;
+					text-align : center;
+				}
+				ol.pageNumber {
+					display : inline-block;
+				}
+				li.pageButtonIcon {
+					display : inline-block;
+					width : 50px;
+					height : 50px;
+					cursor : pointer;
+					line-height : 50px;
+					text-align : center;
+				}
+				li.clickedPageButtonDisign {
+					background-color : #ffb0b0;
+					color : white;	
+					border-radius : 25px;
+				}
+				button.rightButtonIcon {
+					display : inline-block;
+					line-height : 48px;
+					text-align : center;	
+					border : 0px;
+					cursor : pointer;
+					background-color : white;
+				}	
+
+		/* 풋터 CSS */
+	.footerBox {
+		width: 1000px;
+		height: 220px;
+
+		margin: auto;
+
+		background-color: #ffe0e0;
+	}
+		.footerContentsBox {
+			width: 900px;
+			height: 100px;
+			padding-top: 30px;
+			margin-left: 50px;
+
+		}
+			.coqueAddress {
+				display: inline-block;			
+				font-style: normal;
+				font-size:12px;
+				line-height: 23px;		
+				color: #838383;
+
+			}
+			.clientBox {				
+				display: inline-block;
+				float:right;
+				font-weight:bold;
+				line-height: 26px;		
+				color: #838383;				
+
+			}
+				.telSpan {
+					font-size: 30px;
+					color: #ff7d7d;
+					font-weight: bold;
+				}
+				.discSpan {
+					font-weight:900;
+					font-size: 18px;
+					color: #838383;
+				}
+			.snsBox {
+				margin-top: 15px;
+			}
+				.sns {
+				
+				}
+	
+					.snsList {
+						width: 40px;
+						height: 40px;
+				
+						color: white;
+						text-align: center;
+						line-height: 53px;
+						border-radius: 20px;
+						display: inline-block;
+						background-color: #ffa2a2;
+					}
+		

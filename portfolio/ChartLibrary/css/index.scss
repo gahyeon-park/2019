@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: #75715e;
+}
+
+body, html {
+    background: #272822;
+
+    overflow: hidden;
+}
+#wrap {
+    width: 100%;
+    position: relative;    
+}
+.headerBox {
+    width: 100%;
+    height: 150px;
+
+    .headerTitle {
+        width: 100%;
+        height: 150px;
+
+        font-size: 60px;
+        line-height: 148px;
+        text-align: center;
+        letter-spacing: 5px;
+
+        color: #9ae22e;
+
+        span:nth-child(1) {
+            color: #f92672;
+        }
+    }
+}
+
+.sectionBox {
+    width: 90%;
+    height: 650px;
+
+    border-radius: 50px;
+
+    background: #3e3d32;
+
+    margin: auto;
+
+    .inputArticle {
+        display: inline-block;
+        width: 50%;
+        height: 325px;
+        float: left;
+
+        .inputBox {
+            width: 85%;
+            height: 95%;
+
+            border-radius: 10px;
+            background: #fff;
+        
+            margin: auto;
+            margin-top: 5%;
+
+            .inputLabel {
+                display: inline-block;
+                width: 40%;
+                height: 15%;
+
+                font-size: 2em;
+                line-height: 1.3em;
+                font-weight: bold;
+                text-align: center;
+
+                span {
+                    color: #a9a9a9;
+                    font-size: 0.5em;
+                }
+            }
+            .inputLabel:first-child {
+                margin-top: 15%;
+            }
+            .chartId {
+                width: 20%;
+                margin-top: 7%;
+            }
+            .chartTypeBox {
+                display: inline-block;
+
+                width: 50%;
+                height: 15%;
+
+                text-align: center;
+            }
+
+            .dataNumBox {
+                display: inline-block;
+
+                width: 49.5%;
+                height: 15%;
+            }
+
+            .dataBox {
+                display: inline-block;
+
+                width: 50%;
+                height: 35%;
+
+                overflow-y: auto;
+
+                float: right;
+                margin-right: 9%;
+
+                .dataListBox {
+                    width: 100%;
+                    height: 25%;
+
+                    .dataList {
+                        width: 100%;
+                        height: 100%;
+
+                        margin-top: 2%;
+                        
+                        input {
+                            display: inline-block;
+                            width: 25%;
+                            height: 100%;
+        
+                            text-align: center;
+                            float: left;
+                            margin-left: 7px;
+                        }
+                    }
+                }
+
+                .dataButtonBox {
+                    display: inline-block;
+
+                    width: 15%;
+                    height: 100%;
+
+                    float: right;
+
+                    margin-left: 0.8%;
+
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        line-height: 200%;
+                        font-size: 20px;
+
+                        cursor: pointer;
+                    }
+                }
+            }
+            .testButton {
+                display: inline-block;
+
+                width: 30%;
+                height: 10%;
+
+                background: #f8ea23;
+                border-style: none;
+                font-size: 23px;
+                font-weight: bold;
+
+                margin-right: 12.5%;
+                cursor: pointer;
+                float: right;
+
+            }
+            .testButton:nth-child(2) {
+                background: #a6e22e;
+                
+            }
+
+        }
+    }
+    
+        .previewArticle {
+            display: inline-block;
+            width: 49%;
+            height: 650px;
+    
+            border-left: 2px dotted #7c6b7a;
+            float: right;
+    
+            .previewBox {
+                width: 85%;
+                height: 87%;
+    
+                border-radius: 10px;
+                background: #fff;
+            
+                margin: auto;
+                margin-top: 5%;
+            }
+        }
+    
+    .codeArticle {
+        display: inline-block;
+        width: 50%;
+        height: 325px;
+
+        float: left;
+
+        .codeBox {
+            width: 85%;
+            height: 74%;
+
+            border-radius: 10px;
+            background: #272822;
+        
+            margin: auto;
+            margin-top: 5%;
+
+            .codeTextBox {
+                width: 100%;
+                height: 100%;
+
+                overflow: auto;
+
+                .codeText {
+                    color: #f8f8f2;
+                    font-size: 20px;
+                    line-height: 24px;
+                    .blue { color: #62d9ef; }
+                    .pink { color: #f92672; }
+                    .green { color: #a6e22e; }
+                    .yellow { color: #e6db74; }
+                    .purple { color: #da6bae; }
+                    .gray { color: #75715e; }
+                    
+                }
+            }
+        }
+
+    }
+
+    
+}
+
+.footerBox {
+    width: 100%;
+    height: 130px;
+
+    .footerTitle {
+        width: 100%;
+        height: 130px;
+
+        font-size: 50px;
+        line-height: 128px;
+        color: #75715e;
+        text-align: center;
+    }
+}

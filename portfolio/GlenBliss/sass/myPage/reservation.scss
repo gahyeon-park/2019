@@ -1,0 +1,261 @@
+*{ margin: 0px; padding: 0px; }
+
+html, body{ width: 100%; }
+button{ cursor: pointer; }
+a{ text-decoration: none; color: inherit; }
+.clear{ clear: both; position: inherit; }
+
+.notice_nav{
+	width: 100%; height: 400px;
+	position: relative;
+	.noticeImg{ width: 100%; height: 400px; }
+	.noticeNav{
+		width: 780px; height: 40px;
+		position: absolute;
+		bottom: 10%; 
+		left: 50%;
+		margin-left: -390px;
+		h1:first-child{ margin-left: 0; }
+		h1:last-child{ width: 135px; }
+		h1{
+			width: 85px; height: 40px;
+			font-size: 22px; color: #fff;
+			float: left; margin-left: 130px;
+			cursor: pointer;
+		}
+			.underline{
+				width: 90px; height: 3px;
+				background-color: #fff;
+				margin: 5px 0 0 -5px;
+				display: none;
+			}
+			.underline5{ width: 145px; }
+	}
+}
+
+.contents{
+	width: 1500px; height: 1450px;
+	margin: auto; margin-top: 70px;
+	position: relative;
+	h2{ font-size: 30px; color: #3f3222; font-weight: 500; }
+	.horizon1{
+		width: 100%; height: 3px;
+		background-color: #555;
+		margin-top: 10px;
+	}	
+	.reservationTitle{
+		font-size: 25px;
+		margin-top: 80px;
+		margin-left: 100px;
+	}
+	.reservationArea{
+		width: 1300px;
+		height: 120px;
+		font-size: 17px;
+		text-align: center;
+		border-collapse: collapse;
+		position: relative;
+		left: 50%;
+		margin-left: -650px;
+		top: 20px;
+		tr{
+			border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+			th{
+				height: 50px;
+				background-color: #f0e9e1;
+			}
+			.request{
+				width: 350px;
+			}
+		}
+		tr:first-child{
+			border-bottom: 0px;
+		}
+	}
+	.roomTitle{
+		font-size: 25px;
+		margin-top: 80px;
+		margin-left: 100px;
+	}
+	.roomArea{
+		width: 1300px;
+		height: 120px;
+		font-size: 17px;
+		text-align: center;
+		border-collapse: collapse;
+		position: relative;
+		left: 50%;
+		margin-left: -650px;
+		top: 20px;
+		tr{
+			border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+			th{
+				height: 50px;
+				background-color: #f0e9e1;
+			}
+			.checkInDate{
+				width: 300px;
+			}
+		}
+		tr:first-child{
+			border-bottom: 0px;
+		}
+	}
+	.couponTitle{
+		font-size: 25px;
+		margin-top: 80px;
+		margin-left: 100px;
+	}
+	.couponArea{
+		width: 1300px;
+		height: 180px;
+		font-size: 17px;
+		text-align: center;
+		border-collapse: collapse;
+		position: relative;
+		left: 50%;
+		margin-left: -650px;
+		top: 20px;
+		tr{
+			border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+			th{
+				height: 50px;
+				background-color: #f0e9e1;
+			}
+			.checkInDate{
+				width: 300px;
+			}
+			.couponImg{
+				width: 200px;
+			}
+			td>.myCouponImg{
+				margin-top: 7px;
+			}
+		}
+		tr:first-child{
+			border-bottom: 0px;
+		}
+	}
+	.paymentTitle{
+		font-size: 25px;
+		margin-top: 80px;
+		margin-left: 100px;
+	}
+	.paymentArea{
+		width: 1300px;
+		height: 300px;
+		border-top: 2px solid rgba(170, 170, 170, 0.5);
+		border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+		position: relative;
+		left: 50%;
+		margin-left: -650px;
+		top: 20px;
+		
+		.rightPriceArea{
+			width: 435px;
+			height: 155px;
+			float: right;
+			margin-top: 30px;
+
+			.priceWrapper{
+				width: 430px;
+				height: 35px;
+				
+				div{
+					width: 200px;
+					height: 30px;
+					font-size: 20px;
+					line-height: 28px;
+					position: relative;
+					display: inline-block;
+					color: #362f2d;						
+			
+				}
+				.rightPrice{
+					float: right;
+					text-align: right;
+				}
+			}
+			.discountWrapper{
+				width: 430px;
+				height: 35px;
+				
+				div{
+					width: 200px;
+					height: 35px;
+					font-size: 20px;
+					line-height: 28px;
+					position: relative;
+					display: inline-block;
+					color: grey;					
+				
+				}
+				.rightPrice{
+					float: right;
+					text-align: right;
+				}
+			}
+			.resultWrapper{
+				width: 430px;
+				height: 35px;
+				
+				div{
+					width: 200px;
+					height: 35px;
+					font-size: 20px;
+					line-height: 28px;
+					position: relative;
+					display: inline-block;				
+				
+				}
+				.rightPrice{
+					color: #39b54a;	
+					float: right;
+					text-align: right;
+				}
+			}
+		}
+		.lowerNoticeArea{
+			width: 650px;
+			height: 80px;
+			text-align: center;
+			position: absolute;
+			top: 220px;
+			left: 50%;
+			margin-left: -325px;
+
+			.accountArea{
+				width: 645px;
+				height: 40px;
+				div{
+					width: 317px;
+					height: 35px;
+					line-height: 33px;
+					font-size: 16px;
+					line-height: 48px;
+					position: relative;
+					display: inline-block;
+					color: #39b54a;	
+				}
+			}
+			.paymentNoticeArea{
+				width: 645px;
+				height: 35px;
+				line-height: 33px;
+				color: #ed1c24;
+			}
+		}
+	}
+	.reservationBt{
+		width: 150px;
+		height: 60px;
+		font-size: 20px;
+		color: white;
+		background-color: #66605d;
+		line-height: 58px;
+		text-align: center;
+		position: relative;
+		left: 84%;
+		top: 80px;
+	}
+}

@@ -1,0 +1,170 @@
+
+/* 본문 */
+
+        /* 주민등록증 form */
+        .idCardForm {
+            display: inline-block;
+
+            width: 818.9px;
+            height: 526.3px;
+
+            position: absolute;
+            left: 50%;
+            top: 70px;
+            margin-left: -600px;
+        }
+            /* 주민등록증 이미지 */
+            .idCardImage {
+                display: inline-block;
+
+                /* 932 x 600 0.95배 */
+                width: 885.4px;
+                height: 570px;
+
+                background-image: url('../../images/idCheckPage/idCardImage.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                transform: rotate3d(1, 2.0, 3.0, -12deg);
+
+                /* margin-left: 350px;
+
+                position: absolute;
+                top: -60px; */
+
+            }
+                /* 주민등록증 제목 */
+                .idCardTitle {
+                    width: 500px;
+                    height: 100px;
+
+                    font-size: 50px;
+                    text-align: center;
+                    line-height: 98px;
+                    font-weight: bold;
+
+                    margin-top: 80px;
+                    margin-left: 50px;
+                }
+                .inputBox {
+                    width: 250px;
+                    height: 150px;
+
+                    margin-left: 185px;
+                }
+                    /* 년도 입력 */
+                    .yearText {
+                        display: inline-block;
+
+                        width: 200px;
+                        height: 50px;
+
+                        color: #515151;
+                        font-size: 40px;
+                        line-height: 48px;
+                        text-align: center;
+
+                        margin-top: 30px;
+                    }
+                    /* 월 입력 */
+                    .monthText {
+                        display: inline-block;
+
+                        width: 200px;
+                        height: 50px;
+
+                        color: #515151;
+                        font-size: 40px;
+                        line-height: 48px;
+                        text-align: center;
+
+                        margin-top: 30px;
+                    }
+                    /* 일 입력 */
+                    .dateText {
+                        display: inline-block;
+
+                        width: 200px;
+                        height: 50px;
+
+                        color: #515151;
+                        font-size: 40px;
+                        line-height: 48px;
+                        text-align: center;
+
+                        margin-top: 30px;
+                    }
+                    /* 년, 월, 일 텍스트 */
+                    .inputText {
+                        display: inline-block;
+
+                        width: 40px;
+                        height: 50px;
+                        font-size: 40px;
+
+                        margin-left: 5px;
+                    }
+                
+                /* 증명사진 박스 */
+                .idPicture {
+                    display: inline-block;
+                    width: 255px;
+                    height: 318px;
+
+                    margin-top: -235px;
+                    margin-left: 555px;
+                }
+                .fileInputButton {
+                    display: inline-block;
+
+                    width: 200px;
+                    height: 50px;
+
+                    font-size: 30px;
+                    line-height: 55px;
+                    text-align: center;
+
+                    border-radius: 10px;
+                    border: 3px solid #515151;
+
+                    margin-top: 20px;
+                    margin-left: 585px;
+
+                    cursor: pointer;
+                }
+                /* 파일 필드 숨기기 */
+                input[type="file"] {
+                    position: absolute; 
+                    width: 1px; 
+                    height: 1px; 
+                    padding: 0; 
+                    margin: -1px; 
+                    overflow: hidden; 
+                    clip:rect(0,0,0,0);
+                    border: 0; 
+                }
+                
+                /* 검사 버튼 */
+                .submitButton {
+                    display: inline-block;
+
+                    width: 200px;
+                    height: 50px;
+
+                    color: #ffffff;
+                    font-size: 30px;
+                    line-height: 48px;
+                    text-align: center;
+
+                    border-radius: 10px;
+                    border: 3px solid #131641;
+                    background-color: #131641;
+
+                    margin-top: -50px;
+                    margin-left: 220px;
+
+                    cursor: pointer;
+                }
+
+
+        

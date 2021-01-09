@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="./css/mainPage.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans+Condensed:700|Teko|Titillium+Web&display=swap" rel="stylesheet">
+        
+        <title>gahyeonBlog</title>
+    </head>
+    <body>
+        <!-- 전체 -->
+        <div class="wrap">
+            <!-- 책 -->
+            <div class="bookBox">
+                <!-- 헤더 -->
+                <header class="headerBox">
+                    <!-- 메뉴 -->
+                    <nav id="menuBox" class="menuBox">
+                        <ol class="menuList">
+                            <li class="bookMarkImg setPosition1">
+                                <p id="homeButton" class="commonStyle">HOME</p>
+                            </li>
+                            <li class="bookMarkImg setPosition2">
+                                <p id="aboutButton" class="commonStyle">ABOUT</p>
+                            </li>
+                            <li class="bookMarkImg setPosition3">
+                                <p id="abilityButton" class="commonStyle">ABILITY</p>
+                            </li>
+                            <li class="bookMarkImg setPosition4">
+                                <p id="portfolioButton" class="commonStyle">PORTFOLIO</p>
+                            </li>
+                            <li class="bookMarkImg setPosition5">
+                                <p id="contactButton" class="commonStyle">CONTACT</p>
+                            </li>
+                        </ol>
+                    </nav>
+                </header>
+
+                <!-- 현재 메뉴 알림 부분 -->
+                <section class="noticeBox">
+                    <article>
+                        <p class="nowPage HOME">HOME</p>                   
+                        <p class="nowPage ABOUT">ABOUT</p> 
+                        <p class="nowPage ABILITY">ABILITY</p>
+                        <p class="nowPage PORTFOLIO">PORTFOLIO</p>
+                        <p class="nowPage CONTACT">CONTACT</p>
+
+                    </article>
+                </section>
+
+                <!-- 컨텐츠  -->
+                <section class="contentsBox">
+
+                    <!-- HOME 컨텐츠 -->
+                    <div class="HOME">
+                        <div class="HOMEBackgroundImg">
+                            <dl class="HOMEContents">
+                                <!-- 내 이름 -->
+                                <dt id="myNameBox" class="myNameBox">
+                                    <div id="myNameBoxTransition" class="myNameBoxTransition">CLICK</div>
+                                    <div class="quotesStartImg"></div>
+                                    <p class="myName">박가현</p>
+                                    <div class="quotesEndImg"></div>
+                                    <p class="myNameDisc">| 주요인물</p>
+                                </dt>
+
+                                <!-- 나에대한 설명 -->
+                                <dd id="myDiscBox" class="myDiscBox">
+                                    <p class="discKind">[ 고유명사 ]</p>
+                                    <ol class="discListBox">
+                                        <li id="discList1" class="discList"></li>
+                                        <li id="discList2" class="discList"></li>
+                                        <li id="discList3" class="discList"></li>
+                                    </ol>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT 컨텐츠 -->
+                    <div class="ABOUT">
+                        <div class="ABOUTContents">
+                            <ol>
+                                <li id="historyList1" class="historyListBox setPosition1">
+                                    <!-- 발자국 이미지 -->
+                                    <div id="footPrintLeft1" class="footPrintLeftImg"></div>
+                                    <div id="footPrintRight1" class="footPrintRightImg"></div>
+                                    <!-- 구분 선 -->
+                                    <div id="divisionLine1" class="divisionLine"></div>
+                                    <!-- 날짜 -->
+                                    <p id="dateText1" class="dateText">2016.02</p>
+                                    <!-- 그 날짜에 대한 설명 -->
+                                    <p id="dateDisc1" class="dateDisc">안산 양지고등학교 졸업</p>
+                                </li>
+                                <li id="historyList2" class="historyListBox setPosition2">
+                                    <!-- 발자국 이미지 -->
+                                    <div id="footPrintLeft2"  class="footPrintLeftImg"></div>
+                                    <div id="footPrintRight2" class="footPrintRightImg"></div>
+                                    <!-- 구분 선 -->
+                                    <div id="divisionLine2" class="divisionLine"></div>
+                                    <!-- 날짜 -->
+                                    <p id="dateText2" class="dateText">2016.03</p>
+                                    <!-- 그 날짜에 대한 설명 -->
+                                    <p id="dateDisc2" class="dateDisc">한국산업기술대학교 게임공학부 입학</p>
+                                </li>
+                                <li id="historyList3" class="historyListBox setPosition3">
+                                    <!-- 발자국 이미지 -->
+                                    <div id="footPrintLeft3"  class="footPrintLeftImg"></div>
+                                    <div id="footPrintRight3" class="footPrintRightImg"></div>
+                                    <!-- 구분 선 -->
+                                    <div id="divisionLine3" class="divisionLine"></div>
+                                    <!-- 날짜 -->
+                                    <p id="dateText3" class="dateText">2018.07</p>
+                                    <!-- 그 날짜에 대한 설명 -->
+                                    <p id="dateDisc3" class="dateDisc">한국산업기술대학교 중퇴</p>
+                                </li>
+                                <li id="historyList4" class="historyListBox setPosition4">
+                                    <!-- 발자국 이미지 -->
+                                    <div id="footPrintLeft4"  class="footPrintLeftImg"></div>
+                                    <div id="footPrintRight4" class="footPrintRightImg"></div>
+                                    <!-- 구분 선 -->
+                                    <div id="divisionLine4" class="divisionLine"></div>
+                                    <!-- 날짜 -->
+                                    <p id="dateText4" class="dateText">2019.03</p>
+                                    <!-- 그 날짜에 대한 설명 -->
+                                    <p id="dateDisc4" class="dateDisc">라인아카데미  UI/UX 공부</p>
+                                </li>
+                                <li id="historyList5" class="historyListBox setPosition5">
+                                    <!-- 발자국 이미지 -->
+                                    <div id="footPrintLeft5"  class="footPrintLeftImg"></div>
+                                    <div id="footPrintRight5" class="footPrintRightImg"></div>
+                                    <!-- 구분 선 -->
+                                    <div id="divisionLine5" class="divisionLine"></div>
+                                    <!-- 날짜 -->
+                                    <p id="dateText5" class="dateText">미래</p>
+                                    <!-- 그 날짜에 대한 설명 -->
+                                    <p id="dateDisc5" class="dateDisc">웹 퍼블리셔 & 백앤드 취업 예정</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- ABILITY 컨텐츠 -->
+                    <div class="ABILITY">
+                        <!--  -->
+                        <section id="abilityContents" class="abilityContents">
+                            <ol>
+                                <!-- 포토샵 -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText1" class="photoshopStickPercent">50%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick1" class="photoshopStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="photoshopImg"></div>
+                                    </article>
+                                </li>
+                                <!-- 일러스트 -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText2" class="illustratorStickPercent">60%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick2" class="illustratorStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="illustratorImg"></div>
+                                    </article>
+                                </li>
+                                <!-- HTML -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText3" class="htmlStickPercent">75%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick3" class="htmlStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="htmlImg"></div>
+                                    </article>
+                                </li>
+                                <!-- CSS -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText4" class="cssStickPercent">70%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick4" class="cssStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="cssImg"></div>
+                                    </article>
+                                </li>
+                                <!-- JAVASCRIPT -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText5" class="javascriptStickPercent">85%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick5" class="javascriptStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="javascriptImg"></div>
+                                    </article>
+                                </li>
+                                <!-- C/C++ -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText6" class="cStickPercent">90%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick6" class="cStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="cImg"></div>
+                                    </article>
+                                </li>
+                                <!-- C# -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText7" class="csStickPercent">80%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick7" class="csStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="csImg"></div>
+                                    </article>
+                                </li>
+                                <!-- JAVA -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText8" class="javaStickPercent">90%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick8" class="javaStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="javaImg"></div>
+                                    </article>
+                                </li>
+                                <!-- 자료구조 -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText9" class="dataStickPercent">85%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick9" class="dataStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="dataImg"></div>
+                                    </article>
+                                </li>
+                                <!-- 알고리즘 -->
+                                <li class="listContents">
+                                    <article>
+                                        <!-- 가능 퍼센트 -->
+                                        <p id="percentText10" class="algorithmStickPercent">85%</p>
+                                        <!-- 막대기 -->
+                                        <div id="percentStick10" class="algorithmStick stickCommonStyle"></div>
+                                        <!-- 이미지 -->
+                                        <div class="algorithmImg"></div>
+                                    </article>
+                                </li>
+                            </ol>
+                        </section>
+                    </div>
+
+                    <!-- PORTFOLIO 컨텐츠 -->
+                    <div class="PORTFOLIO">
+                        <!-- 포스트잇 전체 -->
+                        <article class="portfolioContents">
+                            <dl class="portfolioBox">
+                                <div id="portfolioCoqueFactory" class="portfolioImg">
+                                    <dt>
+                                        <p id="coqueFactory1" class="coqueFactory portfolioTitle">꼬끄팩토리</p>
+                                    </dt>
+                                    <dd>
+                                        <pre id="coqueFactory2" class="coqueFactory portfolioDisc">
+마카롱 주문제작
+사이트 제작
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="portfolioBox">
+                                <div id="portfolioOmok" class="portfolioImg">
+                                    <dt>
+                                        <p id="omok1" class="portfolioTitle">오목게임</p>
+                                    </dt>
+                                    <dd>
+                                        <pre id="omok2"class="portfolioDisc">
+오목 콘솔 게임
+C언어 콘솔 제작
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="portfolioBox">
+                                <div id="portfolioHealMe" class="portfolioImg">
+                                    <dt>
+                                        <p id="healMe1" class="portfolioTitle">진찰해주세요</p>
+                                    </dt>
+                                    <dd>
+                                        <pre id="healMe2" class="portfolioDisc">
+레이션플리즈 바탕
+C#언어 2D 제작
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="portfolioBox">
+                                <div id="portfolioOutOfBody" class="portfolioImg">
+                                    <dt>
+                                        <p id="outOfBody1" class="portfolioTitle">아웃오브바디</p>
+                                    </dt>
+                                    <dd>
+                                        <pre id="outOfBody2" class="portfolioDisc">
+DARK ECHO 바탕
+C언어 3D 제작
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="portfolioBox">
+                                <div class="portfolioImg">
+                                    <dt>
+                                        <p class="portfolioTitle">추가 예정</p>
+                                    </dt>
+                                    <dd>
+                                        <pre class="portfolioDisc">
+추가 예정
+추가 예정
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="portfolioBox">
+                                <div class="portfolioImg">
+                                    <dt>
+                                        <p class="portfolioTitle">추가 예정</p>
+                                    </dt>
+                                    <dd>
+                                        <pre class="portfolioDisc">
+추가 예정
+추가 예정
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="portfolioBox">
+                                <div class="portfolioImg">
+                                    <dt>
+                                        <p class="portfolioTitle">추가 예정</p>
+                                    </dt>
+                                    <dd>
+                                        <pre class="portfolioDisc">
+추가 예정
+추가 예정
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="portfolioBox">
+                                <div class="portfolioImg">
+                                    <dt>
+                                        <p class="portfolioTitle">추가 예정</p>
+                                    </dt>
+                                    <dd>
+                                        <pre class="portfolioDisc">
+추가 예정
+추가 예정
+                                        </pre>
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            
+                        </article>
+                        <!-- 포트볼리오 프리뷰 -->
+                        <article class="portfolioPreview">
+                            <!-- 포트폴리오 사진-->
+                            <pre id="previewDisc" class="previewDisc"></pre>
+                            <div id="previewImg" class="previewImg"></div>
+                        </article>
+                    </div>
+
+                    <!-- CONTACT 컨텐츠 -->
+                    <div class="CONTACT">
+                        <!-- 핸드폰 부분 -->
+                        <article class="phoneBox">
+                            <!-- 핸드폰 이미지 -->
+                            <div class="phoneImg">
+                                    <article class="phoneView">
+                                        <!-- HOVER ME 문구 -->
+                                        <div id="hoverMeText" class="hoverMeText">
+                                            <p class="hoverMe">HOVER ME</p>
+                                            <i id="arrowIcon1" class="xi-arrow-down xi-4x arrowIcon fixPosition colorGreen"></i>
+                                            <i id="arrowIcon2" class="xi-arrow-down xi-4x arrowIcon colorYellow"></i>
+                                            <i id="arrowIcon3" class="xi-arrow-down xi-4x arrowIcon fixPosition colorBlue"></i>
+                                        </div>
+
+                                        <!-- 전화 아이콘 hover 시 -->
+                                        <pre id="myPhoneNumber" class="myCommonStyle fixStyle">
+010 - 
+        2246 - 
+                1662
+                                        </pre>
+                                        <!-- 카카오톡 아이콘 hover 시 -->
+                                        <pre id="myKakaoId" class="myCommonStyle">
+KAKAO ID :  
+    bbaga1108 
+                                        </pre>
+                                        <!-- 메일 아이콘 hover 시 -->
+                                        <pre id="myMailAddress" class="myCommonStyle">
+zzrkguszz@ 
+        naver.com
+                                        </pre>
+                                        <!-- 연락 이미지 버튼 -->
+                                        <div class="contactButton">
+                                            <!-- 전화 -->
+                                            <button id="callIcon" class="callImg commonButton"></button>
+                                            <!-- 카카오톡 -->
+                                            <button id="kakaoIcon" class="kakaoImg commonButton"></button>
+                                            <!-- 메일 -->
+                                            <button id="mailIcon" class="mailImg commonButton"></button>
+                                        </div>
+                                    </article>
+
+                            </div>    
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/mainPage.js"></script>
+</html>

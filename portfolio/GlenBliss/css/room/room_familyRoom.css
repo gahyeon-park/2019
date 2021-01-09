@@ -1,0 +1,40 @@
+.roomArticle {
+    width: 1900px;
+    height: 475px;
+
+    margin-left: 1.5px;
+}
+    .roomBoxR {
+        display: inline-block;
+
+        width: 950px;
+        height: 475px;
+
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+        .roomImg {
+            width: 950px;
+            height: 475px;
+
+            position: absolute;
+            top: 0px;
+
+            z-index: 30;
+        }
+        .roomName, .roomDisc {
+            position: absolute;
+            z-index: 50;
+            color: #ffffff;
+        }
+        .roomName {
+            font-size: 40px;
+            top: 330px;
+            left: 30px;
+        }
+        .roomDisc {
+            font-size: 20px;
+            top: 400px;
+            left: 30px;
+        }

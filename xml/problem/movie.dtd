@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT movieTable (movie)+>
+	<!ELEMENT movie (title, assessment, genre, date, running_time, nation, director, spectator_num)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT assessment (spectator, critic)>
+		<!ELEMENT genre (action|adventure|comic)+>
+		<>

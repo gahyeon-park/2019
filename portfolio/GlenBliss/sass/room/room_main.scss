@@ -1,0 +1,235 @@
+$windowWidth : 100%;
+
+/* room Menu */
+$roomHeaderWidth : 700px;
+$roomMenuHeight : 60px;
+
+/* room */
+$roomW : 384px;
+$roomH : 384px;
+
+$roomNameHeight : 50px;
+
+@mixin fontStyle($size, $weight, $line) {
+    font-size: $size;
+    font-weight: $weight;
+    text-align: center;
+    line-height: $line;
+}
+
+/* room Box */
+@mixin roomBox{
+    display: inline-block;
+    overflow-y: hidden;
+    float: left;
+}
+html, body {
+    overflow-x: hidden;
+}
+section {
+    width: 100%;
+    z-index: 0;
+
+    /* room Header */
+    .roomMainHeader {
+        width: $roomHeaderWidth;
+        height: 100px;
+
+        margin: auto;
+        margin-top: 160px;
+        margin-bottom: 35px;    
+
+        overflow-y: hidden;
+
+        /* room main Title */
+        h2 {
+            width: 700px;
+            height: 40px;
+
+            @include fontStyle(25px, bold, 25px);
+        }
+        /* room Menu */
+        .roomMainNav {
+            width: $roomHeaderWidth;
+            height: 60px;
+
+            /* room Menu List */
+            .roomMainMenu {
+                display: inline-block;
+
+                width: $roomHeaderWidth / 5;
+                height: $roomMenuHeight;
+
+                @include fontStyle(20px, 100, $roomMenuHeight - 2);
+                float: left;
+            }
+        }
+    }
+
+    /* room Contents */
+    .roomImgArticle {
+        width: 1920px;
+        height: 1152px;
+        position: relative;
+        left: 50%;
+        margin-left: -960px;
+        .roomBoxLeft { 
+            width: $roomW * 3;
+            height: $roomW * 3;
+            @include roomBox;
+
+            background-color: red;
+        }
+        .roomBoxRight {
+            width: $roomW * 2;
+            height: $roomW * 3;
+            @include roomBox;
+            background-color: red;
+        }
+
+        /* room type size class */
+        .roomBoxS {
+            width: $roomW;
+            height: $roomH;
+            @include roomBox;
+
+            display: inline-block;
+            float: left;
+
+            position: relative;
+
+            .roomImg {
+                position: absolute;
+                top: 0px;
+
+                width: $roomW;
+                height: $roomH;
+
+                z-index: 30;
+            }
+            .roomName {
+                width: ($roomW / 4) - 20;
+                height: $roomNameHeight;
+
+                position: absolute;
+                top: $roomH - ($roomH / 3);
+                left: 20px;
+                z-index: 50;
+
+                @include fontStyle(40px, 600, $roomNameHeight - 2);
+                text-align: left;
+                color: #ffffff;
+            }
+            .roomDisc {
+                width: $roomW - 20;
+                height: $roomNameHeight;
+
+                position: absolute;
+                top: $roomH - ($roomH / 5);
+                left: 20px;
+                z-index: 50;
+
+                @include fontStyle(20px, 100, $roomNameHeight - 2);
+                color: #ffffff;
+                text-align: left;
+            }
+        }
+        .roomBoxR {
+            width: $roomW * 2;
+            height: $roomH;
+            @include roomBox;
+
+            display: inline-block;
+            float: left;
+
+            position: relative;
+
+            .roomImg {
+                position: absolute;
+                top: 0px;
+
+                width: $roomW * 2;
+                height: $roomH;
+
+                z-index: 30;
+            }
+            .roomName {
+                width: (($roomW * 2) / 4) - 20;
+                height: $roomNameHeight;
+
+                position: absolute;
+                top: $roomH - ($roomH / 3);
+                left: 20px;
+                z-index: 50;
+
+                @include fontStyle(40px, 600, $roomNameHeight - 2);
+                text-align: left;
+                color: #ffffff;
+            }
+            .roomDisc {
+                width: ($roomW * 2) - 20;
+                height: $roomNameHeight;
+
+                position: absolute;
+                top: $roomH - ($roomH / 5);
+                left: 20px;
+                z-index: 50;
+
+                @include fontStyle(20px, 100, $roomNameHeight - 2);
+                color: #ffffff;
+                text-align: left;
+            }
+        }
+        .roomBoxL {
+            width: $roomW * 2;
+            height: $roomH * 2;
+            @include roomBox;
+
+            display: inline-block;
+            float: left;
+
+            position: relative;        
+            
+            .roomImg {
+                position: absolute;
+                top: 0px;
+
+                width: ($roomW * 2);
+                height: ($roomH * 2);
+
+                z-index: 30;
+            }
+            .roomName {
+                width: (($roomW * 2) / 4) - 20;
+                height: $roomNameHeight;
+
+                position: absolute;
+                top: ($roomH * 2) - ($roomH / 3);
+                left: 20px;
+                z-index: 50;
+
+                @include fontStyle(40px, 600, $roomNameHeight - 2);
+                text-align: left;
+                color: #ffffff;
+            }
+            .roomDisc {
+                width: ($roomW * 2) - 20;
+                height: $roomNameHeight;
+
+                position: absolute;
+                top: ($roomH * 2) - ($roomH / 5);
+                left: 20px;
+                z-index: 50;
+
+                @include fontStyle(20px, 100, $roomNameHeight - 2);
+                color: #ffffff;
+                text-align: left;
+            }
+        }
+
+    }
+
+}
+
+
+

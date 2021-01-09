@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/commonStyle.css" />
+        <link rel="stylesheet" href="../../css/originalPage/originalPage.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans+Condensed:700|Teko|Titillium+Web&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 id="mainTitleButton" class="mainTitle">가니 포차</h1>
+                <h2 class="subTitle subTitleColor">기본 소주</h2>
+                <h3 class="nowTitle nowTitleColor">기본 소주</h3>
+                <!-- 소주병 이미지 -->
+                <img class="sojuImage" src="../../images/sojuImage.png" alt="sojuImage">
+            </header>
+
+            <section class="mainSection">
+                <article>
+                    <!-- 소주 종류 메뉴 -->
+                    <nav id="originalMenuBox" class="originalMenu">
+                        <ol>
+                            <li id="originalMenu1" class="menuCommonStyle">참나무통맑은이슬</li>
+                            <li id="originalMenu2" class="menuCommonStyle">진로이즈백</li>
+                            <li id="originalMenu3" class="menuCommonStyle">참이슬16.9도</li>
+                            <li id="originalMenu4" class="menuCommonStyle">참이슬오리지널</li>
+                            <li id="originalMenu5" class="menuCommonStyle menuSelected">참이슬후레쉬</li>
+                            <li id="originalMenu6" class="menuCommonStyle">진로골드</li>
+                            <li id="originalMenu7" class="menuCommonStyle">일품진로18년산</li>
+                            <li id="originalMenu8" class="menuCommonStyle">일품진로1924</li>
+                        </ol>
+                    </nav>
+                    <!-- 소주 뒷면 컨셉 박스 -->
+                    <dl class="sojuDiscBox">
+                        <!-- 현재 메뉴 -->
+                        <dt id="sojuDiscTitle" class="sojuDiscTitle">
+                            <p>참이슬<br>후레쉬</p>
+                        </dt>
+                        <!-- 소주 로고 -->
+                        <img id="sojuLogo" class="sojuLogo" src="../../images/originalPage/chamFreshLogo.png" alt="참이슬후레쉬">
+                        <!-- 자세한 설명 박스 -->
+                        <div class="sojuDetailDisc">
+                            <!-- 알코올, 용량 -->
+                            <dd id="sojuAlcoholDisc" class="sojuDetailStyle">알코올 함량 : 17.0%</dd>
+                            <dd id="sojuCapacityDisc" class="sojuDetailStyle positionFix">용량 : 360ml</dd>
+                            <p class="subDiscStyle">(병 기준)</p>
+                            <!-- 소주 특징 -->
+                            <dd class="sojuFeatureBox">
+                                <p id="sojuFeatureDisc" class="sojuFeatureStyle">청정지역의 선별된 대나무 숯으로 4번 걸러 깨끗한 목넘김과 이슬형태의 라벨로 트렌디한 맛</p>
+                            </dd>
+
+                            <!-- 경고 문구 -->
+                            <p class="cautionText">19세 미만 판매 금지</p><i class="xi-ban xi-3x cautionText fixPosition"></i>
+                            <!-- 바코드 이미지 -->
+                            <img class="barcodeImg" src="../../images/originalPage/barcodeImage.png" alt="바코드이미지">
+                        </div>
+                    </dl>
+                    <!-- 부가적인 소주 메뉴 -->
+                    <nav id="subMenuBox">
+                        <ul class="subSojuMenuList">
+                            <li id="subMenu1" class="subSojuMenuStyle">실물사진</li>
+                            <li id="subMenu2" class="subSojuMenuStyle">테레비광고</li>
+                            <li id="subMenu3" class="subSojuMenuStyle">광고포스타</li>
+                        </ul>
+                    </nav>
+                    <section id="subMenuPopUp" class="subMenuPopUpWrap">
+                            <article id="popUpBox" class="popUpBox">
+                                <!-- 컨텐츠 없을 때 컨텐츠 -->
+                                <article class="noContents" id="noContents">
+                                    <p class=" noContentsText">컨텐츠가 없습니다.</p>
+                                </article>
+
+                                <!-- 실물 사진 컨텐츠 -->
+                                <article id="realImageContents" class="realImageContents">
+                                    <img id="realSojuImage" class="realImage" src="../../images/originalPage/chamFreshImage.png" alt="이슬톡톡">
+                                </article>
+    
+                                <!-- 테레비광고 컨텐츠 -->
+                                <article id="tvCFContents" class="tvCFContents">
+                                    <!-- 광고 동영상 박스 -->
+                                    <div>
+                                        <iframe class="tvCFStyle" title="vimeo-player" src="https://player.vimeo.com/video/311576328" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+    
+                                    
+                                    <!-- 광고 리스트 -->
+                                    <ul id="CFListBox" class="CFListBox">
+                                        <!-- 왼쪽 버튼 -->
+                                        <i class="leftButton xi-angle-left xi-5x"></i>
+                                        <li id="CFList1" class="CFList">
+                                            <img id="CFListImg1" class="CFListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/TVCF/20190116_37743817.jpg" alt="소주는 깨끗함이다">
+                                            <p id="CFTitle1" class="CFTitle CFSelected">소주는 깨끗함이다</p>
+                                        </li>
+                                        <li id="CFList2" class="CFList">
+                                            <img id="CFListImg2" class="CFListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/TVCF/20180419_44166072.png" alt="ALL NEW 참이슬fresh">
+                                            <p id="CFTitle2" class="CFTitle">ALL NEW 참이슬fresh</p>
+                                        </li>
+                                        <li id="CFList3" class="CFList">
+                                            <img id="CFListImg3" class="CFListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/TVCF/20160824_93406523.jpg" alt="참이슬fresh_대학생편">
+                                            <p id="CFTitle3" class="CFTitle">참이슬fresh_대학생편</p>
+                                        </li>
+                                        <li id="CFList4" class="CFList">
+                                            <img id="CFListImg4" class="CFListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/TVCF/20160824_88873645.jpg" alt="참이슬fresh_직장인편">
+                                            <p id="CFTitle4" class="CFTitle">참이슬fresh_직장인편</p>
+                                        </li>
+                                        <!-- 오른쪽 버튼 -->
+                                        <i class="xi-angle-right xi-5x rightButton"></i>
+                                    </ul>
+                                </article>
+                                <!-- 광고포스타 컨텐츠 -->
+                                <article id="posterContents" class="posterContents">
+                                    <div>
+                                        <!-- 광고 포스타 리스트 -->
+                                        <ul id="posterListBox" class="posterListBox">
+                                                <!-- 왼쪽 버튼 -->
+                                                <i class="leftButton xi-angle-left xi-5x"></i>
+                                                <li class="posterList">
+                                                    <img id="posterListImg1" class="posterListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/PRINT/20190624_31192710.jpg" alt="이슬같이 깨끗한 다음날">
+                                                    <p id="posterTitle1" class="posterTitle posterSelected">이슬같이 깨끗한 다음날 (2019)</p>
+                                                </li>
+                                                <li class="posterList">
+                                                    <img id="posterListImg2" class="posterListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/PRINT/20190429_79413196.jpg" alt="이슬같이 깨끗한 다음날">
+                                                    <p id="posterTitle2" class="posterTitle">이슬같이 깨끗한 다음날 (2019)</p>
+                                                </li>
+                                                <li class="posterList">
+                                                    <img id="posterListImg3" class="posterListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/PRINT/20190306_12625816.jpg" alt="소주는 깨끗함이다">
+                                                    <p id="posterTitle3" class="posterTitle">소주는 깨끗함이다 (2019)</p>
+                                                </li>
+                                                <li class="posterList">
+                                                    <img id="posterListImg4" class="posterListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/PRINT/20181226_99401532.jpg" alt="소주는 깨끗함이다">
+                                                    <p id="posterTitle4" class="posterTitle">소주는 깨끗함이다 (2019)</p>
+                                                </li>
+                                                <!-- 오른쪽 버튼 -->
+                                                <i class="xi-angle-right xi-5x rightButton"></i>
+                                            </ul>
+                                    </div>
+                                </article>
+                            </article>
+                        </section>
+                </article>
+            </section>
+        </div>
+    </body>
+    <script type="text/javascript" src="../../js/commonJS.js"></script>
+    <script type="text/javascript" src="../../js/originalPage/originalPage.js"></script>
+</html>

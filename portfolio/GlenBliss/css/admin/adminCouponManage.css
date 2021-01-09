@@ -1,0 +1,38 @@
+.notice_nav > div {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -200px; }
+  
+.notice_nav h1:first-child {
+  margin-left: 0; }
+
+.notice_nav h1 {
+  width: 140px;
+  height: 40px;
+  font-size: 22px;
+  color: #fff;
+  float: left;
+  margin-left: 120px;
+  cursor: pointer; }
+
+.crt_btn{
+  padding: 10px; color: #fff;
+  background-color: #5a6b47; text-align: center;
+}
+
+.cou_box{
+  width: 1700px; height: 300px;
+  margin-top: 70px;
+}
+tr:first-child{ background-color: #a19385; }
+.main_img{ width: 600px; height: 200px; }
+.sub_img{ width: 200px; height: 100px; }
+tr:first-child>td{ color: #fff; font-size: 22px; }
+tr>td{ text-align: center; font-size: 17px; }
+.cou_delete{
+  padding: 10px; color: #fff;
+  background-color: #3f3222; text-align: center;
+}

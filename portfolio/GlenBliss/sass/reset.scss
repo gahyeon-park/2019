@@ -1,0 +1,28 @@
+$green: #5a6b47;
+$lightgreen: #a0a38e;
+$white: #f8f8f8;
+$graybeige: #a19385;
+$beige: #9e8e79;
+$brown: #3f3222;
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	font-family: 'Noto Sans KR', 'Raleway', '±¼¸²Ã¼', sans-serif;
+	overflow-x: hidden;
+
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	
+	border-style: none;
+	background-color: transparent;
+
+	color: $green;
+	color: $lightgreen;
+	color: $white;
+	color: $graybeige;
+	color: $beige;
+	color: $brown;
+}

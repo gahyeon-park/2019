@@ -1,0 +1,19 @@
+.notice_nav > div {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -200px; }
+  
+.notice_nav h1:first-child {
+  margin-left: 0; }
+
+.notice_nav h1 {
+  width: 140px;
+  height: 40px;
+  font-size: 22px;
+  color: #fff;
+  float: left;
+  margin-left: 120px;
+  cursor: pointer; }

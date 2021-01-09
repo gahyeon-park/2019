@@ -1,0 +1,184 @@
+/* room Menu */
+/* room */
+/* room Box */
+html, body {
+  overflow-x: hidden; }
+
+section {
+  width: 100%;
+  z-index: 0;
+  /* room Header */
+  /* room Contents */ }
+  section .roomMainHeader {
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    overflow-y: hidden;
+    /* room main Title */
+    /* room Menu */ }
+    section .roomMainHeader h2 {
+      width: 700px;
+      height: 40px;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 25px; }
+    section .roomMainHeader .roomMainNav {
+      width: 700px;
+      height: 60px;
+      /* room Menu List */ }
+      section .roomMainHeader .roomMainNav .roomMainMenu {
+        display: inline-block;
+        width: 140px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 58px;
+        float: left; }
+  section .roomImgArticle {
+    width: 100%;
+    height: 1140px;
+    margin-left: 2px;
+    /* room type size class */ }
+    section .roomImgArticle .roomBoxLeft {
+      display: inline-block;
+      width: 1140px;
+      height: 1140px;
+      overflow-y: hidden;
+      float: left;
+      background-color: #ffffff; }
+    section .roomImgArticle .roomBoxRight {
+      display: inline-block;
+      width: 760px;
+      height: 1140px;
+      overflow-y: hidden;
+      float: left;
+      background-color: #ffffff; }
+    section .roomImgArticle .roomBoxS {
+      display: inline-block;
+      width: 380px;
+      height: 380px;
+      overflow-y: hidden;
+      float: left;
+      display: inline-block;
+      float: left;
+      position: relative; }
+      section .roomImgArticle .roomBoxS .roomImg {
+        position: absolute;
+        top: 0px;
+        width: 380px;
+        height: 380px;
+        z-index: 30; }
+      section .roomImgArticle .roomBoxS .roomName {
+        width: 75px;
+        height: 50px;
+        position: absolute;
+        top: 253.3333333333px;
+        left: 20px;
+        z-index: 50;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 48px;
+        text-align: left;
+        color: #ffffff; }
+      section .roomImgArticle .roomBoxS .roomDisc {
+        width: 360px;
+        height: 50px;
+        position: absolute;
+        top: 304px;
+        left: 20px;
+        z-index: 50;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 48px;
+        color: #ffffff;
+        text-align: left; }
+    section .roomImgArticle .roomBoxR {
+      display: inline-block;
+      width: 760px;
+      height: 380px;
+      overflow-y: hidden;
+      float: left;
+      display: inline-block;
+      float: left;
+      position: relative; }
+      section .roomImgArticle .roomBoxR .roomImg {
+        position: absolute;
+        top: 0px;
+        width: 760px;
+        height: 380px;
+        z-index: 30; }
+      section .roomImgArticle .roomBoxR .roomName {
+        width: 170px;
+        height: 50px;
+        position: absolute;
+        top: 253.3333333333px;
+        left: 20px;
+        z-index: 50;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 48px;
+        text-align: left;
+        color: #ffffff; }
+      section .roomImgArticle .roomBoxR .roomDisc {
+        width: 740px;
+        height: 50px;
+        position: absolute;
+        top: 304px;
+        left: 20px;
+        z-index: 50;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 48px;
+        color: #ffffff;
+        text-align: left; }
+    section .roomImgArticle .roomBoxL {
+      display: inline-block;
+      width: 760px;
+      height: 760px;
+      overflow-y: hidden;
+      float: left;
+      display: inline-block;
+      float: left;
+      position: relative; }
+      section .roomImgArticle .roomBoxL .roomImg {
+        position: absolute;
+        top: 0px;
+        width: 760px;
+        height: 760px;
+        z-index: 30; }
+      section .roomImgArticle .roomBoxL .roomName {
+        width: 170px;
+        height: 50px;
+        position: absolute;
+        top: 633.3333333333px;
+        left: 20px;
+        z-index: 50;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 48px;
+        text-align: left;
+        color: #ffffff; }
+      section .roomImgArticle .roomBoxL .roomDisc {
+        width: 740px;
+        height: 50px;
+        position: absolute;
+        top: 684px;
+        left: 20px;
+        z-index: 50;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 48px;
+        color: #ffffff;
+        text-align: left; }
+
+/*# sourceMappingURL=room_main.css.map */

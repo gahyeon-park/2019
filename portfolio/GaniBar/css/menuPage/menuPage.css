@@ -1,0 +1,67 @@
+/* 본문 */
+    .menuList {
+        display: inline-block;
+        width: 1300px;
+        height: 600px;
+
+        margin-top: 80px;
+        margin-left: 0px;
+        position: relative;
+    }
+    /* 메뉴 공통 스타일 */
+    .menuCommonStyle {
+        display: inline-block;
+
+        width: 800px;
+        height: 200px;
+
+        cursor: pointer;
+    }
+    .menuCommonStyle:hover .textCommonStyle {
+        font-size: 110px;
+    }
+        .sojuGlassImg {
+            display: inline-block;
+        }
+            .textCommonStyle {
+                display: inline-block;
+                font-size: 100px;
+            
+                text-shadow: -4px -4px 0px #131641;
+
+                transform: rotate3d(1, 2.0, 3.0, -12deg);
+
+                position: absolute;
+                top: 15px;
+            }
+    /* 기본 소주 메뉴 */
+    .originalMenu {
+        float: right;
+    }
+        /* 기본 소주 텍스트 */
+        .originalText {
+            color: #147a45;
+        }
+    /* 과일 소주 메뉴 */
+    .fruitMenu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -400px;
+    }
+        /* 과일 소주 텍스트 */
+        .fruitText {
+            color: #5ea573;
+        }
+    /* 추천 소주 */
+    .recommendMenu {
+        float: left;
+
+        position: absolute;
+        bottom: 0px;
+    }
+        /* 추천 소주 텍스트 */
+        .recommendText {
+            color: #ffffff;
+        }

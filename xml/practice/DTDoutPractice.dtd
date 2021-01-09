@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT monthBestSeller (bestSeller)+>
+	<!ELEMENT bestSeller (type, kind?, title, author+, company*, date, discription)>
+		<!ELEMENT type (economy|computer|fiction|nonfiction)*>
+			<!ELEMENT economy EMPTY>
+			<!ELEMENT computer EMPTY>
+			<!ELEMENT fiction EMPTY>
+			<!ELEMENT nonfiction EMPTY>
+		<!ELEMENT kind (#PCDATA)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+		<!ELEMENT company (#PCDATA)>
+		<!ELEMENT date EMPTY>
+			<!ATTLIST date
+				year CDATA #REQUIRED
+				month CDATA #REQUIRED
+				day CDATA #REQUIRED>
+		<!ELEMENT discription ANY>

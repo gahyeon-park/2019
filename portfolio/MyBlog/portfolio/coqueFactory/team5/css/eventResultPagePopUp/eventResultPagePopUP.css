@@ -1,0 +1,155 @@
+﻿@charset "UTF-8";
+
+/*당첩자 발표 팝업창 박스*/
+section.eventResultPopUpBox{
+	width:700px;
+	height:450px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-350px;
+	margin-top:-225px;
+	display:none;
+	z-index:200;
+
+	/*background-color:green;*/
+}
+	/*종료버튼 onclick을 적용해서 닫힘을 발생*/
+	i.closeButton{
+		position:absolute;
+		top:0px;
+		right:0px;
+		font-size:48px;
+		color:white;
+		cursor:pointer;
+	}
+	/*부제목 공간박스*/
+	h2.eventResultTitleBox{
+		position:absolute;
+		top:50px;
+		left:0px;
+		width:700px;
+		height:80px;
+		background-color:#ffb0b0;
+	}
+		/*글자만 뽑아서 위치와 글씨크기 설정*/
+		span.titleFontValue{
+			font-size:23px;
+			line-height:79px;
+			margin-left:70px;
+		}
+	/*검색 input박스 크기 및 위치 조절*/
+	input.searchBoxDisign{
+		position:absolute;
+		top:90px;
+		right:80px;
+		font-size:19px;
+		width:180px;
+		height:20px;
+		border:0px;
+		border-bottom:2px solid white;
+		background-color:#ffb0b0;
+	}
+	/*검색 돋보기 아이콘을 사이즈 및 위치 조정*/
+	i.searchIconValue{
+		position:absolute;
+		top:85px;
+		right:80px;
+		font-size:23px;
+		color:white;
+		cursor:pointer;
+	}
+	/*당첨자 리스트 공간의 박스 nav태그로 쌈*/
+	nav.winnerListBox{
+		position:absolute;
+		top:130px;
+		left:0px;
+		width:700px;
+		height:320px;
+		background-color:white;
+	}
+		ul.winnerListBoxPositionValue{
+			width:600px;
+			height:280px;
+			margin:auto;
+		}
+			li.winnerListFontValue{
+				margin-top:10px;
+				float:left;
+				width:150px;
+				height:280px;
+				text-align:left;
+				font-size:15px;
+				/*background-color:red;*/
+			}
+				p.paragraphFontValueLineHeight{
+					line-height:35px
+				}
+  		/* 여기서부터 하단은 가현씨가 만든 페이지 넘김 nav 박스임. 클래스명만 바꿔서 이페이지에서만 적용됨. 속성값은 동일*/
+		nav.winnerResultPopUppageNumberNavPosition{
+			//background-color : red;
+			width:345px;
+			height:52px;
+			position:absolute;
+			bottom:0px;
+			left:50%;
+			margin-left:-172.5px;
+	
+		}	
+			div.winnerPopUppageNavBox{
+				font-size : 20px;
+				//background-color : green;
+			}
+				button.clickLeftButtonIcon {
+					display : inline-block;
+					border : 0px;
+					background-color : white;
+					cursor : pointer;
+					line-height : 48px;
+					text-align : center;
+				}
+				ol.pageNumberBoxValue {
+					display : inline-block;
+				}
+					li.pageButtonIconDisignValue {
+						display : inline-block;
+						width : 50px;
+						height : 50px;
+						cursor : pointer;
+						line-height : 50px;
+						text-align : center;
+					}
+					li.clickedPageButtonDisignValue {
+						background-color : #ffb0b0;
+						color : white;	
+						border-radius : 25px;
+					}
+				button.clickRightButtonIcon {
+					display : inline-block;
+					line-height : 48px;
+					text-align : center;	
+					border : 0px;
+					cursor : pointer;
+					background-color : white;
+				}	
+
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

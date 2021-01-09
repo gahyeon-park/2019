@@ -1,0 +1,41 @@
+.notice_nav > div {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -200px; }
+  
+.notice_nav h1:first-child {
+margin-left: 0; }
+  
+.notice_nav h1 {
+width: 140px;
+height: 40px;
+font-size: 22px;
+color: #fff;
+float: left;
+margin-left: 120px;
+cursor: pointer; }
+
+.delete{
+    width: 300px; height: 200px; 
+    position: absolute;
+    top: 100px; right: 0px;
+}
+
+.del_btn{
+  padding: 10px; color: #fff;
+  background-color: #5a6b47; text-align: center;
+}
+
+  
+table{
+    width: 1000px;
+    margin: auto; margin-top: 180px;
+    border-collapse: collapse;
+}
+table tr{ height: 30px; }
+tr:first-child{ background-color: #a19385; }
+tr:first-child>td{ color: #fff; font-size: 22px; }
+tr>td{ text-align: center; font-size: 17px; }

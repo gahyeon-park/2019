@@ -1,0 +1,40 @@
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+
+
+/* CSS RESET */
+*{margin: 0px; padding: 0px;}
+ul,ol,li,dl{list-style:none}
+input{outline:0px;}
+
+button {
+   border: 0px;
+   background: none;
+   line-height: normal;
+   outline: none;
+   cursor: pointer;
+}
+a,a:link,a:hover,a:active {text-decoration:none;}
+
+a:link    {color: #515151; text-decoration:none;}
+a:visited {color: #515151; text-decoration:none;}
+a:hover   {color: #515151; text-decoration:none;}
+a:active  {color: #515151; text-decoration:none;}
+
+body {color: #515151;font-size:15px;font-family:돋움,dotum,굴림,gulim,sans-serif;}
+
+div.alarmBar{
+   width:auto;
+   height:auto;
+   padding:5px 10px;
+   background-color:#ff7d7d;
+   position:absolute;
+   top:7px;
+   left:7px;;
+   color:#fff;
+   font-size:17px;
+   font-family:"Noto Sans KR",sans-serif;
+   border-radius:4px;
+}
+

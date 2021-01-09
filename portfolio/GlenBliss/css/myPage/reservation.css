@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html, body {
+  width: 100%; }
+
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.clear {
+  clear: both;
+  position: inherit; }
+
+.notice_nav {
+  width: 100%;
+  height: 400px;
+  position: relative; }
+  .notice_nav .noticeImg {
+    width: 100%;
+    height: 400px; }
+  .notice_nav .noticeNav {
+    width: 780px;
+    height: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -390px; }
+    .notice_nav .noticeNav h1:first-child {
+      margin-left: 0; }
+    .notice_nav .noticeNav h1:last-child {
+      width: 135px; }
+    .notice_nav .noticeNav h1 {
+      width: 85px;
+      height: 40px;
+      font-size: 22px;
+      color: #fff;
+      float: left;
+      margin-left: 130px;
+      cursor: pointer; }
+    .notice_nav .noticeNav .underline {
+      width: 90px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0 0 -5px;
+      display: none; }
+    .notice_nav .noticeNav .underline5 {
+      width: 145px; }
+
+.contents {
+  width: 1500px;
+  height: 1000px;
+  margin: auto;
+  margin-top: 70px;
+  position: relative; }
+  .contents h2 {
+    font-size: 30px;
+    color: #3f3222;
+    font-weight: 500; }
+  .contents .horizon1 {
+    width: 100%;
+    height: 3px;
+    background-color: #555;
+    margin-top: 10px; }
+  .contents .reservationTitle {
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 100px; }
+  .contents .reservationArea {
+    width: 1300px;
+    font-size: 17px;
+    text-align: center;
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    margin-left: -650px;
+    top: 20px; }
+    .contents .reservationArea tr:last-child {
+      border-bottom: 2px solid rgba(170, 170, 170, 0.5); }
+      .contents .reservationArea tr {
+        height: 70px; }
+      .contents .reservationArea tr th {
+        height: 50px;
+        background-color: #f0e9e1; }
+      .contents .reservationArea tr .request {
+        width: 350px; }
+    .contents .reservationArea tr:first-child {
+      border-bottom: 0px; }
+  .contents .roomTitle {
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 100px; }
+  .contents .roomArea {
+    width: 1300px;
+    font-size: 17px;
+    text-align: center;
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    margin-left: -650px;
+    top: 20px; }
+    .contents .roomArea tr:last-child {
+      border-bottom: 2px solid rgba(170, 170, 170, 0.5); }
+      .contents .roomArea tr {
+        height: 70px; }
+      .contents .roomArea tr th {
+        height: 50px;
+        background-color: #f0e9e1; }
+      .contents .roomArea tr .checkInDate {
+        width: 300px; }
+    .contents .roomArea tr:first-child {
+      border-bottom: 0px; }
+  .contents .couponTitle {
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 100px; }
+  .contents .couponArea {
+    width: 1300px;
+    height: 180px;
+    font-size: 17px;
+    text-align: center;
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    margin-left: -650px;
+    top: 20px; }
+    .contents .couponArea tr {
+      border-bottom: 2px solid rgba(170, 170, 170, 0.5); }
+      .contents .couponArea tr th {
+        height: 50px;
+        background-color: #f0e9e1; }
+      .contents .couponArea tr .checkInDate {
+        width: 300px; }
+      .contents .couponArea tr .couponImg {
+        width: 200px; }
+      .contents .couponArea tr td > .myCouponImg {
+        margin-top: 7px; }
+    .contents .couponArea tr:first-child {
+      border-bottom: 0px; }
+  .contents .paymentTitle {
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 100px; }
+  .contents .paymentArea {
+    width: 1300px;
+    height: 100px;
+    border-top: 2px solid rgba(170, 170, 170, 0.5);
+    border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+    position: relative;
+    left: 50%;
+    margin-left: -650px;
+    top: 20px; }
+    .contents .paymentArea .rightPriceArea {
+      display: none;
+      width: 435px;
+      height: 155px;
+      float: right;
+      margin-top: 30px; }
+      .contents .paymentArea .rightPriceArea .priceWrapper {
+        display: none;
+        width: 430px;
+        height: 35px; }
+        .contents .paymentArea .rightPriceArea .priceWrapper div {
+          width: 200px;
+          height: 30px;
+          font-size: 20px;
+          line-height: 28px;
+          position: relative;
+          display: inline-block;
+          color: #362f2d; }
+        .contents .paymentArea .rightPriceArea .priceWrapper .rightPrice {
+          float: right;
+          text-align: right; }
+      .contents .paymentArea .rightPriceArea .discountWrapper {
+        display: none;
+        width: 430px;
+        height: 35px; }
+        .contents .paymentArea .rightPriceArea .discountWrapper div {
+          width: 200px;
+          height: 35px;
+          font-size: 20px;
+          line-height: 28px;
+          position: relative;
+          display: inline-block;
+          color: grey; }
+        .contents .paymentArea .rightPriceArea .discountWrapper .rightPrice {
+          float: right;
+          text-align: right; }
+      .contents .paymentArea .rightPriceArea .resultWrapper {
+        display: none;
+        width: 430px;
+        height: 35px; }
+        .contents .paymentArea .rightPriceArea .resultWrapper div {
+          width: 200px;
+          height: 35px;
+          font-size: 20px;
+          line-height: 28px;
+          position: relative;
+          display: inline-block; }
+        .contents .paymentArea .rightPriceArea .resultWrapper .rightPrice {
+          color: #39b54a;
+          float: right;
+          text-align: right; }
+    .contents .paymentArea .lowerNoticeArea {
+      width: 650px;
+      height: 80px;
+      text-align: center;
+      margin-left: 350px;
+      margin-top: 10px;
+    }
+      .contents .paymentArea .lowerNoticeArea .accountArea {
+        width: 645px;
+        height: 40px; }
+        .contents .paymentArea .lowerNoticeArea .accountArea div {
+          width: 317px;
+          height: 35px;
+          line-height: 33px;
+          font-size: 16px;
+          line-height: 48px;
+          position: relative;
+          display: inline-block;
+          color: #39b54a; }
+      .contents .paymentArea .lowerNoticeArea .paymentNoticeArea {
+        width: 645px;
+        height: 35px;
+        line-height: 33px;
+        color: #ed1c24; }
+  .contents .reservationBt {
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: #66605d;
+    line-height: 58px;
+    text-align: center;
+    position: relative;
+    left: 84%;
+    top: 80px; }
+
+/*# sourceMappingURL=reservation.css.map */

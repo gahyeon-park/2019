@@ -1,0 +1,783 @@
+@charset "UTF-8";
+	
+	#wrap {
+		
+	}
+	/*공통요소*/
+	.clearFix { 
+		display: block;
+		clear: both;
+		content: '';
+	}/*float 뒤에 포지션이 뭉개지는 현상 버그현상 없애기*/	
+
+	/* 헤더 CSS */
+	header {
+		
+		height: 400px;
+	}
+		.pinkBar {			
+			height : 50px;
+			line-height: 50px;
+			background-color : #ffe0e0;
+		}
+			.topNav {
+				position: relative;
+				top: 10px;
+				width: 800px;
+				height: 30px;
+				margin: 0 auto;
+			}
+				.topMenu {
+					display: inline-block;
+					width: 397px;
+					height: 25px;
+					padding-left: 180px;
+				}
+					.basicMenu {
+						float: left;
+						width: 82px;
+						height: 15px;
+						line-height: 15px;
+						font-size: 13px;
+						margin-top: 3px;
+						margin-right: 10px;
+						padding-right: 10px;
+						border-right: 1px solid #515151;
+					}			
+						.basicMenu a {
+							display:block;
+							width: 100%;
+							color: #515151;
+							text-align: center;
+						}
+					.topMenu .InfoFind {
+						width:89px;
+						border: 0;
+						
+					}						
+					.cartButton {
+						height: 25px; 					
+						border-radius: 5px;
+						background-color: #ffa2a2;
+						color: white;
+						font-weight: bold;
+						text-align: center;
+						line-height: 25px;
+						border: 0;
+						margin-top: -2px;
+						margin-right: 0;
+						padding-right: 0;
+					}
+					/*a 태그 폰트색상 버그현상 장바구니*/
+					.cartButton a:link    {color: #fff; }
+					.cartButton a:visited {color: #fff; }
+					.cartButton a:hover   {color: #fff; }
+					.cartButton a:active  {color: #fff; }
+				
+				.searchBox {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 210px;
+					height: 30px;
+					line-height: 30px;
+				}
+					
+					.searchBar {
+						width: 170px;
+						background-color: #ffe0e0;
+						border: 0px;
+						border-bottom: 2px solid #ffa2a2;
+					}
+					.searchButton {
+						width: 30px;
+						border: 0px;
+						outline: 0px;
+						background-color: #ffe0e0;
+						color: #ffa2a2;
+						cursor: pointer;
+					}			
+					
+		.coqueLogo {
+			width: 170px;
+			height: 170px;
+
+			background-color: white;
+			background-size: 170px 170px;
+			background-image: url("../../images/coqueLogoImg.jpg");
+
+			position: absolute;
+			left: 50%;
+
+			margin-left: -85px;
+
+		}
+			.coqueLogo a {
+				width: 170px;
+				height: 170px;
+
+				display: inline-block;
+			}
+		.bottomNav {
+			width: 1580px;
+			height: 325px;
+
+			background-image: url("../../images/bottomNavBackground.png");
+			background-size: 1580px;
+			background-repeat: no-repeat;
+			
+			position: absolute;
+			top: 230px;
+			left: 50%;
+			margin-left: -790px;
+		}
+			.bottomMenu {
+				width: 825px;
+				height: 30px;				
+				display: inline-block;
+				margin-top: 55px;
+				margin-left:377px;
+				
+			}
+				.mainMenu {
+					width: 161px;
+					height: 30px;
+					display: inline-block;
+					margin-right:5px;					
+					color: white;
+					font-size: 20px;
+					font-weight: 900;
+					float: left;
+					text-align: center;
+					line-height: 28px;
+					
+				}
+				.lastMenu {
+					margin-right:0px;
+					
+				}
+					/*a 태그 폰트색상 버그현상 메인메뉴*/
+					.mainMenu a:link    {color: #fff; }
+					.mainMenu a:visited {color: #fff; }
+					.mainMenu a:hover   {color: #fff; }
+					.mainMenu a:active  {color: #fff; }
+					
+					.currentPageCategoryColor{color:#f94769;}
+					
+					.subMenu:not(subMenu_5){
+						width: 161px;
+						height: 120px;
+						padding : 30px 5px 0px 0px;
+						display : none;	
+						line-height:40px;						
+						
+					}
+						subMenu_5 {
+							width: 161px;
+							height: 120px;
+							padding : 30px 0px 0px 0px;	
+							display : none;
+							line-height:40px;	
+						}
+						.subMenu a{
+						font-size:15px;
+						font-weight:bold;						
+						}
+						/*a 태그 폰트색상 버그현상 서브메뉴*/
+						.subMenu a:link    {color: #982323; }
+						.subMenu a:visited {color: #982323; }
+						.subMenu a:hover   {color: #982323; }
+						.subMenu a:active  {color: #982323; }
+	/* 팝업 백그라운드 설정 */
+	.popUpBackground { 
+		width : 100%;
+		height : 100%;
+		position:fixed;
+		background-color: rgba( 0, 0, 0, 0.7 );
+		z-index:100;
+		display : none;
+	}
+	
+	/* 섹션 CSS */
+	
+		.ContentsBox{			
+			width: 1000px;
+			margin: 0 auto 200px ;
+		}
+			.customOrderBox{
+					
+				
+			}
+				.mainTitle {
+				width : 1000px;
+				height : 50px;	
+
+				font-size : 35px;
+				line-height : 48px;
+				font-weight : bold;
+			
+				border-bottom : 5px solid #c0c0c0;
+
+				margin-top : 150px;
+				margin-bottom : 30px;
+				}
+			/*컬러선택박스*/
+				.orderColorBox{
+					width:1000px;
+					height:290px;
+					position:relative;
+					margin-top:100px;					
+				}
+					/*컬러선택버튼*/
+					.colorButton{
+						width: 100px;
+						height: 260px;
+						position:absolute;
+						background-color: #ffe0e0;
+						padding-top:30px;						
+					}
+					.leftColor{
+						left:100px;
+					}
+					.rightColor{
+						left:800px;
+					}
+						.colorButton li{
+							width: 64px;
+							height: 30px;
+							margin-bottom: 15px;
+							margin-left: 18px;
+							border: 2px solid #ffa2a2;
+							border-radius: 7px;
+							cursor:pointer;
+							text-indent: -9999px;				
+						}
+						/*공통 컬러 클레스버튼*/
+						.buttonRed{					
+							background-color: #f73838;
+						}
+						.buttonYellow{					
+							background-color: #f9ef96;
+						}
+						.buttonBlue{					
+							background-color: #8abffa;
+						}
+						.buttonWhite{					
+							background-color: #fff;
+						}
+						.buttonPink{					
+							background-color: #f8c3e1;
+						}
+						
+						
+					/*마카롱선택*/	
+					.orderImageBox{
+						width: 232px;
+						height:200px;
+						position:absolute;
+						left:384px;						
+						text-indent: -9999px;
+					}
+						.orderImageBox .leftCoque{
+							width: 54px;
+							height: 200px;
+							float:left;
+							border-radius: 130px 0px 0px 130px;
+							border: 4px solid #ffa2a2;							
+						}
+						.orderImageBox .filling{
+							width: 80px;
+							height: 200px;
+							float:left;
+							border-radius:25px;
+							border: 4px solid #ffa2a2;							
+							margin: 0px 10px;
+						}
+						.orderImageBox .rightCoque{
+							width: 54px;
+							height: 200px;
+							float:right;
+							border: 4px solid #ffa2a2;
+							border-radius: 0px 130px 130px 0px;											
+						}
+					/*수량 추가 버튼*/	
+					.quantityAdditionalBtnGroup{
+						width: 300px;
+						height: 54px;
+						position:absolute;
+						top: 236px;
+						left:350px;						
+					}	
+						.qABtn{
+							width: 150px;
+							height: 54px;
+							float:left;							
+						}
+						.quantityBox{
+							background-color:#ffa2a2;
+							border-radius:27px 0px 0px 27px;
+						}							
+							.quantityBox p{
+								width: 150px;
+								height: 54px;								
+								float:left;
+								margin-right:8px;
+								color:#fff;
+								font-weight:bold;								
+								text-align:center;
+								line-height:54px;								
+							}
+								span.leftQuantityBtn{
+									margin-left:6px;
+									display:inline-block;
+									width:20px;
+									cursor:pointer;
+								}
+								span.rightQuantityBtn{
+									display:inline-block;
+									width:20px;
+									cursor:pointer;
+								}
+								span.countBox{
+									display:inline-block;
+									width:20px;									
+								}
+						.additionalBtn{
+							font-weight:bold;
+							text-align:center;
+							line-height:54px;
+							background-color:#ffe0e0;
+							border-radius:0px 27px 27px 0px;
+							cursor:pointer;
+						}			
+						
+					/*마카롱선택담는마카롱*/	
+					.orderImageBox{
+						width: 232px;
+						height:200px;
+						position:absolute;
+						left:384px;						
+						text-indent: -9999px;
+					}
+						.orderImageBox .leftCoque{
+							width: 54px;
+							height: 200px;
+							float:left;
+							border-radius: 130px 0px 0px 130px;
+							border: 4px solid #ffa2a2;							
+						}
+						.orderImageBox .topping{
+							width: 80px;
+							height: 200px;
+							float:left;
+							border-radius:25px;
+							border: 4px solid #ffa2a2;							
+							margin: 0px 10px;
+						}
+						
+						/*큰마카롱 필링 이미지*/
+						.tPChoko{								
+								background-image:url(../../images/customOrder/filling1Big.jpg);
+						}
+						.tPGreentea{
+								background-image:url(../../images/customOrder/filling2Big.jpg);
+						}
+						.tPVanilla{
+								background-image:url(../../images/customOrder/filling3Big.jpg);
+						}
+						.tPMint{
+								background-image:url(../../images/customOrder/filling4Big.jpg);
+						}
+						.tPOreo{
+								background-image:url(../../images/customOrder/filling5Big.jpg);
+						}
+						
+						
+						.tPorderImageBox .rightCoque{
+							width: 54px;
+							height: 200px;
+							float:right;
+							border: 4px solid #ffa2a2;
+							border-radius: 0px 130px 130px 0px;											
+						}
+						
+				/*필링선택영역*/	
+				.orderFillingBox{
+					width:1000px;
+					margin-top:60px;					
+				}
+					.orderTitle{
+						width:150px;
+						height:30px;
+						margin:auto;
+						font-size:17px;
+						font-weight:bold;
+						color: #982323;
+						text-align:center;
+						line-height:32px;
+						border-radius:15px;
+						background-color:#ffa2a2;
+					}
+					.contentImagesBox{
+						width:1000px;
+						height:175px;
+						margin-top:-15px;
+						padding-top:40px;
+						border-top:2px solid #ffa2a2;					
+					}
+						.leftPagePink{
+							width:50px;
+							height:120px;
+							display:inline-block;
+							background-image:url(../../images/customOrder/leftPageIconPink.png);
+							background-size:50px 120px;
+							background-repeat:no-repeat;
+						}
+						.rightPagePink{
+							width:50px;
+							height:120px;
+							display:inline-block;
+							background-image:url(../../images/customOrder/rightPageIconPink.png);
+							background-size:50px 120px;
+							background-repeat:no-repeat;
+						}
+						.orderListBox{
+							width:840px;
+							height:120px;
+							margin:0px 24px;
+							display:inline-block;													
+						}
+							.orderListBox li{
+								width:100px;
+								height:100px;
+								margin-left:60px;
+								float:left;								
+								border-radius:20px;
+								background-size:100px 100px;
+								text-indent:-9999px;
+								cursor:pointer;
+							}
+							.orderListBox li:first-child{
+								margin-left:0px;
+							}
+							/*필링 background 이미지*/
+							.choko{
+								border:10px solid #ffe0e0;	
+								background-image:url(../../images/customOrder/filling1.jpg);
+							}
+							.greentea{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/filling2.jpg);
+							}
+							.vanilla{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/filling3.jpg);
+							}
+							.mint{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/filling4.jpg);
+							}
+							.oreo{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/filling5.jpg);
+							}
+							/*필링 선택 background 이미지*/
+							.chokoCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/filling1_1.jpg);
+							}
+							.greenteaCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/filling2_1.jpg);
+							}
+							.vanillaCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/filling3_1.jpg);
+							}
+							.mintCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/filling4_1.jpg);
+							}
+							.oreoCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/filling5_1.jpg);
+							}
+							/*토핑 background 이미지*/
+							.cereal{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/topping1.jpg);
+							}
+							.greengrape{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/topping2.jpg);
+							}
+							.strawberry{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/topping3.jpg);
+							}
+							.wahase{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/topping4.jpg);
+							}
+							.frazzle{
+								border:10px solid #ffe0e0;
+								background-image:url(../../images/customOrder/topping5.jpg);
+							}
+							/*토핑 선택 background 이미지*/
+							.cerealCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/topping1_1.jpg);
+							}
+							.greengrapeCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/topping2_1.jpg);
+							}
+							.strawberryCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/topping3_1.jpg);
+							}
+							.wahaseCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/topping4_1.jpg);
+							}
+							.frazzleCheck{
+								border:10px solid #ed3635;
+								background-image:url(../../images/customOrder/topping5_1.jpg);
+							}
+				/*결과주문 목록영역*/
+				.orderResultBox{
+					width:1000px;
+					height:284px;					
+				}
+					.resultImagesBox{
+						width:1000px;
+						height:240px;
+						margin-top:20px;
+						padding-top:40px;
+						border-top:2px solid #c1c1c1;
+						border-bottom:2px solid #c1c1c1;
+					}
+						.leftPageGray{
+							width:64px;
+							height:200px;
+							display:inline-block;
+							background-image:url(../../images/customOrder/leftPageIconGray.png);
+							background-size:50px 120px;
+							background-repeat:no-repeat;
+							background-position:50%;
+						}
+						.rightPageGray{
+							width:64px;
+							height:200px;
+							display:inline-block;
+							background-image:url(../../images/customOrder/rightPageIconGray.png);
+							background-size:50px 120px;
+							background-repeat:no-repeat;
+							background-position:50%;
+						}
+						.resultListBox{
+							width:860px;
+							height:200px;
+							display:inline-block;		
+						}
+						.resultListBox li{
+							width:200px;
+							height:200px;
+							margin-left:20px;
+							float:left;							
+							background-color:#e1e1e1;
+							background-image:url(../../images/customOrder/putInIcon.png);
+							background-repeat:no-repeat;
+							background-position: 50% 50%;
+							
+						}
+						.resultListBox li:first-child{
+								margin-left:0px;
+							}
+							/*담기는 마카롱 안보이는 영역*/
+							
+							.putOrderImageBox{/* 안보이는 마카롱 전체를감싸는 박스*/
+								width: 200px;
+								height:200px;							
+								background-color:#e1e1e1;								
+								display:inline-block;
+							}
+								.rescissionBtn{
+									width:25px;
+									height:25px;									
+									margin:8px 0px 0px 167px;
+									background-image:url(../../images/customOrder/rescissionIcon.png);
+									background-repeat:no-repeat;
+									background-position: 50% 50%;
+								}
+								.putOrderImageBox .putLeftCoque{
+									width: 110px;
+									height: 25px;
+									margin-top:-10px;
+									margin-left:45px;							
+									border-radius: 130px 130px 0px 0px;
+									border: 2px solid #ffa2a2;
+									text-indent: -9999px;	
+								}
+								.putOrderImageBox .putFilling{
+									width: 110px;
+									height: 40px;																		
+									border-radius:15px;
+									border: 2px solid #ffa2a2;						
+									margin: 2px 0px 2px 45px;
+									text-indent: -9999px;
+								}
+								
+								/*작은마카롱 필링 이미지*/
+								.tPChokoSmall{								
+										background-image:url(../../images/customOrder/filling1small.jpg);
+								}
+								.tPGreenteaSmall{
+										background-image:url(../../images/customOrder/filling2small.jpg);
+								}
+								.tPVanillaSmall{
+										background-image:url(../../images/customOrder/filling3small.jpg);
+								}
+								.tPMintSmall{
+										background-image:url(../../images/customOrder/filling4small.jpg);
+								}
+								.tPOreoSmall{
+										background-image:url(../../images/customOrder/filling5small.jpg);
+								}
+								
+								.putOrderImageBox .putRightCoque{
+									width: 110px;
+									height: 25px;
+									margin-left:45px;
+									margin-bottom:8px;
+									border: 2px solid #ffa2a2;
+									border-radius: 0px 0px 130px 130px;
+									text-indent: -9999px;	
+								}
+								.putOrderImageBox p{
+									width: 200px;
+									height:46px;
+									font-size:13px;
+									text-align:center;
+									line-height:23px;									
+								}									
+							
+							
+				/*총가격 장바구니 구매버튼*/
+				.grossValueBox{
+					width:1000px;
+					height:70px;					
+					border-bottom:2px solid #c1c1c1;
+				}
+					.grossValueBox h3{
+						width:230px;
+						height:22px;
+						float:right;
+						margin:24px 35px 0px 0px;
+						font-size:20px;						
+						color:#be4d4d;						
+					}
+						.grossValueBox h3 span{
+							width:118px;
+							height:22px;
+							display:inline-block;
+							text-align:center;							
+						}
+				.orderButtonGroup{
+					width:420px;
+					height:44px;
+					margin:30px 40px 0px 0px;
+					float:right;				
+				}
+					.orderButtonGroup button{							
+						width:200px;
+						height:44px;						
+						text-align:center;
+						line-height:47px;
+						font-size:17px;
+						font-weight:bold;
+						color:#fff;
+						background-color:#ffa2a2;
+						border-radius:22px;	
+					}					
+					.orderButtonGroup a{
+						width:200px;
+						height:44px;						
+						display:inline-block;										
+						text-align:center;
+						line-height:47px;
+						font-size:17px;
+						font-weight:bold;						
+						border-radius:22px;
+						background-color:#ffe0e0;	
+												
+					}
+					
+					.orderButtonGroup a:link    {font-weight:bold; }
+					.orderButtonGroup a:visited {font-weight:bold;}
+					.orderButtonGroup a:hover   {font-weight:bold; }
+					.orderButtonGroup a:active  {font-weight:bold; }
+					
+					
+
+	/* 풋터 CSS */
+	.footerBox {
+		width: 1000px;
+		height: 220px;
+
+		margin: auto;
+
+		background-color: #ffe0e0;
+	}
+		.footerContentsBox {
+			width: 900px;
+			height: 100px;
+			padding-top: 30px;
+			margin-left: 50px;
+
+		}
+			.coqueAddress {
+				display: inline-block;			
+				font-style: normal;
+				font-size:12px;
+				line-height: 23px;		
+				color: #838383;
+
+			}
+			.clientBox {				
+				display: inline-block;
+				float:right;
+				font-weight:bold;
+				line-height: 26px;		
+				color: #838383;				
+
+			}
+				.telSpan {
+					font-size: 30px;
+					color: #ff7d7d;
+					font-weight: bold;
+				}
+				.discSpan {
+					font-weight:900;
+					font-size: 18px;
+					color: #838383;
+				}
+			.snsBox {
+				margin-top: 15px;
+			}
+				.sns {
+				
+				}
+	
+					.snsList {
+						width: 40px;
+						height: 40px;
+				
+						color: white;
+						text-align: center;
+						line-height: 53px;
+						border-radius: 20px;
+						display: inline-block;
+						background-color: #ffa2a2;
+					}
+		

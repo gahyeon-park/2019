@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: #75715e; }
+
+body, html {
+  background: #272822;
+  overflow: hidden; }
+
+#wrap {
+  width: 100%;
+  position: relative; }
+
+.headerBox {
+  width: 100%;
+  height: 150px; }
+  .headerBox .headerTitle {
+    width: 100%;
+    height: 150px;
+    font-size: 60px;
+    line-height: 148px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #9ae22e; }
+    .headerBox .headerTitle span:nth-child(1) {
+      color: #f92672; }
+
+.sectionBox {
+  width: 90%;
+  height: 650px;
+  border-radius: 50px;
+  background: #3e3d32;
+  margin: auto; }
+  .sectionBox .inputArticle {
+    display: inline-block;
+    width: 50%;
+    height: 325px;
+    float: left; }
+    .sectionBox .inputArticle .inputBox {
+      width: 85%;
+      height: 95%;
+      border-radius: 10px;
+      background: #fff;
+      margin: auto;
+      margin-top: 5%; }
+      .sectionBox .inputArticle .inputBox .inputLabel {
+        display: inline-block;
+        width: 40%;
+        height: 15%;
+        font-size: 2em;
+        line-height: 1.3em;
+        font-weight: bold;
+        text-align: center; }
+        .sectionBox .inputArticle .inputBox .inputLabel span {
+          color: #a9a9a9;
+          font-size: 0.5em; }
+      .sectionBox .inputArticle .inputBox .inputLabel:first-child {
+        margin-top: 15%; }
+      .sectionBox .inputArticle .inputBox .chartId {
+        width: 20%;
+        margin-top: 7%; }
+      .sectionBox .inputArticle .inputBox .chartTypeBox {
+        display: inline-block;
+        width: 50%;
+        height: 15%;
+        text-align: center; }
+      .sectionBox .inputArticle .inputBox .dataNumBox {
+        display: inline-block;
+        width: 49.5%;
+        height: 15%; }
+      .sectionBox .inputArticle .inputBox .dataBox {
+        display: inline-block;
+        width: 50%;
+        height: 35%;
+        overflow-y: auto;
+        float: right;
+        margin-right: 9%; }
+        .sectionBox .inputArticle .inputBox .dataBox .dataListBox {
+          width: 100%;
+          height: 25%; }
+          .sectionBox .inputArticle .inputBox .dataBox .dataListBox .dataList {
+            width: 100%;
+            height: 100%;
+            margin-top: 2%; }
+            .sectionBox .inputArticle .inputBox .dataBox .dataListBox .dataList input {
+              display: inline-block;
+              width: 25%;
+              height: 100%;
+              text-align: center;
+              float: left;
+              margin-left: 7px; }
+        .sectionBox .inputArticle .inputBox .dataBox .dataButtonBox {
+          display: inline-block;
+          width: 15%;
+          height: 100%;
+          float: right;
+          margin-left: 0.8%; }
+          .sectionBox .inputArticle .inputBox .dataBox .dataButtonBox i {
+            width: 20px;
+            height: 20px;
+            line-height: 200%;
+            font-size: 20px;
+            cursor: pointer; }
+      .sectionBox .inputArticle .inputBox .testButton {
+        display: inline-block;
+        width: 30%;
+        height: 10%;
+        background: #f8ea23;
+        border-style: none;
+        font-size: 23px;
+        font-weight: bold;
+        margin-right: 12.5%;
+        cursor: pointer;
+        float: right; }
+      .sectionBox .inputArticle .inputBox .testButton:nth-child(2) {
+        background: #a6e22e; }
+  .sectionBox .previewArticle {
+    display: inline-block;
+    width: 49%;
+    height: 650px;
+    border-left: 2px dotted #7c6b7a;
+    float: right; }
+    .sectionBox .previewArticle .previewBox {
+      width: 85%;
+      height: 87%;
+      border-radius: 10px;
+      background: #fff;
+      margin: auto;
+      margin-top: 5%; }
+  .sectionBox .codeArticle {
+    display: inline-block;
+    width: 50%;
+    height: 325px;
+    float: left; }
+    .sectionBox .codeArticle .codeBox {
+      width: 85%;
+      height: 74%;
+      border-radius: 10px;
+      background: #272822;
+      margin: auto;
+      margin-top: 5%; }
+      .sectionBox .codeArticle .codeBox .codeTextBox {
+        width: 100%;
+        height: 100%;
+        overflow: auto; }
+        .sectionBox .codeArticle .codeBox .codeTextBox .codeText {
+          color: #f8f8f2;
+          font-size: 20px;
+          line-height: 24px; }
+          .sectionBox .codeArticle .codeBox .codeTextBox .codeText .blue {
+            color: #62d9ef; }
+          .sectionBox .codeArticle .codeBox .codeTextBox .codeText .pink {
+            color: #f92672; }
+          .sectionBox .codeArticle .codeBox .codeTextBox .codeText .green {
+            color: #a6e22e; }
+          .sectionBox .codeArticle .codeBox .codeTextBox .codeText .yellow {
+            color: #e6db74; }
+          .sectionBox .codeArticle .codeBox .codeTextBox .codeText .purple {
+            color: #da6bae; }
+          .sectionBox .codeArticle .codeBox .codeTextBox .codeText .gray {
+            color: #75715e; }
+
+.footerBox {
+  width: 100%;
+  height: 130px; }
+  .footerBox .footerTitle {
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 128px;
+    color: #75715e;
+    text-align: center; }
+
+/*# sourceMappingURL=index.css.map */

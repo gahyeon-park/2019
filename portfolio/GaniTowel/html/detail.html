@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <!-- x icon -->
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/detail/detail.css">
+
+        <!-- javascript -->
+        <script src="../script/footer.js"></script>
+        <title>GANI TOWEL</title>
+    </head>
+    <body>
+        <div id='wrap'>
+            <!-- 가니 타월 헤더 -->
+            <header class='headerBox'>
+                    <a href="./main.html"><h1 class='headerTitle'>가니 타월</h1></a>
+            </header>
+
+            <section class="productDetailSection">
+                <div class="productImgBox">
+                    <img class="productImg" src="../images/washTowel/total.jpg" alt="타월이미지">
+                </div>
+                
+                <form class="productDetail" action="#">
+                    <h3 class="productTitle">가니 세면타월</h3>
+                    <input type="hidden" name="productName">
+                
+                    <label class="productInputBox" for="productColor">색상
+                        <input type="hidden" name="productColor">
+                        <div class="productColor"></div>
+                        <div class="productColor"></div>
+                        <div class="productColor"></div>
+                        <div class="productColor"></div>
+                    </label>
+
+                    <!-- 중량 선택 인풋창 -->
+                    <label class="productInputBox" for="productWeight">중량
+                        <select class='form-control selectInput' name="productWeight" id="productWeight">
+                            <option value="0">중량 선택</option>
+                            <option value="150">150g</option>
+                            <option value="170">170g</option>
+                            <option value="200">200g</option>
+                        </select>       
+                    </label>
+
+                    <!-- 단품, 세트 선택 라디오 버튼 -->
+                    <div class="btn-group radioInputBox productInputBox" data-toggle="buttons">수량
+                        <div class="radioInputBox">
+                            <label class="btn active radioInput">
+                                <input type="radio" name="productType" value="num" id="numRadio" autocomplete="off" checked>&nbsp;&nbsp;단품
+                            </label>
+                            <label class="btn radioInput">
+                                <input type="radio" name="productType" value="set" id="setRadio" autocomplete="off">&nbsp;&nbsp;세트
+                            </label>
+                        </div>
+                        <input class='numberInput' type="number" name='productNum' value='1' mix='1' max='10'> 
+                    </div>
+
+                    <p class="productPrice">18,000원</p>
+                    <button class="myCartButton">장바구니 담기</button>
+
+                </form>
+            </section>
+
+
+            <!-- 나의 장바구니 -->
+            <footer id='myCartBox' class='footerBox'>
+                <!-- 나의 장바구니 스위치 부분 -->
+                <header class="myCartHeader">
+                    <i id='myCartSwitchButton' class='xi-angle-up xi-4x myCartHeaderIcon'></i> <!-- xi-angle-down -->
+                    <p class='myCartHeaderTitle'>나의 장바구니&nbsp;&nbsp;&nbsp;</p>
+                </header>
+
+                <!-- 나의 장바구니 인풋 창 -->
+                <div class="inputCartBox">
+
+                    <form class='myCartForm' action="#" method='POST'>
+                        <div class='form-group'>
+                            <!-- 상품 선택 인풋창 -->
+                            <select class='form-control selectInput' name="productName" id="productName">
+                                <option value="0">상품명 선택</option>
+                                <option value="1">가니 세면타월</option>
+                                <option value="2">가니 비치타월</option>
+                                <option value="3">가니 손수건</option>
+                            </select>
+                            <!-- 중량 선택 인풋창 -->
+                            <select class='form-control selectInput' name="productWeight" id="productWeight">
+                                <option value="0">중량 선택</option>
+                                <option value="150">150g</option>
+                                <option value="170">170g</option>
+                                <option value="200">200g</option>
+                            </select>                    
+                            <!-- 단품, 세트 선택 라디오 버튼 -->
+                            <div class="btn-group radioInputBox" data-toggle="buttons">
+                                <label class="btn active radioInput">
+                                    <input type="radio" name="productType" value="num" id="numRadio" autocomplete="off" checked>&nbsp;&nbsp;단품
+                                </label>
+                                <label class="btn radioInput">
+                                    <input type="radio" name="productType" value="set" id="setRadio" autocomplete="off">&nbsp;&nbsp;세트
+                                </label>
+                            </div>
+                            <input class='numberInput' type="number" name='productNum' value='1' mix='1' max='10'>
+                            <!-- 색상 선택 버튼 -->
+                            <input type="hidden" name='productColor'>
+                            <div class='colorBox babyBlue'></div>
+                            <div class='colorBox white'></div>
+                            <div class='colorBox babyPink'></div>
+                            <div class='colorBox gray'></div>
+
+                            <!-- 장바구니 추가 버튼 -->
+                            <button class='plusButton'><i class='xi-plus-square-o xi-3x'></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 장바구니 목록 -->
+                <div class='myCartListBox'>
+                    <!-- 장바구니 목록 하나 -->
+                    <ol class='myCartList'>
+                        <li class='myProduct'>
+                            <p class='product productNum'>1</p>
+                            <p class='product productName'>가니 세면타월</p>
+                            <p class='product productWeight'>170g</p>
+                            <p class='product productType'>세트</p>
+                            <p class='product productTypeNum'>2개</p>
+                            <div class='product productColor'></div>
+                            <p class='product totalPriceNum'>18,000원</p>
+
+                            <button class='deleteButton'><i class='xi-close-square-o xi-2x'></i></button>
+                        </li>
+                    </ol>
+
+                    <!-- 총 금액 -->
+                    <div class='myCartTotalPriceBox'>
+                        <p class='myCartTotalPriceText'>총 금액</p>
+                        <p class='myCartTotalPrice'>18,000원</p>
+                    </div>
+                </div>
+            </footer>
+        </div>    
+    </body>
+</html>

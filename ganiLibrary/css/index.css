@@ -1,0 +1,42 @@
+.footerButton {
+    width: 100px;
+}
+.footerButtonBox {
+    width: 250px;
+
+    margin: auto;
+}
+.bookInfoCommon {
+    display: none;
+}
+
+.pageTitle {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 450px;
+}
+
+#loginButton {
+    margin-right: 15px;
+    margin-left: 20px;
+}
+#logoutButton {
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.searchTypeDropDown {
+    display: inline-block;
+    width: 100px;
+}
+.searchText {
+    display: inline-block;
+    width: 200px;
+}
+
+.searchModalBox {
+    width: 1000px;
+
+    margin-left: -250px;
+}

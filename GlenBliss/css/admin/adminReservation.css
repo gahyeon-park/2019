@@ -1,0 +1,32 @@
+
+table{
+    width: 100%; margin-top: 70px;
+    border-collapse: collapse;
+}
+
+tr{ height: 50px; text-align: center; }
+
+tr:first-child { background-color: #a19385; }
+tr:first-child>td{ color: #fff; }
+
+tr>td{ text-align: center; border: 1px solid #bdbdbd;}
+
+.id{ width: 60px; margin: auto; text-align: center; }
+.userid{ width: 120px; margin: auto; text-align: center; }
+.name{ width: 120px; margin: auto; text-align: center; }
+.sex{ width: 80px; margin: auto; text-align: center; }
+.birth{ width: 170px; margin: auto; text-align: center; }
+.nick{ width: 140px; margin: auto; text-align: center; }
+.phone{ width: 150px; margin: auto; text-align: center; }
+.addr{ width: 370px; margin: auto; text-align: center; }
+.email{ width: 190px; margin: auto; text-align: center; }
+.update{ width: 100px; margin: auto; text-align: center; }
+.delete{ width: 100px; margin: auto; text-align: center; }
+.res_permit{
+    padding: 10px; color: #fff;
+    background-color: #9e8e79; text-align: center;
+}
+.res_delete{
+    padding: 10px; color: #fff;
+    background-color: #3f3222; text-align: center;
+}

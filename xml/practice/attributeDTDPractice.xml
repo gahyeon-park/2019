@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE memberList SYSTEM "./attributeDTDPractice.dtd">
+
+<memberList>
+	<member grade="regular">
+		<name memberNum="regular0001" idNum="971108">홍길동</name>
+		<phone>011-234-5678</phone>
+		<address location="seo">서울시</address>
+	</member>
+	<member>
+		<name memberNum="associated0001" idNum="951109">강감찬</name>
+		<phone>062-230-6624</phone>
+		<address location="gyeong">부산시</address>
+	</member>
+	<member grade="admin">
+		<name memberNum="admin0001" idNum="123456">이순신</name>
+		<phone>062-230-7963</phone>
+		<address>광주시</address>
+	</member>
+	<bestMember memberNum="admin0001"/>
+	<newMember memberNum="regular0001 associated0001"/>
+</memberList>

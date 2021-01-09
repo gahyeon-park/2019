@@ -1,0 +1,136 @@
+﻿@charset "UTF-8";
+
+*{margin:0px; padding:0px;}
+
+/*회원가입 팝업 박스*/
+section.signUpBox{
+	width:750px;
+	height:455px;
+	background-color:white;
+	position:absolute;
+	top:100px;
+	left:50%;
+	margin-left:-375px;
+	z-index:200;
+	display:none;
+}
+	/*박스 안에 제목 */
+	h2.signUpTitle{
+		text-align:center;
+		font-size:28px;
+		font-weight:lighter;
+		color:#e5bea8;
+		margin-top:13px;
+	}
+	/*경계선을 hr로 주었다.*/
+	hr.signUpPopUp_topBorderLine{
+		background-color:#e5bea8;
+		margin:auto;
+		margin-top:10px;
+		width:420px;
+		height:1.5px;
+		border:0px;
+	}
+	/*기입 공간은 좌우로 나눴고 그중에 좌측 기입박스*/
+	section.inputBaseBox_left{
+		float:left;
+		width:375px;
+		height:300px;
+		//border:1px solid red;
+	}
+		/*그 안에서 form 양식으로 다시 박스를 만들었다.*/
+		form.leftInputBox{
+			width:300px;
+			height:300px;
+			//border:1px solid blue;	
+			margin-top:30px;
+			margin-left:60px;
+		}
+			/*공통된 문단 p의 css 속성값*/
+			p.commonFontValue{
+				font-size:25px;
+				color:#b5b6b8;
+				margin-top:17px;
+			}
+			/*각 좌우 기입박스에 가장 위에 p의 위치를 초기화했다. p 간격을 공통 css로 17띄어놓았었음*/
+			p.paragraphPositionReset{
+				margin-top:0px;
+			}
+			/*input text 박스의 설정값이다.*/
+			input.commonBoxValue{
+				border:0px solid white;
+				outline:0px;
+				font-size:18px;			
+			}
+	/*우측 기입박스*/
+	section.inputBaseBox_right{
+		float:left;
+		width:375px;
+		height:300px;
+		//border:1px solid red;
+		padding-bottom:25px;
+	}
+		/*중앙 수직 경계선을 만들기 위해 div로 감싼후 좌측에만 border 라인값을 줌*/
+		div.centerBorderBar{
+			width:300px;
+			height:240px;
+			border-left:1px solid #b5b6b8;
+		}	
+			/*우측 기입 form형식의 박스*/
+			form.rightInputBox{
+				width:300px;
+				height:240px;
+				margin-top:35px;
+				margin-left:40px;
+			}	
+				/*button 아이콘을 옆으로 나열하기 위해 블럭요소 p 에 display:inline-block을 준 값*/
+				p.inputIdParagraphPositionValue{
+					display:inline-block;
+				}
+				/*중복확인 버튼*/
+				button.buttonValue{
+					width:60px;
+					height:30px;
+					font-size:13px;
+					border:0px;
+					border-radius:3px;
+					background-color:rgba(0,0,0,0.2);
+					cursor:pointer;
+				}
+				/*전화번호 추가 설명 문장*/
+				p.addExplanationFontValue{
+					font-size:11px;
+					color:rgba(0,0,0,0.3);
+				}
+	/*최하단 취소,수락 위에 위치한 경계선 hr 값*/
+	hr.signUpPopUp_boundaryLine{
+		clear:both;
+		background-color:rgba(0,0,0,0.1);
+		width:750px;
+		height:1px;
+		border:0px;		
+	}
+	/*cancel 버튼 */
+	a.signUpPopUp_cancelButton{
+		font-size:12px;		
+		position:absolute;
+		bottom:40px;
+		left:130px;
+		color:#b5b6b8;
+		text-decoration:none;	
+	}
+	/*수락 버튼 */
+	a.signUpPopUp_submitButton{
+		font-size:12px;		
+		position:absolute;
+		bottom:40px;
+		right:130px;
+		color:#b5b6b8;
+		text-decoration:none;
+	}
+		
+		
+		
+	
+	
+	

@@ -1,0 +1,24 @@
+footer {
+    width: 100%;
+    height: 160px;
+    background-color: #9e8e79;
+    margin-top: 100px;
+    position: absolute;
+    bottom: -160px;
+}
+    .footerText, .footerText>a {
+        width: 100%;
+        height: 100px;
+        font-size: 15px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .footerStrong {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 50px;
+
+    }
+    .topButton {
+        display: scroll;
+    }

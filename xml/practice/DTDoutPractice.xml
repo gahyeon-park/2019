@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE monthBestSeller SYSTEM "DTDoutPractice.dtd">
+
+<monthBestSeller>
+	<bestSeller>
+		<type><economy/><nonfiction/></type>
+		<kind>금융, 증권</kind>
+		<title>부자 아빠, 가난한 아빠</title>
+		<author>로버트 기요사키</author>
+		<author>Rovert Kiyosaki</author>
+		<company>황금가지</company>
+		<date year="2002" month="3" day="10"/>
+		<discription>
+			<author>홍길동</author>
+			<author>이순신</author>
+			<company>은뿌리</company>
+		</discription>
+	</bestSeller>
+</monthBestSeller>

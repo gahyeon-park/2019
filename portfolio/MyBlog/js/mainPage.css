@@ -1,0 +1,1100 @@
+@charset "UTF-8";
+* { 
+    margin: 0px; 
+    padding: 0px;
+
+    font-family: 'Titillium Web', 'Teko', 'Do Hyeon',sans-serif;
+    cursor: default;
+} 
+
+/* 스크롤 없애기 */
+body { overflow-x: hidden; overflow-y: hidden; color: #515151; }
+
+.wrap {
+    width: 100%;
+    height: 1000px;
+
+    background-color: #FFECC5;
+}
+    /* 책 */
+    .bookBox {
+        /* 본 사이즈의 1.5배 (1011 * 595) */
+        width: 1516.5px;
+        height: 892.5px;
+
+        background-image: url("../images/myBlog_background2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        top: 25px;
+        left: 230px;
+    }
+
+        .headerBox {
+            display: inline-block;
+            
+            width: 285px;
+            height: 892.5px;
+
+          
+            float: left;
+            clear: both;
+        }
+            /* 메뉴 */
+            .menuBox {     
+                width: 285px;
+                height: 920px;
+            }
+                .menuList {
+                    /* position 부모 설정 */
+                    position: relative;
+                }
+            
+                    /* 북마크 이미지 삽입 */
+                    .bookMarkImg {
+                        /* 본 사이즈의 2배 (71 * 37)*/
+                        width: 142px;
+                        height: 74px;
+
+                        background-image: url("../images/myBlog_bookMark.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        cursor: pointer;
+                        z-index: 100;
+                    }
+
+                    /* 스타일 및 위치 조정 */
+                    .bookMarkImg .commonStyle {
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: #ffffff;
+                        text-align: center;
+                        line-height: 72px;
+
+                        margin-left: 30px;
+
+                        cursor: pointer;
+                    }
+                    .bookMarkImg.setPosition1 {
+                        position: absolute;
+
+                        top: 115px;
+                        left: 88px;
+                    }
+                    .bookMarkImg.setPosition2 {
+                        position: absolute;
+
+                        /* setPosition1 top의 2.5배 */
+                        top: 287.5px;
+                        /*각 요소들과 25px 차이*/
+                        left: 63px;
+                    }
+                    .bookMarkImg.setPosition3 {
+                        position: absolute;
+
+                        /* setPosition1 top의 3.5배 */
+                        top: 402.5px;
+                        /*각 요소들과 25px 차이*/
+                        left: 38px;
+                    }
+                    .bookMarkImg.setPosition4 {
+                        position: absolute;
+
+                        /* setPosition1 top의 4.5배 */
+                        top: 517.5px;
+                        /*각 요소들과 25px 차이*/
+                        left: 13px;
+                    }
+                    .bookMarkImg.setPosition5 {
+                        position: absolute;
+
+                        /* setPosition1 top의 5.5배 */
+                        top: 632.5px;
+                        /*각 요소들과 25px 차이*/
+                        left: -12px;
+                    }
+        
+        /* 현재 메뉴 알림 부분 */
+        .noticeBox {
+            display: inline-block;
+            width: 1231.5px;
+            height: 187px;
+
+        }
+            .nowPage {
+                width: 500px;
+                height: 150px;
+
+                color: #ffffff;
+                font-size: 90px;
+                font-weight: bold;
+                line-height: 165px;
+                text-align: right;
+
+                float: right;
+                clear: both;
+
+                margin-top: 38px;
+                margin-right: 50px;
+            }
+
+        /* 컨텐츠 */
+        .contentsBox {
+            display: inline-block;
+            width: 1231.5px;
+            height: 705.5px;
+
+
+            margin-top: -6px;
+        }
+
+/* HOME 컨텐츠 ----- */
+            /* HOME 컨텐츠 보이기 / 안보이기 */
+            .HOME { display: inline-block; }
+
+                .HOMEBackgroundImg {
+                    /* 본 사이즈의 1.5배 (1011 * 595) */
+                    width: 1516.5px;
+                    height: 892.5px;
+
+                    background-image: url("../images/myBlog_mainBackground.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    
+                    z-index: 0;
+                }
+                    .HOMEContents {
+                        display: inline-block;
+
+                        width: 1231.5px;
+                        height: 705.5px;
+
+                        margin-top: 185px;
+                        margin-left: 285px;
+                    }
+                    /* 내 이름 */
+                    .myNameBox {
+                        width: 800px;
+                        height: 200px;
+
+                        margin-top: 140px;
+                        margin-left: 50px;
+
+                        position: relative;
+
+                        cursor: pointer;
+                    }
+                        /* 밑줄 */
+                        .myNameBoxTransition {
+                            width: 800px;
+                            height: 200px;
+
+                            border-radius: 100px;
+                            color: rgba(255, 255, 255, 0.0);
+                            font-size: 100px;
+                            font-weight: bold;
+                            line-height: 198px;
+                            text-align: center;
+
+                            background-color: rgba(100,100,100,0.0);
+
+                            position: absolute;
+                            top: 0px;
+                            left: -30px;
+
+                            cursor: pointer;
+
+                            /* hover 효과 */
+                            transition-property: all;
+                            transition-duration: 0.5s;
+                            transition-delay: 0.1s;
+                            transition-timing-function: ease;
+                        }
+                        /* 따옴표 이미지 삽입 */
+                        .quotesStartImg {
+                            display: inline-block;
+                            width: 128px;
+                            height: 128px;
+
+                            background-image: url("../images/home/quotes_start.png");
+                        }
+                        .quotesEndImg {
+                            display: inline-block;
+                            width: 128px;
+                            height: 128px;
+
+                            background-image: url("../images/home/quotes_end.png");
+                        }   
+                        .myName {
+                            display: inline-block;
+
+                            color: #504a43;
+                            font-size: 100px;
+
+                            margin-left: 50px;
+                            margin-right: 50px;
+                            margin-top: 30px;
+                        }
+                        .myNameDisc {
+                            display: inline-block;
+
+                            color: #8d8274;
+                            font-size: 30px;
+
+                            margin-left: 30px;
+                        }
+                    
+                    /* 나에 대한 설명 */
+                    .myDiscBox {
+                        display: inline-block;
+
+                        width: 780px;
+                        height: 200px;
+
+                        float: right;
+                        clear: both;
+
+                        margin-top: 80px;
+                    }
+                        .discKind {
+                            display: inline-block;
+
+                            width: 140px;
+                            height: 40px;
+                            
+                            color: #8d8274;
+                            font-size: 30px;
+
+                            margin-left: 50px;
+                        }
+                        .discListBox {
+                            display: inline-block;
+                    
+                            width: 660px;
+                            height: 200px;
+
+                            color: #504a43;
+                            font-size: 30px;
+
+                            margin-left: 200px;
+                        }
+                            .discList {
+                                color: #504a43;
+                                font-size: 30px;
+
+                                transition-property: all;
+                                transition-duration: 0.5s;
+                                transition-delay: 0.1s;
+                                transition-timing-function: ease;
+                            }
+/* ----- HOME 컨텐츠 */
+
+/* ABOUT 컨텐츠 ---- */
+            /* ABOUT 컨텐츠 보이기 / 안보이기 */
+            .ABOUT { display: none; }
+
+                .ABOUTContents {
+                    width: 1231.5px;
+                    height: 705.5px;
+
+                    /* ABOUT 컨텐츠 보이기/ 안보이게 하기 */
+                    display: inline-block;
+                }
+                    /* 나의 역사 리스트 */
+                    .historyListBox {
+                        display: inline-block;
+
+                        width: 800px;
+                        height: 130px;
+
+                        margin-top: 7px;
+                        position: relative;
+                    }      
+                    /* 리스트 위치 조정 */
+                    .historyListBox.setPosition1 {
+                            margin-left: 0px;
+                    }  
+                    .historyListBox.setPosition2 {
+                            margin-left: 150px;
+                    }  
+                    .historyListBox.setPosition3 {
+                            margin-left: 300px;
+                    }  
+                    .historyListBox.setPosition4 {
+                            margin-left: 450px;
+                    }  
+                    .historyListBox.setPosition5 {
+                            margin-left: 600px;
+                    }  
+                        /* 발자국 이미지 삽입 */
+
+                        .footPrintLeftImg {
+                             display: inline-block;
+
+                             /* 본 사이즈의 0.8배 (128*128) */
+                             width: 102.4px;
+                             height: 102.4px;
+
+                             background-image: url("../images/about/footPrint_left_rotate.png");
+                             background-repeat: no-repeat;
+                             background-size: cover;
+
+                             position: absolute;
+                             top: 10px;
+                             left: 10px;
+
+                             opacity: 0;
+                        }
+                        .footPrintRightImg {
+                            display: inline-block;
+
+                            /* 본 사이즈의 0.8배 (128*128) */
+                            width: 102.4px;
+                            height: 102.4px;
+                            
+                            background-image: url("../images/about/footPrint_right_rotate.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+
+                            opacity: 0;
+                        }
+
+                        
+                        /*  구분 선 */
+                        .divisionLine {
+                            display: inline-block;
+
+                            width: 10px;
+                            /* 102.4 */
+                            height: 0px;
+
+                            border-radius: 5px;
+
+                            position: absolute;
+                            top: 10px;
+                            left: 130px;
+                            
+                            background-color: #8d8274;
+                        }
+    
+                        /* 날짜 */
+                        .dateText {
+                            display: inline-block;
+                            width: 500px;
+                            height: 34px;
+                            font-size: 30px;
+
+                            margin-left: 150px;
+                        }
+
+                        /* 날짜에 대한 설명 */
+                        .dateDisc {
+                            display: inline-block;
+                            width: 550px;
+
+                            font-size: 40px;
+
+                            margin-left: 150px;
+                        }
+/* ----- ABOUT 컨텐츠 */
+
+/* ABILITY 컨텐츠 ----- */
+            /* ABILITY 컨텐츠 보이기 / 안보이기 */
+            .ABILITY { display: none; }
+                .abilityContents {
+                    display: inline-block;
+
+                    width: 1100px;
+                    height: 600px;
+
+                    margin-top: 55px; 
+                    margin-left: 50px;          
+                    
+                    border-radius: 20px;
+                    border: 2px solid #504a43;
+                }
+                    .abilityContents .listContents {
+                        display: inline-block;
+
+                        width: 110px;
+                        height: 600px;
+
+                         float: left; 
+
+                        position: relative;
+                    }
+                        .stickCommonStyle {
+                            width: 50px;
+                            border-radius: 15px;
+                        }
+
+                    /* 포토샵 */
+                        /* 가능 퍼센트 */
+                        .photoshopStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent */
+                            margin-top: 227.5px;
+                        }
+                        /* 막대기 */
+                        .photoshopStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - x - 27.5px */
+                            height: 200px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .photoshopImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/photoshopIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* 일러스트 */
+                        /* 가능 퍼센트 */
+                        .illustratorStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 182px;
+                        }
+                        /* 막대기 */
+                        .illustratorStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 245.5px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .illustratorImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/illustratorIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* HTML */
+                        /* 가능 퍼센트 */
+                        .htmlStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 114.75px;
+                        }
+                        /* 막대기 */
+                        .htmlStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 312.75px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .htmlImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/htmlIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* CSS */
+                        /* 가능 퍼센트 */
+                        .cssStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 136.5px;
+                        }
+                        /* 막대기 */
+                        .cssStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 291px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .cssImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/cssIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* JAVASCRIPT */
+                        /* 가능 퍼센트 */
+                        .javascriptStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 68.25px;
+                        }
+                        /* 막대기 */
+                        .javascriptStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 359.25px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .javascriptImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/javascriptIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* C/C++ */
+                        /* 가능 퍼센트 */
+                        .cStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 45.5px;
+                        }
+                        /* 막대기 */
+                        .cStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 382px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .cImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/cIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* C# */
+                        /* 가능 퍼센트 */
+                        .csStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 91px;
+                        }
+                        /* 막대기 */
+                        .csStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 336.5px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .csImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/csIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* JAVA */
+                        /* 가능 퍼센트 */
+                        .javaStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 45.5px;
+                        }
+                        /* 막대기 */
+                        .javaStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 382px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .javaImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/javaIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* 자료구조 */
+                        /* 가능 퍼센트 */
+                        .dataStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 68.25px;
+                        }
+                        /* 막대기 */
+                        .dataStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 359.25px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .dataImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/dataIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+
+                    /* 알고리즘 */
+                        /* 가능 퍼센트 */
+                        .algorithmStickPercent {
+                            display: inline-block;
+
+                            width: 110px;
+                            height: 40px;
+
+                            font-size: 30px;
+                            line-height: 38px;
+                            text-align: center;
+
+                            /* 막대와 퍼센트 위치 조정 */
+                            /* 455px : 100 = x : percent  에서 455px - x 한 값*/
+                            margin-top: 68.25px;
+                        }
+                        /* 막대기 */
+                        .algorithmStick {
+                            /* 퍼센트에 따라 높이 값이 달라짐 */
+                            /* 455px - (가능 퍼센트의 margin-top 값) - 27.5px */
+                            height: 359.25px;
+
+                            margin: auto;
+                            
+                            background-color: #504a43;
+                        }
+                        /* 이미지 */
+                        .algorithmImg {
+                            width: 80px;
+                            height: 80px;
+
+                            background-image: url("../images/ability/algorithmIcon.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            position: absolute;
+                            top: 495px;
+                            left: 15px;
+                        }
+/* ----- ABILITY 컨텐츠 */
+
+/* PORTFOLIO 컨텐츠 ----- */
+            /* PORTFOLIO 컨텐츠 보이기 / 안보이기 */
+            .PORTFOLIO { display: none; }
+                .portfolioContents {
+                    display: inline-block;
+                    /* 1231.5 */
+                    /* 615.75 */
+                    width: 615.75px;
+                    height: 705.5px;
+
+                    float: left;
+                    overflow: scroll;
+                    overflow-x: hidden;
+                }
+                    /* 각각의 포트폴리오 */
+                    .portfolioBox {
+                        display: inline-block;
+                        /* 307.875 * 352.75 0.9배 */
+                        width: 277.0875px;
+                        height: 317.475px;
+
+                        float: left;
+                    }
+                        /* 포스트잇 이미지 삽입 */
+                        .portfolioImg {
+                            /* 280 * 280 0.9배 */
+                            width: 252px;
+                            height: 252px;
+
+                            background-image: url("../images/portfolio/postitImg.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            margin-top: 30px;
+                            margin-left: 10px;
+
+                            /*position: relative;*/
+                        }
+                        /*
+                            .portfolioClick {
+                                display: inline-block;
+                                
+                                width: 200px;
+                                height: 140px;
+
+                                border-radius: 100px;
+                                background-color: rgba(100,100,100,0.5);
+                                position: absolute;
+                                top : 50%;
+                                left: 50%;
+                                
+                                margin-top: -70px;
+                                margin-left: -100px;
+                            }
+                            */
+                            /* 각 포트폴리오 제목 */
+                            .portfolioTitle {
+                                display: inline-block;
+
+                                /* 307.875 * 150 0.9배 */
+                                width: 277.0875px;
+                                height: 135px;
+
+                                font-size: 40px;
+                                line-height: 133px;
+                                text-align: center;
+
+                                margin-left: -5px;
+
+                                cursor: pointer;
+                            }
+                            /* 각 포트폴리오 간단 설명 */
+                            .portfolioDisc {
+                                display: inline-block;
+
+                                /* 307.875 * 202.75 0.9배 */
+                                width: 277.0875px;
+                                height: 182.475px;
+
+                                font-size: 30px;
+                                line-height: 30px;
+                                text-align: center;
+
+                                margin-left: -5px;
+
+                            cursor: pointer;
+                            }
+
+                .portfolioPreview {
+                    display: inline-block;
+                    /* 1231.5 */
+                    /* 615.75 */
+                    width: 615.75px;
+                    height: 705.5px;
+
+                    position: relative;
+                }
+                    .previewDisc {
+                        display: inline-block;
+
+                        /* 이미지는 모두 600 * 600 고정 */
+                        width: 615.75px;
+                        height: 352.75px;
+                        
+                        font-size: 30px;
+                        line-height: 50px;
+                        text-align: center;
+
+                        margin-top : 20px;
+                    }
+                        .discTitle {
+                            font-size: 40px;
+                        }
+                    .previewImg {
+                        display: inline-block;
+
+                        /* 이미지는 모두 600 * 600 고정 */
+                        width: 352.75px;
+                        height: 352.75px;
+                        background-size: cover;
+                        
+                        margin-left : 131.5px;
+                        margin-top: -25px;
+                        /* position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-top: -300px;
+                        margin-left: -300px; */
+                    }
+/* ----- PORTFOLIO 컨텐츠 */
+
+/* CONTACT 컨텐츠 ----- */
+            /* CONTACT 컨텐츠 보이기 / 안보이기 */
+            .CONTACT { display: none; }
+
+                .phoneBox {
+                    display : inline-block;
+                    width: 1231.5px;
+                    height: 705.5px;
+
+                }
+                    /* 핸드폰 이미지 */
+                    .phoneImg {
+                        /* 원본 크기의 1.3배 (331 * 519) */
+                        width: 430.3px;
+                        height: 674.7px;
+
+                        background-image : url("../images/contact/phoneImg.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        margin: auto;
+                        margin-top: 15px;
+                    }
+                    /* 처음 화면 */
+                        /* 처음 화면 보이기 /  안보이기 */
+                        .phoneView { 
+                            display: inline-block;
+                            width: 385px;
+                            height: 500px;
+
+                            margin-top : 80px;
+                            margin-left: 25px;
+                            
+                            position: relative;
+                        }
+
+                            /* HOVER ME 문구 */
+                            .hoverMeText {
+                                width: 385px;
+                                height: 100px;
+
+                                position: absolute;
+                                top: 200px;
+                            }
+                                .hoverMe {
+                                    display: inline-block;
+                                    width: 385px;
+                                    height: 50px;
+
+                                    font-size: 50px;
+                                    font-weight: bold;
+                                    line-height: 48px;
+                                    text-align: center;
+                                }
+                                .arrowIcon {
+                                    display: inline-block;
+                                    width: 128.3px;
+                                    height: 50px;
+
+                                    color: #2a3444;
+                                    font-weight: bold;
+                                    text-align: center;
+
+                                    margin-top: 20px;
+
+                                    float: left;
+                                }
+                                    .colorGreen { color: #3a814c; }
+                                    .colorYellow { color: #aa9250; }
+                                    .colorBlue { color: #476b8f; }
+                                    #arrowIcon1 { margin-left: 10px; }
+                                    #arrowIcon2 { margin-left: -10px; }
+                                    #arrowIcon3 { margin-left: -15px; }
+                                
+                            .myCommonStyle {
+                                width: 385px;
+                                height: 100px;
+
+                                font-size: 50px;
+                                font-weight: bold;
+
+                                position: absolute;
+                                
+                                margin-top: 100px;
+                                margin-left: 40px;
+                            }
+                            .fixStyle { margin-top: 80px; }
+                            /* 연락 이미지 버튼 */
+                            .contactButton {
+                                display: inline-block;
+                                width: 400px;
+                                height: 128px;
+
+                                margin-top: 380px;
+                                margin-left: 15px;
+                            }
+                                /* 전화 */
+                                .callImg {
+                                    /* 원본 크기의 0.8배 (128 * 128) */
+                                    width: 102.4px;
+                                    height: 102.4px;
+
+                                    background-image : url("../images/contact/callIcon.png");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                                /* 카카오톡 */
+                                .kakaoImg {
+                                    /* 원본 크기의 0.8배 (128 * 128) */
+                                    width: 102.4px;
+                                    height: 102.4px;
+
+                                    background-image : url("../images/contact/kakaoIcon.png");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                                /* 메일 */
+                                .mailImg {
+                                    /* 원본 크기의 0.8배 (128 * 128) */
+                                    width: 102.4px;
+                                    height: 102.4px;
+
+                                    background-image : url("../images/contact/mailIcon.png");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                                .commonButton { margin-left: 10px; }
+/* ----- CONTACT 컨텐츠 */

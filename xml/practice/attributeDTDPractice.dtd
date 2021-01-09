@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT memberList (member*, bestMember, newMember)>
+	<!ELEMENT member (name, phone, address)>
+	<!ATTLIST member grade CDATA "associated">
+		<!ELEMENT name (#PCDATA)>
+		<!ATTLIST memberNum ID #REQUIRED
+			  idNum NMTOKENS #REQUIRED>
+		<!ELEMENT phone (#PCDATA)>
+		<!ELEMENT address (#PCDATA)>
+		<!ATTLIST address location (jeon|gyeong|gang|gyang|seo) #IMPLIED>
+	<!ELEMENT bestMember EMPTY>
+	<!ATTLIST bestMember memberNum IDREF #REQUIRED>
+	<!ELEMENT newMember EMPTY>
+	<!ATTLIST newMember memberNum IDREFS #REQUIRED>

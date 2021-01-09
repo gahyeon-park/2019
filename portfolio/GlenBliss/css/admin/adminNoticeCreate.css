@@ -1,0 +1,85 @@
+html, body {
+  width: 100%; }
+
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.clear {
+  clear: both;
+  position: inherit; }
+  
+.contents_head {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+
+.contents_head > h1 {
+  font-size: 35px; }
+
+.contents_head>button {
+  padding: 3px 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.contents_head>button:first-child{ background-color: #5a6b47; }
+
+.contents_body {
+  width: 1700px;
+  margin-top: 5px;
+  position: relative; }
+
+
+.contents_foot {
+  width: 1700px;
+  height: 70px;
+  margin-top: 200px; }
+
+.horizon2 {
+  width: 1700px;
+  height: 1px;
+  background-color: #555;
+  margin: 10px 0; }
+
+.contents_foot > button {
+  width: 90px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #5a6b47; }
+
+#not_prev {
+  float: left;
+  margin-left: 20px; }
+
+#not_next {
+  float: right;
+  margin-right: 20px; }
+
+.not_create_btn{
+  width: 400px; height: 30px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #5a6b47;
+  float: right;
+}
+/*# sourceMappingURL=notice_answer.css.map */
+.contents_body p{ font-size: 22px; }
+.contents>form>input{
+  width: 500px; height: 30px;
+  font-size: 22px; text-indent: 10px;
+  border: 1px solid black;
+  border-radius: 6px; margin-left: 10px;
+}
+.contents_body textarea{
+  margin-top: 80px;
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 6px; 
+}

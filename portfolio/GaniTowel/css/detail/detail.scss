@@ -1,0 +1,212 @@
+$productImgWidth: 400px;
+$productImgHeight: 400px;
+
+$productDetailWidth: 600px;
+$productDetailHeight: 700px;
+
+$productTitleHeight: 50px;
+
+/* Set Font Style */
+@mixin fontStyle($size, $bold, $color, $align, $line) {
+    font-size: $size;
+    font-weight: $bold;
+    color: $color;
+    text-align: $align;
+    line-height: $line;
+}
+
+.productDetailSection {
+    width: 1150px;
+    height: $productDetailHeight;
+
+    margin: auto;
+
+    /* Product Img */
+    .productImgBox {
+        display: inline-block;
+
+        width: $productImgWidth + 100;
+        height: $productImgHeight + 160;
+
+        float: left;
+
+        .productImg {
+            width: $productImgWidth;
+            height: $productImgHeight;
+
+            margin-top: 100px;
+        }
+        .productTotalImgButton {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+
+            background-color: #8F9FAF;
+            color: #ffffff;
+            text-align: center;
+            line-height: 38px;
+            font-size: 20px;
+            border-radius: 5px;
+
+            float: left;
+
+            margin-left: 30px;
+            margin-top: 10px;
+
+            transition: all 0.3s 0s ease;
+        }
+        .productTotalImgButton:hover {
+            border: 1px solid #8F9FAF;
+            background-color: #ffffff;
+            color: #8F9FAF;
+        }
+        .productDetailImgButton {
+            display: inline-block;
+
+            width: 120px;
+            height: 40px;
+
+            background-color: #8F9FAF;
+            color: #ffffff;
+            text-align: center;
+            line-height: 38px;
+            font-size: 20px;
+            border-radius: 5px;
+
+            float: left;
+
+            margin-left: 70px;
+            margin-top: 10px;
+
+            transition: all 0.3s 0s ease;
+
+        }
+        .productDetailImgButton:hover {
+            border: 1px solid #8F9FAF;
+            background-color: #ffffff;
+            color: #8F9FAF;
+        }
+    }
+
+    /* Product Title And Input */
+    .productDetail {
+        display: inline-block;
+
+        width: $productDetailWidth;
+        height: $productDetailHeight;
+
+        float: left;
+
+        margin-top: 100px;
+
+        .productTitle {
+            width: $productDetailWidth;
+            height: $productTitleHeight;
+
+            @include fontStyle(35px, bold, #494949, left, $productTitleHeight - 2);
+        }
+
+        /* Product Input */
+        .productInputBox {
+            display: inline-block;
+
+            width: $productDetailWidth;
+            height: 70px;
+
+            @include fontStyle(20px, bold, #494949, left, 68px);
+
+            float: left;
+            margin-top: 20px;
+
+            /* Select Color Input */
+            .productColor {
+                display: inline-block;
+
+                width: 48px;
+                height: 48px;
+
+                border: 1px solid rgb(199, 203, 207);
+                border-radius: 5px;
+    
+                float: right;
+                margin-right: 50px;
+                margin-top: 10px;
+
+                cursor: pointer;
+            }
+            .colorSelected {
+                border: 3px solid rgb(240, 103, 85);
+            }
+            /* Product Width Input */
+            .selectInput {
+                display: inline-block;
+
+                width: 300px;
+                height: 50px;
+
+                float: right;
+                margin-right: 50px;
+            }
+
+            /* Product Num Input */
+            .radioInputBox {
+                display: inline-block;
+                width: 250px;
+                height: 70px;
+
+                float: right;
+                
+                .radioInput {
+                    display: block;
+                    width: 250px;
+                    height: 35px;
+                }
+            }
+            .numberInput {
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+
+                text-align: center;
+                font-size: 20px;
+
+                border: 1px solid rgb(199, 203, 207);
+                border-radius: 5px;
+
+                float: right;
+                margin-top: 10px;
+            }
+
+        }
+        .productPrice {
+            display: inline-block;
+
+            width: $productDetailWidth;
+            height: 60px;
+
+            @include fontStyle(35px, bold, #8F9FAF, right, 58px);
+            margin-top: 20px;
+
+            border-top: 1px solid #8F9FAF;
+        }
+        .myCartButton {
+            display: inline-block;
+
+            width: 150px;
+            height: 50px;
+
+            background-color: #8F9FAF;
+            border-radius: 5px;
+            @include fontStyle(20px, bold, #ffffff, center, 48px);
+            float: right;
+        }
+        
+    }
+
+}
+.modalDetailImg {
+    display: inline-block;
+    width: 465px;
+    height: 465px;
+    text-align: center;
+}

@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+html, body{ width: 100%; }
+button{ cursor: pointer; }
+a{ text-decoration: none; color: inherit; }
+.clear{ clear: both; position: inherit; }
+
+.reservation_nav>img{ width: 100%; height: 400px; }
+.navBox{
+    width: 100%; height: 70px;
+    border-bottom: 1px solid #9f9890;
+    position: relative; margin-top: 40px;
+}
+.navBox>ul{
+    width: 350px; height: 70px;
+    position: absolute;
+    top:0; left: 50px;
+}
+.navBox>ul>li{
+    width: 150px; height: 50px;
+    display: inline-block; font-size: 30px;
+    font-weight: bold; text-align: center;
+}
+.navBox>ul>li:first-child{ border-bottom: 3px solid #3f3222; }
+
+.calender{
+    width: 1500px; height: 550px;
+    margin: auto; margin-top: 50px;
+    border: 1px solid #9f9890;
+}
+.calender_date{
+    width: 1400px; height: 50px;
+    margin: auto; text-align: center;
+    margin-top: 20px;
+}
+.calender_date>div{
+    width: 300px; height: 50px; margin: auto;
+}
+.calender_date>div>h3{
+    width: 200px; height: 60px;
+    font-size: 30px; float: left;
+    line-height: 58px;
+    
+    font-weight: 600;
+}
+.calender_date>div>div{
+    width: 40px; height: 40px;
+    float: left; margin-top: 10px;
+}
+#prev{
+    box-shadow: -1px 1px 2px #9f9890;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#next{
+    box-shadow: 1px 1px 2px #9f9890;
+    cursor: pointer;
+}
+.calender_date>div>div>a{ font-size: 40px; line-height: 40px; }
+
+.calender_table{
+    width: 840px; height: 360px;
+    border-collapse: collapse;
+    margin: 80px 0 0 40px; float: left;
+}
+.calender_table tr>td{
+    width: 120px; height: 60px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.calender_table tr:first-child{ border-bottom: 1px solid #aaa;}
+.calender_table tr:first-child>td{ cursor: default; }
+.calender_table tr>td:first-child{ color: #d00;}
+.calender_table tr>td:last-child{ color: #00d;}
+#publicHoliday { color: #d00}
+.calenderTD {
+    transition: all 0.3s 0s ease;
+}
+.calenderTD:hover {
+    background-color: #a19385;
+    color: #f8f8f8;
+}
+.calenderTD:hover #publicHoliday{
+    background-color: #a19385;
+    color: #f8f8f8;
+}
+.selectedDate {
+    background-color: #a0a38e;
+}
+
+.calender_guide{
+    width: 440px; height: 360px;
+    margin: 80px 0 0 40px;
+    float: left;
+}
+.calender_guide>h1{
+    font-size: 28px; color: #5a6b47;
+}
+.calender_guide>p{
+    margin-top: 20px; font-size: 22px;
+}
+.click_res{
+    width: 300px; height: 40px;
+    margin: 50px 0 0 170px; 
+}
+.click_res>p{
+    font-size: 22px; float: left;
+}
+.click_res>button{
+    margin-left: 20px;
+    background-color: #3f3222;
+    padding: 5px 20px;
+}
+.click_res>button>a{
+    color: #fff; font-size: 22px;
+}
+
+.select_room{
+    width: 1400px; margin: auto;
+    margin-top: 50px;
+}
+.select_head{
+    width: 100%; height: 60px;
+    position: relative;
+}
+.select_head>h1{ font-size: 28px; }
+.select_head>ul{ float: right; margin-top: -20px; }
+.select_head>ul>li:first-child{ font-weight: bold; margin: 0; }
+.select_head>ul>li{ float: left; margin-left: 20px; }
+.horizon1{
+    width: 100%; height: 1px;
+    background-color: #9f9890;
+    margin-top: 10px;
+}
+
+.select_table{
+    width: 1400px; height: 1500px;
+    border-collapse: collapse;
+    margin-top: -10px;
+}
+.select_table tr{ height: 300px; border-bottom: 1px solid #9f9890; }
+.select_table tr>td:nth-child(1){ width: 80px; height: 150px; }
+.select_table tr>td:nth-child(2){ width: 260px; height: 150px; }
+.select_table tr>td:nth-child(3){ width: 260px; height: 150px; }
+.select_table tr>td:nth-child(4){ width: 144px; height: 150px; }
+.select_table tr>td:nth-child(5){ width: 144px; height: 150px; }
+.select_table tr>td:nth-child(6){ width: 144px; height: 150px; }
+.select_table tr>td:nth-child(7){ width: 144px; height: 150px; }
+.select_table tr>td:nth-child(8){ width: 144px; height: 150px; }
+
+.select_table tr>td>input:first-child{
+    width: 20px; height: 20px;
+    background-color: transparent;
+    border: 1px solid #9f9890;
+    margin-left: 25px;
+}
+.select_table tr>td>img{
+    width: 250px; height: 130px;
+    margin: 10px 0 0 10px;
+}
+.select_table tr>td>h4{
+    font-size: 20px; text-indent: 5px;
+    font-weight: 500;
+}
+.select_table tr>td>h5{
+    font-size: 15px; text-indent: 5px;
+    color: #aaa; font-weight: 500;
+}
+.introduce{
+    font-size: 15px; text-indent: 5px;
+    margin-top: 10px;
+}
+.introduce>span{
+    font-size: 14px; text-indent: 10px;
+}
+.period{
+    text-align: center; font-size: 18px;
+}
+.select_table tr>td>select{
+    width: 60px; height: 30px;
+    margin: 20px 0 0 48px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.adult{
+    text-align: center; font-size: 18px;
+}
+.select_table tr>td>input:nth-child(2){
+    width: 80px; height: 30px;
+    margin: 20px 0 0 37px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    text-align: center;
+}
+.child{
+    text-align: center; font-size: 18px;
+}
+.baby{
+    text-align: center; font-size: 18px;
+}
+.select_table tr>td>h3{ font-size: 20px; text-align: center; }
+
+.reservationButtonFixed {
+    width: 50px;
+    height: 200px;
+    background-color: #5a6b47;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    margin-right: 50px;
+    margin-top: -100px;
+    z-index: 500;
+    text-align: center;
+
+    opacity: 0.7;
+    transition: all 0.2s 0s ease;
+}
+.reservationButtonFixed:hover { opacity: 1;}
+.reservationButton {
+    font-size: 30px;
+    line-height: 48px;
+
+    color: #f8f8f8;
+}
+.noRoomText {
+    width: 100%;
+    height: 200px;
+    line-height: 198px; 
+    font-size: 30px;
+    text-align: center;
+}

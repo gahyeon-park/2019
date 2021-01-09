@@ -1,0 +1,384 @@
+/* 서브 메뉴 색상 */
+.subTitleColor {
+    color: #5ea573;
+}
+
+/* 현재 메뉴 색상 */
+.nowTitleColor {
+    color: #5ea573;
+}
+/* 소주 종류 메뉴 */
+.fruitMenu {
+    width: 1250px;
+    height: 120px;
+
+    float: right;
+    margin-top: 45px;
+    transform: rotate3d(1, 2.0, 3.0, -12deg);
+}
+    /* 소주 종류 메뉴 */
+    .menuCommonStyle {
+        display: inline-block;
+        width: 250px;
+        height: 60px;
+
+        color: #131641;
+        font-size: 31px;
+        text-align: center;
+        line-height: 73px;
+
+        text-shadow: -1.5px -1.5px 0px #050610;
+        float: right;
+        cursor: pointer;
+    }
+
+/* 소주 뒷면 컨셉 박스 */
+.sojuDiscBox {
+    width: 800px;
+    height: 500px;
+
+    transform: rotate3d(1, 2.0, 3.0, -12deg);
+    background-color: #c7cad1;
+    box-shadow: -20px -20px 0px 0px #131641;
+
+    position: absolute;
+    top: 240px;
+}
+    /* 소주 이름 타이틀 */
+    .sojuDiscTitle {
+        display: inline-block;
+
+        width: 200px;
+        height: 100px;
+
+        color: #131641;
+        font-size: 45px;
+        text-align: right;
+        line-height: 60px;
+
+        margin-top: 20px;
+        margin-right: 30px;
+        float: right;
+    }
+
+    /* 소주 로고 */
+    .sojuLogo {
+        display: inline-block;
+
+        width: 125px;
+        height: 125px;
+
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    /* 자세한 설명 박스 */
+    .sojuDetailDisc {
+        display: inline-block;
+
+        width: 790px;
+        height: 350px;
+
+        border: 1px solid #000000;
+
+        margin-left: 4px;
+        margin-top: 3px;
+    }   
+        /* 자세한 설명 공통 스타일 */
+        .sojuDetailStyle {
+            display: inline-block;
+            width: 500px;
+            height: 55px;
+
+            color: #000000;
+            font-size: 35px;
+            line-height: 55px;
+
+            margin-left: 5px;
+        }
+            /* 추가적인 위치 이동 */
+            .sojuDetailStyle.positionFix {
+                margin-left: 165px;
+            }
+            /* 부가적 설명 스타일 */
+            .subDiscStyle {
+                display: inline-block;
+                font-size: 20px;
+                color: #464646e9;
+
+                margin-left: -270px;
+            }
+        
+        /* 소주 특징 */
+        .sojuFeatureBox {
+            width: 610px;
+            height: 200px;
+            
+            margin-left: 167.5px;
+            position: relative;
+        }
+            .sojuFeatureStyle {
+                width: 610px;
+                height: 200px;
+
+                line-height: 40px;
+                color: #5ea573;
+                font-size: 30px;
+
+                position: absolute;
+                top: 35px;
+
+            }
+        
+        /* 경고 문구 */
+        .cautionText {
+            color: #e00000;
+            font-size: 30px;
+            line-height: 50px;
+            float: right;
+            margin-right: 10px;
+        }
+            .xi-ban.fixPosition {
+                margin-left: 5px;
+            }
+        /* 바코드 이미지 */
+        .barcodeImg {
+            /* 156 x 290*/
+            display: inline-block;
+            width: 156px;
+            height: 290px;
+
+            margin-left: 3px;
+            position: absolute;
+            top: 200px;
+        }
+    
+    /* 부가적인 소주 메뉴 */
+
+    .subSojuMenuList {
+        display: inline-block;
+
+        width: 200px;
+        height: 240px;
+        
+        position: absolute;
+        right: 20px;
+        bottom: 0px;
+    }
+    .subSojuMenuStyle {
+        display: inline-block;
+    
+        width: 200px;
+        height: 80px;
+        
+        text-shadow: -1.5px -1.5px 0px #050610;
+
+        color: #131641;
+        font-size: 35px;
+        text-align: right;
+        line-height: 70px;
+
+        float: right;
+        cursor: pointer;
+    }
+
+    /* 서브 메뉴 팝업창 */
+    .subMenuPopUpWrap {
+        display: none;
+        width: 1920px;
+        height: 940px;
+        
+        position: absolute;
+        top: -240px;
+        left: -715px;
+
+        background-color: rgba(0,0,0, 0.5);
+
+        position: relative;
+    }
+        /* 팝업 박스 */
+        .popUpBox {
+            display: inline-block;
+            
+            width: 1000px;
+            height: 500px;
+
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -250px;
+            margin-left: -500px;
+        }
+        /* 컨텐츠가 없을 때 */
+        .noContents { display: none; }
+        .noContentsText {
+            display: inline-block;
+            width: 500px;
+            height: 60px;
+
+            font-size: 50px;
+            text-align: center;
+            line-height: 58px;
+            color: #ffffff;
+
+            margin-top: 220px;
+            margin-left: 250px;
+        }
+        /* 실물 사진 팝업 컨텐츠 */
+        .realImageContents {
+            display: none;
+        }
+            .realImage {
+                /* 500 800 */
+                display: inline-block;
+
+                width: 265.625px;
+                height: 425px;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -212.5px;
+                margin-left: -132.8125px;
+            }
+
+        /* 테레비 광고 팝업 컨텐츠 */
+        .tvCFContents {
+            display: none;
+        }
+            /* 광고 동영상 */
+            .tvCFStyle {
+                width: 640px;
+                height: 360px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -300px;
+                margin-left: -320px;
+            }
+            
+            /* 광고 리스트 */
+            .CFListBox {
+                display: inline-block;
+                
+                width: 1380px;
+                height: 200px;
+
+                position: absolute;
+                top: 350px;
+                left: 50%;
+                margin-left: -690px;
+
+                float: left;
+            }
+            .CFList {
+                display: inline-block;
+
+            }
+                /* 왼쪽 버튼 */
+                .CFListBox .leftButton {
+                    color: #ffffff;
+                    margin-top: 45px;
+                    float: left;
+                    cursor: pointer;
+                }
+                .CFListImg {
+                    /* 145 80 */
+                    display: inline-block;
+                    width: 290px;
+                    height: 160px;
+
+                    margin-left: 10px;
+
+                    cursor: pointer;
+                }
+                .CFTitle {
+                    color: #000000;
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .CFSelected { color: #ffffff; }
+                /* 오른쪽 버튼 */
+                .CFListBox .rightButton {
+                    display: inline-block;
+                    color: #ffffff;
+                    margin-top: 45px;
+
+                    cursor: pointer;
+                    float: right;
+                }
+
+
+        /* 광고포스타 컨텐츠 */
+        .posterContents {
+            display: none;            
+        }
+            .posterImg {
+                display: inline-block;
+                width: 250px;
+                height: 340px;
+
+                float: left;
+            }
+            
+
+            /* 광고 리스트 */
+            .posterListBox {
+                display: inline-block;
+                
+                width: 1365px;
+                height: 340px;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -170px;
+                margin-left: -682.5px;
+
+                float: left;
+            }
+            .posterList {
+                display: inline-block;
+
+                width: 300px;
+                height: 370px;
+            }
+                /* 왼쪽 버튼 */
+                .posterListBox .leftButton {
+                    color: #ffffff;
+                    margin-top: 120px;
+                    float: left;
+                    cursor: pointer;
+                }
+                .posterListImg {
+                    /* 145 80 */
+                    display: inline-block;
+                    width: 250px;
+                    height: 340px;
+
+                    margin-left: 25px;
+                    cursor: pointer;
+                }
+                .posterTitle {
+                    color: #ffffff;
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .posterSelected { color: #ffffff; }
+                /* 오른쪽 버튼 */
+                .posterListBox .rightButton {
+                    display: inline-block;
+                    color: #ffffff;
+                    margin-top: 120px;
+
+                    cursor: pointer;
+                    float: right;
+                }
+
+
+
+    /* 메뉴 선택 시 색상 */
+    .menuSelected {
+        color: #ffffff;
+    }

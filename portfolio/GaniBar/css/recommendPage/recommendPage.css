@@ -1,0 +1,263 @@
+.subTitleColor {
+    color: #ffffff;
+}
+.nowTitleColor {
+    color: #dddddd;
+}
+
+/* 설문지 폼 */
+.surveyFormImg {
+    /* 632 800 */
+    width: 1004px;
+    height: 790px;
+
+    background-image: url("../../images/recommendPage/surveyImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: -30px -30px 0px 0px #131641;
+    margin-top: 120px;
+    margin-left: 30px;
+    transform: rotate3d(1, 2.0, 3.0, -12deg);
+
+    position: relative;
+}
+
+    /* 설문지 내용 */
+    #surveyContents { display: block; }
+    .surveyContents {
+        width: 900px;
+        height: 700px;
+
+        position: absolute;
+        top: 160px;
+        left: 50px;
+    }
+        /* 설문지 항목 텍스트 */
+        .surveyArticleText {
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+
+            font-size: 40px;
+            text-align: center;
+            line-height: 52px;
+            font-weight: bold;
+        }
+        /* 종류 버튼 */
+        .buttonBox { display: inline-block; }
+        .kindButton {
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+
+            font-size: 40px;
+            text-align: center;
+            line-height: 52px;
+
+            border-radius: 5px;
+
+            margin-left: 30px;
+
+            cursor: pointer;
+        }
+        /* 기본 버튼 */
+        .kindOriginal {
+            background-color: #147a45;
+        }
+        .kindOriginal:hover {
+            color: #ffffff;
+        }
+        /* 과일 버튼 */
+        .kindFruit {
+            background-color: #f05052;
+        }
+        .kindFruit:hover {
+            color: #ffffff;
+        }
+
+        /* 소주종류 선택전 설문지 */
+        .subSurveyContents {
+            width: 900px;
+            height: 500px;
+
+            margin-top: 40px;
+        }
+            /* 소주 종류 선택 전 설문지 */
+            #defaultSubSurvey { display: block; }
+                .defaultText {
+                    font-size: 50px;
+                    text-align: center;
+                    line-height: 270px;
+                    color: #aaaaaa;
+                }
+            
+            /* 기본 소주 종류 선택 후 설문지 */
+            #kindOriginalSubSurvey { display: none; }
+            #kindFruitSubSurvey { display: none; }
+                /* 하위 설문항목 박스 */
+                .subSurveyContentBox {
+                    margin-top: 30px;
+                }
+                /* 범위 박스 */
+                .rangeBox {
+                    display: inline-block;
+                    width: 500px;
+                    height: 50px;
+
+                    margin-left: 50px;
+                    position: relative;
+                }
+                    /* 범위 바 */
+                    .rangeBar {
+                        width: 500px;
+                        height: 25px;
+
+                        margin-bottom: -10px;
+                    }
+                    /* 범위 바 텍스트들 */
+                    .rangeText1 {
+                        display: inline-block;
+                        width: 60px;
+                        height: 25px;
+
+                        font-size: 25px;
+                        text-align: center;
+                        line-height: 25px;
+                        
+                        position: absolute;
+                        left: 0%;
+                        top: 30px;
+                        margin-left: -30px;
+                    }
+                    .rangeText2 {
+                        display: inline-block;
+                        width: 60px;
+                        height: 25px;
+
+                        font-size: 25px;
+                        text-align: center;
+                        line-height: 25px;
+                        
+                        position: absolute;
+                        left: 50%;
+                        top: 30px;
+                        margin-left: -30px;
+                    }
+                    .rangeText3 {
+                        display: inline-block;
+                        width: 60px;
+                        height: 25px;
+
+                        font-size: 25px;
+                        text-align: center;
+                        line-height: 25px;
+                        
+                        position: absolute;
+                        left: 100%;
+                        top: 30px;
+                        margin-left: -30px;
+                    }
+                .submitOriginalButton {
+                    width: 200px;
+                    height: 60px;
+
+                    font-size: 50px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 52px;
+
+                    background-color: #ffffff;
+                    color: #147a45;
+
+                    margin-top: 50px;
+                    float: right;
+
+                    cursor: pointer;
+                }
+                .submitOriginalButton:hover {
+                    font-size: 55px;
+                }
+                .submitFruitButton {
+                    width: 200px;
+                    height: 50px;
+
+                    font-size: 50px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 52px;
+
+                    background-color: #ffffff;
+                    color: #f05052;
+
+                    margin-top: 50px;
+                    float: right;
+
+                    cursor: pointer;
+                }
+                .submitFruitButton:hover {
+                    font-size: 55px;
+                }
+
+    #recommendContentsBox {display: none; }
+
+    /* 소주 추천 컨텐츠 */
+    #recommendOriginalContents { display: none; }
+    #recommendFruitContents {display: none; }
+    .recommendContentsBox {
+        width: 900px;
+        height: 700px;
+
+        position: absolute;
+        top: 160px;
+        left: 50px;
+    }
+        .recommendTitle {
+            font-size: 33px;
+            text-align: center;
+
+            margin-top: 30px;
+        }
+            #recommendOriginalContents strong { font-weight: bold; color: #147a45; }
+            #recommendFruitContents strong { font-weight: bold; color: #f05052; }
+            
+            #noRecommendContents { display: none; }
+            #recommendContents { display: none; }
+
+            /* 추천 소주가 없을 때 */
+            .noRecommendContentsText {
+                font-size: 40px;
+                text-align: center;
+                color: #aaaaaa;
+                margin-top: 100px;
+            }
+
+            /* 추천 소주가 있을 때 */
+            .sojuLogoImg {
+                width: 160px;
+                height: 160px;
+
+                margin-left: 380px;
+                margin-top: 30px;
+            }
+            .recommendContentsText {
+                color: #777777;
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+            }
+            .returnButton {
+                font-size: 50px;
+                font-weight: bold;
+                color: #131641;
+                float: right;
+                margin-top: 50px;
+                margin-right: 50px;
+            }
+            .returnButton:hover {
+                font-size: 55px;
+            }
+
+        
+
+                    

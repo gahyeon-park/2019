@@ -1,0 +1,107 @@
+html{ scroll-behavior: smooth; }
+
+#wrap{
+	width: 100%; background-color: #fff;
+	header{
+		width: 100%; height: 80px;
+		position: fixed; z-index: 100;
+		top: 0; left: 0;
+		background-color: rgba(248,248,248,0.9);
+		.leftMenuBox{
+			width: 600px; height: 80px;
+			float: left; display: inline-block;
+			.leftMenu{
+				width: 150px; height: 80px;
+				float: left; text-align: center;
+				display: inline-block;
+				.leftMenuText{
+					font-size: 19px;
+					line-height: 78px;
+				}
+			}
+		}
+		.logoImg{
+			width: 105px; height: 70px;
+			position: absolute;
+			top: 0; left: 50%;
+			margin: 5px 0 0 -40px;
+			display: inline-block;
+		}
+		.rightButtonMenuBox{
+			width: 300px; height: 80px;
+			display: inline-block;
+			float: right;
+			.buttonMenu{
+				width: 150px; height: 80px;
+				display: inline-block;
+				text-align: center;
+				float: left;
+				cursor: pointer;
+			}
+			.loginIcon{
+				width: 45px; height: 45px;
+				position: absolute;
+				top: 17px; right: 250px;
+			}
+			.loginButton{
+				font-size: 19px;
+				line-height: 78px;
+			}
+			.reservationButton{
+				font-size: 17px;
+				background-color: #a19385;
+				color: #fff;
+			}
+		}
+	}
+	.modal{
+		width: 100%; height: 100%;
+		position: fixed;
+		top: 0; left: 0; z-index: 200;
+		background-color: rgba(0,0,0,0.5);
+		display:none;
+		.login_box{
+			width: 500px; height: 500px;
+			background-color: rgba(248,248,248,0.9);
+			position: relative; z-index: 300;
+			top: 50%; left: 50%;
+			transform: translate(-50%, -50%);
+			.exit_box{
+				width: 400px; height: 24px;
+				margin: auto; margin-top: 5px;
+				.exit_icon{
+					float: right;
+					font-size: 20px;
+					cursor: pointer;
+				}
+			}
+			.title_box{
+				width: 400px; height: 140px;
+				margin: auto; margin-top: 20px;
+				h1{
+					font-size: 30px;
+				}
+				h4{
+					font-size: 17px; color: #aaa;
+					font-weight: 300; margin-top: 5px;
+				}
+			}
+			.input_box{
+				width: 400px; height: 260px; margin: auto;
+				form{
+					input{
+						width: 400px; height: 40px;
+						background-color: #e5ddd3;
+						border-bottom: 2px solid #ccc;
+					}
+					input:last-child{
+						width: 230px; height: 50px;
+						margin: 50px 0 0 85px;
+						border: 0; background-color: #66605d;
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,78 @@
+html, body{ width: 100%; }
+
+.banner{
+	width: 100%; height: 300px;
+	background-color: #f0e9e1;
+	position: relative;
+	div{
+		width: 600px; height: 80px;
+		position: absolute;
+		top: 50%; left: 50%;
+		margin-left: -300px;
+		h1{
+			font-size: 40px;
+			text-align: center;
+		}
+		p{
+			color: #aaa;
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+}
+
+.input{
+	width: 1200px; height: 980px;
+	margin: auto; position: relative;
+	margin-top: 50px; font-size: 20px;
+	.horizon1{
+		width: 100%; height: 2px;
+		background-color: #aaa;
+		margin-top: 20px;
+	}
+	.horizon2{
+		width: 100%; height: 3px;
+		background-color: #aaa;
+		margin-top: 30px;
+	}
+	.star{ color: #fdc04d; }
+	form{
+		table{
+			width: 900px;
+			border-collapse: collapse;
+			tr>td{ padding-top: 30px; }
+			tr>td:first-child{ width: 400px; }
+		}
+		.text{
+			width: 500px; height: 50px;
+			border: 2px solid #ccc;
+			text-indent: 10px;
+		}
+		select{
+			width: 168px; height: 50px;
+			text-indent: 10px; float: left;
+			border-top: 2px solid #ccc;
+			border-bottom: 2px solid #ccc;
+			border-right: 2px solid #ccc;
+		}
+		select:first-child{ border: 2px solid #ccc; }
+		.radio{ width: 20px; height: 20px; }
+		canvas{
+			width: 190px; height: 60px;
+			float: left;
+			border: 2px solid #ccc;
+		}
+		.confirm{
+			width: 280px; height: 40px;
+			border: 2px solid #ccc;
+			margin: 10px 0 0 26px;
+		}
+		.submit{
+			width: 240px; height: 60px;
+			background-color: #66605d;
+			text-align: center; cursor: pointer;
+			color: #fff; font-size: 22px;
+			margin: 30px 0 0 480px;
+		}
+	}
+}

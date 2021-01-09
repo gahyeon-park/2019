@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/commonStyle.css" />
+        <link rel="stylesheet" href="../../css/fruitPage/fruitPage.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans+Condensed:700|Teko|Titillium+Web&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 id="mainTitleButton" class="mainTitle">가니 포차</h1>
+                <h2 class="subTitle subTitleColor">과일 소주</h2>
+                <h3 class="nowTitle nowTitleColor">과일 소주</h3>
+                <!-- 소주병 이미지 -->
+                <img class="sojuImage" src="../../images/sojuImage.png" alt="sojuImage">
+            </header>
+
+            <section class="mainSection">
+                <article>
+                    <!-- 소주 종류 메뉴 -->
+                    <nav id="fruitMenuBox" class="fruitMenu">
+                        <ol>
+                            <li id="fruitMenu1" class="menuCommonStyle">매화수</li>
+                            <li id="fruitMenu2" class="menuCommonStyle">자두에이슬</li>
+                            <li id="fruitMenu3" class="menuCommonStyle">청포도에이슬</li>
+                            <li id="fruitMenu4" class="menuCommonStyle">자몽에이슬</li>
+                            <li id="fruitMenu5" class="menuCommonStyle menuSelected">이슬톡톡</li>
+                        </ol>
+                    </nav>
+                    <!-- 소주 뒷면 컨셉 박스 -->
+                    <dl class="sojuDiscBox">
+                        <!-- 현재 메뉴 -->
+                        <dt id="sojuDiscTitle" class="sojuDiscTitle">
+                            <p>이슬<br>톡톡</p>
+                        </dt>
+                        <!-- 소주 로고 -->
+                        <img id="sojuLogo" class="sojuLogo" src="../../images/fruitPage/toktokLogo.png" alt="이슬톡톡">
+                        <!-- 자세한 설명 박스 -->
+                        <div class="sojuDetailDisc">
+                            <!-- 알코올, 용량 -->
+                            <dd id="sojuAlcoholDisc" class="sojuDetailStyle">알코올 함량 : 3.0%</dd>
+                            <dd id="sojuCapacityDisc" class="sojuDetailStyle positionFix">용량 : 330ml</dd>
+                            <p class="subDiscStyle">(병 기준)</p>
+                            <!-- 소주 특징 -->
+                            <dd class="sojuFeatureBox">
+                                <p id="sojuFeatureDisc" class="sojuFeatureStyle">톡톡 튀는 탄산을 타고 입안 가득 산뜻하게 퍼지는 새콤달콤한 맛</p>
+                            </dd>
+
+                            <!-- 경고 문구 -->
+                            <p class="cautionText">19세 미만 판매 금지</p><i class="xi-ban xi-3x cautionText fixPosition"></i>
+                            <!-- 바코드 이미지 -->
+                            <img class="barcodeImg" src="../../images/fruitPage/barcodeImage.png" alt="바코드이미지">
+                        </div>
+                    </dl>
+                    <!-- 부가적인 소주 메뉴 -->
+                    <nav id="subMenuBox">
+                        <ul class="subSojuMenuList">
+                            <li id="subMenu1" class="subSojuMenuStyle">실물사진</li>
+                            <li id="subMenu2" class="subSojuMenuStyle">테레비광고</li>
+                            <li id="subMenu3" class="subSojuMenuStyle">광고포스타</li>
+                        </ul>
+                    </nav>
+                    <section id="subMenuPopUp" class="subMenuPopUpWrap">
+                        <article id="popUpBox" class="popUpBox">
+                            <!-- 컨텐츠 없을 때 컨텐츠 -->
+                            <article class="noContents" id="noContents">
+                                <p class="noContentsText">컨텐츠가 없습니다.</p>
+                            </article>
+
+                            <!-- 실물 사진 컨텐츠 -->
+                            <article id="realImageContents" class="realImageContents">
+                                <img id="realSojuImage" class="realImage" src="../../images/fruitPage/toktokImage.png" alt="이슬톡톡">
+                            </article>
+
+                            <!-- 테레비광고 컨텐츠 -->
+                            <article id="tvCFContents" class="tvCFContents">
+                                <!-- 광고 동영상 박스 -->
+                                <div>
+                                    <iframe class="tvCFStyle" title="vimeo-player" src="https://player.vimeo.com/video/222634371" frameborder="0" allowfullscreen></iframe>
+                                </div>
+
+                                
+                                <!-- 광고 리스트 -->
+                                <ul id="CFListBox" class="CFListBox">
+                                    <!-- 왼쪽 버튼 -->
+                                    <i class="leftButton xi-angle-left xi-5x"></i>
+                                    <li id="CFList1" class="CFList">
+                                        <img id="CFListImg1" class="CFListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/TVCF/20170622_54345379.jpg" alt="이슬톡톡">
+                                        <p id="CFTitle1" class="CFTitle CFSelected">이슬톡톡</p>
+                                    </li>
+                                    <li id="CFList2" class="CFList">
+                                        <img id="CFListImg2" class="CFListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/TVCF/20160801_50882652.jpg" alt="이슬톡톡">
+                                        <p id="CFTitle1" class="CFTitle">이슬톡톡</p>
+                                    </li>
+                                    <li id="CFList3" class="CFList">
+                                        <img id="CFListImg3" class="CFListImg" src="" alt="">
+                                        <p id="CFTitle1" class="CFTitle"></p>
+                                    </li>
+                                    <li id="CFList4" class="CFList">
+                                        <img id="CFListImg4" class="CFListImg" src="" alt="">
+                                        <p id="CFTitle1" class="CFTitle"></p>
+                                    </li>
+                                    <!-- 오른쪽 버튼 -->
+                                    <i class="xi-angle-right xi-5x rightButton"></i>
+                                </ul>
+                            </article>
+                            <!-- 광고포스타 컨텐츠 -->
+                            <article id="posterContents" class="posterContents">
+                                <div>
+
+                                    <!-- 광고 포스타 리스트 -->
+                                    <ul id="posterListBox" class="posterListBox">
+                                            <!-- 왼쪽 버튼 -->
+                                            <i class="leftButton xi-angle-left xi-5x"></i>
+                                            <li class="posterList">
+                                                <img id="posterListImg1" class="posterListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/PRINT/20161226_78602107.jpg" alt="이슬같이 깨끗한 다음날">
+                                                <p id="posterTitle1" class="posterTitle posterSelected">이슬톡톡 파인애플</p>
+                                            </li>
+                                            <li class="posterList">
+                                                <img id="posterListImg2" class="posterListImg" src="http://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/PRINT/20170103_66283856.jpg" alt="이슬같이 깨끗한 다음날">
+                                                <p id="posterTitle2" class="posterTitle">이슬톡톡 복숭아</p>
+                                            </li>
+                                            <li class="posterList">
+                                                <img id="posterListImg3" class="posterListImg" src="" alt="">
+                                                <p id="posterTitle3" class="posterTitle"></p>
+                                            </li>
+                                            <li class="posterList">
+                                                <img id="posterListImg4" class="posterListImg" src="" alt="">
+                                                <p id="posterTitle4" class="posterTitle"></p>
+                                            </li>
+                                            <!-- 오른쪽 버튼 -->
+                                            <i class="xi-angle-right xi-5x rightButton"></i>
+                                        </ul>
+                                </div>
+                            </article>
+                        </article>
+                    </section>
+                </article>
+            </section>
+        </div>
+    </body>
+    <script type="text/javascript" src="../../js/commonJS.js"></script>
+    <script type="text/javascript" src="../../js/fruitPage/fruitPage.js"></script>
+</html>

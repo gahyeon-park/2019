@@ -1,0 +1,78 @@
+html, body {
+  width: 100%; }
+
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.clear {
+  clear: both;
+  position: inherit; }
+  
+.contents_head {
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.contents_head > h1 {
+  font-size: 35px; }
+
+.contents_head>button {
+  padding: 3px 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.contents_head>button:first-child{ background-color: #5a6b47; }
+.notice_delete{ background-color: #3f3222; }
+
+.contents_body {
+  width: 1700px;
+  margin-top: 5px;
+  position: relative; }
+
+.contents_body > p {
+  margin: 130px 0 0 50px;
+  font-size: 25px; }
+
+.write_date {
+  width: 270px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.write_date > p {
+  font-size: 20px; }
+
+.contents_foot {
+  width: 1700px;
+  height: 70px;
+  margin-top: 200px; }
+
+.horizon2 {
+  width: 1700px;
+  height: 1px;
+  background-color: #555;
+  margin: 10px 0; }
+
+.contents_foot > button {
+  width: 90px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #5a6b47; }
+
+#que_prev {
+  float: left;
+  margin-left: 20px; }
+
+#que_next {
+  float: right;
+  margin-right: 20px; }
+
+/*# sourceMappingURL=notice_answer.css.map */

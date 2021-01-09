@@ -1,0 +1,100 @@
+html, body {
+  overflow-x : hidden;
+}
+/* fixed image */
+.backgroundImg {
+  width: 100%;
+  position: fixed;
+  z-index: 0; }
+
+/* fixed image overlay */
+.overlay {
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  height: 1800px;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.sectionBox {
+  width: 1980px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -990px;
+  z-index: 10;
+  /* about Contents */
+  /* contents Text */ }
+  .sectionBox .mainText {
+    width: 500px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 100;
+    margin: auto;
+    margin-top: 200px; }
+  .sectionBox .subText {
+    width: 500px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 100;
+    margin: auto;
+    margin-bottom: 30px; }
+  .sectionBox .contentsBox {
+    width: 1000px;
+    height: 1500px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 30px;
+    /* row Contents */ }
+    .sectionBox .contentsBox .contentsList {
+      width: 1000px;
+      display: inline-block;
+      float: left;
+      /* contents Image */ }
+      .sectionBox .contentsBox .contentsList .contentsImg {
+        display: inline-block;
+        /* 1930 1080 */
+        width: 500px;
+        height: 300px;
+        float: left; }
+  .sectionBox .contentsTextBox {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    float: left;
+    overflow-y: hidden;
+    /* Text */ }
+    .sectionBox .contentsTextBox .contentsSubTitle {
+      width: 500px;
+      height: 30px;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      font-weight: 100;
+      overflow-y: hidden; }
+    .sectionBox .contentsTextBox .contentsTitle {
+      width: 500px;
+      height: 50px;
+      font-size: 30px;
+      line-height: 48px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 60px; }
+    .sectionBox .contentsTextBox .contentsDisc {
+      width: 500px;
+      height: 120px;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 10px; }
+      .contentsTitle:hover
+      {
+        color: #6d8d48;
+      }
+
+/*# sourceMappingURL=specialPage.css.map */

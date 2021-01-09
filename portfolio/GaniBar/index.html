@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="./css/idCheckPage/idCheckPage.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/commonStyle.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans+Condensed:700|Teko|Titillium+Web&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 id="mainTitleButton" class="mainTitle">가니 포차</h1>
+                <h2 class="subTitle">민증 검사</h2>
+                <h3 class="nowTitle">하이트진로</h3>
+                <!-- 소주병 이미지 -->
+                <img class="sojuImage" src="./images/sojuImage.png" alt="sojuImage">
+            </header>
+            
+            <section class="mainSection">
+
+                <!-- 생년월일, 사진 form -->
+                <div class="idCardForm">
+                    <!-- 주민등록증 이미지 -->
+                    <div class="idCardImage">
+                        <p class="idCardTitle">주민등록증</p>
+                        <div class="inputBox">
+                            <input id="yearText" class="yearText" type="text" name="yearText" placeholder="0000" autocomplete = "off">
+                            <p class="inputText">년</p>
+                            <input id="monthText" class="monthText" type="text" name="monthText" placeholder="00" autocomplete = "off">
+                            <p class="inputText">월</p>
+                            <input id="dateText" class="dateText" type="text" name="dateText" placeholder="00" autocomplete = "off">
+                            <p class="inputText">일</p>
+                        </div>
+                        <!-- 사진 파일 업로드 -->
+                        <input id="fileInput" type="hidden" name="MAX_FILE_SIZE" value="3000000">
+                        <img id="idPicture" class="idPicture" src="./images/idCheckPage/idPicture_none.png" alt="idPicture">
+                        <label class="fileInputButton" for="fileInputButton">사진 업로드</label>
+                        <input id="fileInputButton" type="file" name="imgFile">
+                        
+                        <!-- 제출 -->
+                        <button id="submitButton" class="submitButton">검사</button>
+                </div>
+            </section>
+
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/idCheckPage/idCheckPage.js"></script>
+</html>

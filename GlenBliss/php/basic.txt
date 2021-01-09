@@ -1,0 +1,12 @@
+<?php
+include('../../php/common.php');
+$login = false; // login or logout
+
+session_start();
+$loginMember = whoIsLogin();
+$loginMember[0] && $login = true;
+
+?>
+<?php include("../../php/header.php"); ?>
+
+<?php include("../../php/footer.php"); ?>

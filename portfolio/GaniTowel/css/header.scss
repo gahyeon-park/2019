@@ -1,0 +1,60 @@
+$headerHeight: 150px;
+
+.headerBox {
+    width: 100%;
+    height: $headerHeight;
+
+    .pptDownloadButton {
+        display: inline-block;
+
+        width: 200px;
+        height: 40px;
+
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 38px;
+
+        border-radius: 5px;
+        background-color: #12345678;
+        
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+
+        transition: all 0.3s 0s ease;
+    }
+
+    .pptDownloadButton:hover {
+        background-color: #ffffff;
+        color: #12345678;
+        border: 2px solid #12345678;
+    }
+
+    .headerSubTitle {
+        width: 500px;
+        height: 40px;
+
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 95px;
+
+        color: #979595;
+
+
+    }
+    .headerTitle {
+
+        width: 85%;
+        height: $headerHeight;
+        
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        line-height: $headerHeight - 2;
+
+        color: #12345678;
+    }
+}

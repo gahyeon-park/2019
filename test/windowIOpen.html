@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// window.addEventListener('error', function(e) {
+//     console.log(window);
+//     console.log(e);
+// }, true);
+// child = window.open("abcde");
+// child.addEventListener('error', function(e) {
+//     console.log("child");
+//     console.log(e);
+// });
+
+
+
+
+var appSchem = 'fb://profile';
+
+isMyApp();
+
+location.href = appSchem;
+
+function isMyApp(){
+  function clearTimers(){
+        clearInterval(heartbeat);
+        clearTimeout(timer);
+    }
+
+    function intervalHeartbeat(){
+        if(document.webkitHidden || document.hidden){
+            clearTimers();
+            // console.log('앱이 설치 되어 있습니다.');
+        }
+    }
+    heartbeat = setInterval(intervalHeartbeat, 200);
+    var deLay = 1000;
+    timer = setTimeout(function() {
+        location.href = "https://www.facebook.com/E9PAY";
+    }, deLay);
+}
+
+</script>
+</html>

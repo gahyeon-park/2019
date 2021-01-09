@@ -1,0 +1,112 @@
+﻿@charset "UTF-8";
+
+*{margin:0px; padding:0px;}
+
+/*login팝업창 section으로 묶음*/
+section.loginBox{
+	width:500px;
+	height:480px;
+	position:absolute;
+	left:50%;
+	top:100px;
+	margin-left:-250px;
+	z-index:200;
+	background-color:white;
+	display:none;	
+}
+	/*로그인을 h2로 부제목으로 작성함. h1메인은 홈페이지 로고라고 생각함*/
+	h2.loginTitle{
+		text-align:center;
+		font-size:28px;
+		font-weight:lighter;
+		color:#e5bea8;
+		margin-top:13px;
+	}
+	/*상단 경계선 하단에도 동일한 값의 경계선이 있음*/
+	hr.loginPopUp_topBorderLine{
+		background-color:#e5bea8;
+		margin:auto;
+		margin-top:10px;
+		width:420px;
+		height:1.5px;
+		border:0px;
+	}
+	/*input 받는 구역을 form형식으로 묶어 박스화 했다. */
+	form.id_pw_inputValueBox{
+		//background-color:blue;
+		width:420px;
+		height:250px;
+		margin:auto;
+		margin-top:25px;
+	}
+		/*아이디,비밀번호 공통된 font 속성값*/
+		p.id_pw_fontValue{
+			font-size:25px;
+			color:#b5b6b8;
+		}
+		/*패스워드 위치 조정(로그인글과 상단 간격을 줌)*/
+		p.pw_positionValue{
+			margin-top:15px;
+		}
+		/*id와 pw 공통된 속성값 글씨크기와 보더 선을 없앰*/
+		input.id_pw_inputBox{
+			border:0px solid white;
+			outline:0px;
+			font-size:18px;
+		}
+		/*잊었을때 text font값*/
+		p.forgotIdPwText{
+			font-size:25px;
+			color:#e5bea8;
+			margin-top:40px;
+			padding-bottom:10px;
+		}
+		/*잊었을때 text 링크 버튼 속성*/
+		a.forgotIdPwButton{
+			text-decoration:none;
+			color:#e5bea8;
+			padding-top:px;
+			margin-left:15px;
+		}
+	/*상단 경계선과 동일한 하단 경계선 */
+	hr.loginPopUp_bottomBorderLine{
+		background-color:#e5bea8;
+		margin:auto;
+		width:420px;
+		height:1.5px;
+		border:0px;
+	}
+	
+	/*cancel과 submit 위에 있는 실선 (반투명화 함)*/
+	hr.loginPopUp_boundaryLine{
+		background-color:rgba(0,0,0,0.1);
+		width:500px;
+		height:0.5px;
+		border:0px;
+		margin-top:75px;
+	}
+	/*cancel버튼 속성값 absolute로 위치 잡음*/
+	a.loginPopUp_cancelButton{
+		//border:1px solid red;
+		font-size:12px;		
+		position:absolute;
+		bottom:40px;
+		left:70px;
+		color:#b5b6b8;
+		text-decoration:none;
+	}
+	/*cancel버튼 속성값 absolute로 위치 잡음*/
+	a.loginPopUp_submitButton{
+		//border:1px solid red;
+		font-size:12px;
+		position:absolute;
+		bottom:40px;
+		right:70px;
+		color:#b5b6b8;
+		text-decoration:none;
+	}
+
+	
+	
+
+	

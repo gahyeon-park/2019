@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<academy>
+	<c8>
+		<teacher>조대룡</teacher>
+		<students>
+			<st>C8ST01</st>
+			<st>C8ST02</st>
+			<st>C8ST03</st>
+			<st>C8ST04</st>
+			<st>C8ST05</st>
+			<st>C8ST06</st>
+			<st>C8ST07</st>
+		</students>
+	</c8>
+	<c9>
+		<teacher>조대룡</teacher>
+		<students>
+			<st>C9ST01</st>
+			<st>C9ST02</st>
+			<st>C9ST03</st>
+			<st>C9ST04</st>
+			<st>C9ST05</st>
+			<st>C9ST06</st>
+			<st>C9ST07</st>
+		</students>
+	</c9>
+</academy>

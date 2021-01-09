@@ -1,0 +1,204 @@
+﻿@charset "UTF-8";
+
+
+/* 팝업 백그라운드 설정 */
+	.popUpBackground { 
+		width : 100%;
+		height : 100%;
+		position:fixed;
+		background-color: rgba( 0, 0, 0, 0.7 );
+		z-index:100;
+		display : none;
+	}
+/*모두 동일한 규격으로 제작됨*/
+
+/*반투명 배경색을 줌 그리고 display:none을 때림. 마우스 호버하는것을 구현하기 위해*/
+
+div.backgroundBox_hash{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:288.64px;
+	background-color:rgba(0,0,0,0.5);
+	display:none;	
+}
+	/*가운데 click 아이콘박스 속성값*/
+	div.clickIcon_hash{
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-100px;
+		margin-top:-35px;
+		width:200px;
+		height:70px;
+		border-radius:35px;
+		background-color:white;
+	}	
+		/*링크 a 태그 정렬값*/
+		a.aTagDisign_hash{
+			position:absolute;
+			left:47px;
+			top:16px;
+			font-weight:bold;
+			font-size:35px;
+		}
+div.backgroundBox_kakao{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:288.64px;
+	background-color:rgba(0,0,0,0.5);
+	display:none;	
+}
+	div.clickIcon_kakao{
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-100px;
+		margin-top:-35px;
+		width:200px;
+		height:70px;
+		border-radius:35px;
+		background-color:white;
+	}
+		a.aTagDisign_kakao{
+			position:absolute;
+			left:47px;
+			top:16px;
+			margin:auto;
+			font-weight:bold;
+			font-size:35px;
+		}
+div.backgroundBox_one_plus_one{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:288.64px;
+	background-color:rgba(0,0,0,0.5);
+	display:none;	
+}
+	div.clickIcon_one_plus_one{
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-100px;
+		margin-top:-35px;
+		width:200px;
+		height:70px;
+		border-radius:35px;
+		background-color:white;
+	}
+		a.aTagDisign_one_plus_one{
+			position:absolute;
+			left:47px;
+			top:16px;
+			margin:auto;
+			font-weight:bold;
+			font-size:35px;
+		}
+div.backgroundBox_whiteday{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:288.64px;
+	background-color:rgba(0,0,0,0.5);
+	display:none;	
+}
+	div.clickIcon_whiteday{
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-100px;
+		margin-top:-35px;
+		width:200px;
+		height:70px;
+		border-radius:35px;
+		background-color:white;
+	}
+		a.aTagDisign_whiteday{
+			position:absolute;
+			left:47px;
+			top:16px;
+			margin:auto;
+			font-weight:bold;
+			font-size:35px;
+		}
+div.backgroundBox_valentine{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:288.64px;
+	background-color:rgba(0,0,0,0.5);
+	display:none;	
+}
+	div.clickIcon_valentine{
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-100px;
+		margin-top:-35px;
+		width:200px;
+		height:70px;
+		border-radius:35px;
+		background-color:white;
+	}
+		a.aTagDisign_valentine{
+			position:absolute;
+			left:47px;
+			top:16px;
+			margin:auto;
+			font-weight:bold;
+			font-size:35px;
+		}
+div.backgroundBox_card{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:288.64px;
+	background-color:rgba(0,0,0,0.5);	
+	display:none;
+}
+	div.clickIcon_card{
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-100px;
+		margin-top:-35px;
+		width:200px;
+		height:70px;
+		border-radius:35px;
+		background-color:white;
+	}
+		a.aTagDisign_card{
+			position:absolute;
+			left:47px;
+			top:16px;
+			margin:auto;
+			font-weight:bold;
+			font-size:35px;
+		}
+/*공통된 class명에 각 호버시 창이 뜨는 것을 표시함*/
+li.eventBoxBaseValue:hover div.backgroundBox_hash{
+	display:block;	
+} 
+li.eventBoxBaseValue:hover div.backgroundBox_kakao{
+	display:block;	
+}
+li.eventBoxBaseValue:hover div.backgroundBox_one_plus_one{
+	display:block;	
+} 
+li.eventBoxBaseValue:hover div.backgroundBox_whiteday{
+	display:block;	
+} 
+li.eventBoxBaseValue:hover div.backgroundBox_valentine{
+	display:block;	
+} 
+li.eventBoxBaseValue:hover div.backgroundBox_card{
+	display:block;	
+} 

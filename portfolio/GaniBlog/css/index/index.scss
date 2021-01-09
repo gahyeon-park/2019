@@ -1,0 +1,650 @@
+$footerMenuWidth: 50px;
+$footerMenuHeight: 40px;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    list-style: none;
+    outline: 0px;
+    border: 0px;
+
+}
+button {
+    text-decoration: none;
+    background: transparent;
+}
+html, body {
+    width: 120em;
+    height: 58.55em;
+
+}
+
+#myPC { display: none;}
+#wrap {
+    height: 100%;
+
+    background: rosybrown;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    .backgroundImgBox {
+        height: 100%;
+    }
+    .monitorBox {
+        width: 66.3%;
+        height: 78%;
+        
+        position: absolute;
+        bottom: 15.3%;
+        left: 18.9%;
+        
+        .sectionBox {
+            display: inline-block;
+    
+            width: 100%;
+            height: 80%;
+
+            margin-left: 0em;
+
+            .folderBox {
+                height: 18%;
+
+                margin-top: 1%;
+                margin-left: 1%;
+
+                cursor: pointer;
+
+                transition: all 0.3s 0s ease;
+                img {
+                    width: 100%;
+                    margin-top: 1%;
+                }
+                p {
+                    width: 100%;
+                    height: 35%;
+
+
+                    font-size: 0.9em;
+                    text-align: center;
+                    line-height: 140%;
+                    color: #ffffff;
+                }
+
+            }
+            .folderBox:hover {
+                background-color: rgba(256, 256, 256, 0.5);
+            }
+
+        }
+        .appBox {
+            visibility: hidden;
+            width: 30%;
+
+            position: absolute;
+            top: 10%;
+            left: 12%;
+
+            opacity: 0;
+            transition: all 0.3s 0s ease;
+            img {
+                width: 100%;
+                margin-top: 1%;
+
+                box-shadow: 1px 1px 3px 3px #222222;
+            }
+
+            .appContentsBox {
+                width: 100%;
+                height: 7%;
+
+                position: absolute;
+                top: 1.9%;
+                right: 1em;
+
+                .appTitle {
+                    display: inline-block;
+                    width: 21%;
+                    height: 70%;
+    
+                    margin-left: 5%;
+                    margin-top: 0.5%;
+
+                    font-size: 1.2em;
+                    line-height: 150%;
+                    text-align: left;
+                    color: #d6d6d6;
+
+                    float: left;
+                }
+                .appButton {
+                    display: inline-block;
+                    width: 3.5%;
+                    height: 70%;
+    
+                    outline-style: none;
+                    border-radius: 50%;
+    
+                    margin-right: 1%;
+                    margin-top: 0.5%;
+                    float: right;
+                }
+                .minButton { background: #e2ab46; }
+                .minButton:hover { background: #e2ab46d5; }
+                .maxButton { background: #7bbe4c; }
+                .maxButton:hover { background: #7bbe4cc5; }
+                .closeButton { background: #dd5246; }
+                .closeButton:hover{ background: #dd5346b6; }
+
+                .appPrevButtonBox {
+                    width: 0;
+                    height: 0;
+
+                    position: absolute;
+                    top: 78%;
+                    left: 4%;
+
+                    outline: none;
+
+                    color: #bec1c5;
+                    font-size: 2.8rem;
+                    transition: all 0.3s 0s ease;
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+                .appNextButton {
+                    width: 0;
+                    height: 0;
+                    border-top: 0.8rem solid transparent;
+                    border-left: 1rem solid #bec1c5;
+                    border-bottom: 0.8rem solid transparent;
+
+                    position: absolute;
+                    top: 125%;
+                    left: 8%;
+
+                    transition: all 0.3s 0s ease;
+                    &:hover {
+                        border-left: 1rem solid #ffffff;
+                    }
+                }
+                .appPath {
+                    width: 87%;
+                    height: 85%;
+
+                    position: absolute;
+                    top: 120%;
+                    left: 13%;
+                    
+                    font-size: 1em;
+                    text-align: left;
+                    line-height: 200%;
+
+                }
+
+                .appContents {
+                    display: inline-block;
+                    width: 100%;
+                    height: 1190%;
+
+                    margin-top: 5%;
+                    margin-left: 1em;
+
+                }
+                .fileBox {
+                    display: inline-block;
+
+                    width: 50%;
+                    height: 94%;
+
+                    margin-top: 1%;
+                    float: left;
+
+                    overflow: auto;
+
+                    .file, .directory {
+                        display: inline-block;
+
+                        width: 35%;
+                        height: 35%;
+
+                        transition: all 0.3s 0s ease;
+
+                        margin-top: 3%;
+                        margin-left: 3%;
+
+                        cursor: default;
+                        
+                        &:hover {
+                            background: #d8eaf9;
+                        }
+                        .fileImg {
+                            width: 60%;
+
+                            margin-top: 12%;
+                            margin-left: 20%;
+                            
+                            box-shadow: none;
+                        }
+                        .folderIcon {
+                            width: 60%;
+
+                            margin-top: 12%;
+                            margin-left: 20%;
+
+                            box-shadow: none;
+                        }
+                        
+                        .fileTitle {
+                            width: 100%;
+                            height: 25%;
+
+                            font-size: 0.9em;
+                            line-height: 350%;
+                            text-align: center;
+                        }
+                    }
+                    .fileSelected {
+                        background: #cce8ff;
+                        border: 1px solid #99d1ff;
+                    }
+                }
+
+                .fileDiscBox {
+                    display: inline-block;
+
+                    width: 49%;
+                    height: 97%;
+
+                    float: right;
+
+                    border-left: 1px solid #bbbbbb;
+                    margin-top: 1%;
+
+                    .fileDisc {
+                        display: none;
+
+                        width: 95%;
+                        height: 97%;
+
+                        margin-top: 3%;
+                        margin-left: 5%;
+
+                        .mainTitle {
+                            width: 100%;
+                            height: 8%;
+
+                            font-size: 1.2em;
+                            font-weight: bold;
+                        }
+                        .subTitle {
+                            width: 100%;
+                            height: 5%;
+
+                            font-size: 0.8em;
+                            margin-top: -0.5em;
+                        }
+                        .discImg {
+                            width: 20%;
+                            box-shadow: none;
+                        }
+
+                        .discBox {
+                            width: 100%;
+                            height: 50%;
+
+                            margin-top: 6.5%;
+
+                            .disc {
+                                display: inline-block;
+
+                                width: 100%;
+
+                                margin-top: -1em;
+                                .discTitle {
+                                    display: inline-block;
+                                    width: 30%;
+
+                                    font-size: 0.8em;
+                                    color: #5a6779;
+                                    text-align: left;
+
+                                    float: left;
+                                }
+                                .discText {
+                                    display: inline-block;
+                                    width: 60%;
+
+                                    font-size: 0.8em;
+                                    color: #1e395b;
+                                    text-align: left;
+
+                                    float: right;
+                                    margin-right: 5%;
+
+                                    .strongText {
+                                        color: #76b9ed;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    .fileDiscSelected { display: inline-block; }
+
+                }
+            }
+        }
+    
+        #InformationApp { top: 10%; left: 12%; }
+        #myPCApp { top: 5%; left: 20%; }
+        #PortfolioApp { top: 15%; left: 30%; }
+        #StudyApp { top: 18%; left: 25%; }
+
+        .footerBox {
+            width: 100%;
+            height: $footerMenuHeight;
+    
+            position: absolute;
+            bottom: 0;
+            left: 0;
+    
+            background: #1d1d1d;
+            opacity: 0.9;
+    
+            z-index: 1000000;
+
+            margin-left: 0em;
+            .appMenuList {
+                display: inline-block;
+    
+                height: $footerMenuHeight;
+    
+                .appMenuList:nth-child(2) { width: 40%; }
+                .footerMenu {
+                    display: inline-block;
+    
+                    width: $footerMenuWidth - 10px;
+                    height: $footerMenuHeight;
+                    
+                    float: left;
+                    position: relative;
+    
+                    margin-right: 5px;
+
+                    cursor: default;
+                    transition: all 0.3s 0s ease;
+                    
+                    .footerIcon {
+                        $minSize: 15px;
+    
+                        position: absolute;
+                    
+                        width: $footerMenuHeight - $minSize;
+                        height: $footerMenuHeight - $minSize;
+                    
+                        left: $minSize / 2;
+                        top: $minSize / 2;
+
+                    }
+                }
+    
+                .footerMenu:hover {
+                    background-color: rgba(256, 256, 256, 0.5);
+                }
+            }
+            
+            .leftMenuList { 
+                float: left; 
+
+                .AbilityMenu {
+                    border-bottom: 2px solid #76b9ed;
+
+                    &:hover .footerPreviewBox {
+                        
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    .footerPreviewBox {
+                        visibility: hidden;
+                        width: 500%;
+                        height: 400%;
+                        
+                        margin-top: -($footerMenuHeight * 4) + 7px;
+                        margin-left: -($footerMenuWidth * 1.5);
+                        
+                        background-color: rgba(0, 0, 0, 0.8);
+                        
+                        position: absolute;
+                        bottom: 100%;
+                        
+                        left: 15%;
+                        opacity: 0;
+        
+                       transition: all 0.3s 0s ease;
+        
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.5);
+                        }
+        
+                        .AbilityTitle {
+                            display: inline-block;
+        
+                            width: 100%;
+                            height: 15%;
+        
+                            line-height: 180%;
+                            font-size: 1em;
+                            
+                            color: #ffffff;
+                            margin-bottom: 0em;
+        
+                            float: left;
+        
+                            .previewIcon {
+                                width: 10%;
+                                height: 80%;
+                                
+                                margin-left: 5%;
+                                margin-right: 5%;
+                            }
+                        }
+                        .AbilityBarBox {
+                            display: inline-block;
+                            width: 90%;
+                            height: 80%;
+                        
+                            background-image: url("../../images/index/app.png");
+                            background-size: cover;
+                            
+                            margin-top: 3%;
+                            margin-left: 5%;
+                            float: left;
+
+                            .AbilityBarPercent {
+                                display: inline-block;
+
+                                width: 40%;
+                                height: 100%;
+
+                                font-size: 1.5em;
+                                line-height: 800%;
+                                font-weight: bold;
+                                color: #1d1d1d;
+
+                                text-align: center;
+                                float: left;
+                            }
+                            .AbilityBar {
+                                display: inline-block;
+                                width: 60%;
+                                height: 100%;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+            .rightMenuList {
+                float: right;   
+
+                .clockMenu {
+                    width: $footerMenuWidth * 2;
+                    height: $footerMenuHeight;  
+
+                    float: right;
+                    p {
+                        display: inline-block;
+    
+                        width: $footerMenuWidth * 2;
+                        height: $footerMenuHeight / 2;
+    
+                        color: #ffffff;
+                        font-size: 13.5px;
+                        line-height: ($footerMenuHeight / 2);
+                        text-align: center;
+    
+                        float: left;
+                        margin-bottom: 0px;
+                    }
+                }
+                .snsMenu { 
+                    float: right; 
+
+                    &:hover .footerPreviewBox {
+                        
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    .footerPreviewBox {
+                        visibility: hidden;
+                        width: 500%;
+                        height: 400%;
+                        
+                        margin-top: -($footerMenuHeight * 4) + 7px;
+                        margin-left: -($footerMenuWidth * 1.5);
+                        
+                        background-color: rgba(0, 0, 0, 0.8);
+                        
+                        position: absolute;
+                        bottom: 100%;
+                        
+                        left: 15%;
+                        opacity: 0;
+        
+                       transition: all 0.3s 0s ease;
+        
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.5);
+                        }
+
+                        .snsTitle {
+                            display: inline-block;
+        
+                            width: 100%;
+                            height: 15%;
+        
+                            line-height: 180%;
+                            font-size: 1em;
+                            
+                            color: #ffffff;
+                            margin-bottom: 0em;
+        
+                            float: left;
+        
+                            .previewIcon {
+                                width: 10%;
+                                height: 80%;
+                                
+                                margin-left: 5%;
+                                margin-right: 5%;
+                            }
+                        }
+                        .snsContents {
+                            display: inline-block;
+                            width: 90%;
+                            height: 80%;
+                        
+                            background-image: url("../../images/index/app.png");
+                            background-size: cover;
+                            
+                            margin-top: 3%;
+                            margin-left: 5%;
+                            float: left;
+
+                            .snsListBox {
+                                width: 100%;
+                                height: 100%;
+
+                                margin-top: 15%;
+
+                                .snsList {
+                                    display: inline-block;
+
+                                    margin-bottom: 10px;
+
+                                    float: left;
+                                    img {
+                                        display: inline-block;
+                                        
+                                        width: 25px;
+                                        font-weight: bold;
+                                        
+                                        float: left;
+
+                                        margin-left: 10px;
+
+                                    }
+                                    p {
+                                        display: inline-block;
+                                        width: 100px;
+
+                                        line-height: 200%;
+                                        font-weight: bold;
+                                        float: left;
+
+                                        font-size: 0.75rem;
+
+                                        margin: 0px;
+                                        margin-left: 20px;
+                                    }
+                                }
+                                .snsList:nth-child(1) { p:nth-child(1) { color: #6aaf50; }}
+                                .snsList:nth-child(2) { p:nth-child(1) { color: #a43026; }}
+                                .snsList:nth-child(3) { p:nth-child(1) { color: #ffeb3b; }}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // .footerMenu {
+        //     display: inline-block;
+
+        //     width: $footerMenuWidth;
+        //     height: $footerMenuHeight;
+
+        //     float: left;
+        //     position: relative;
+
+        //     img {
+        //         position: absolute;
+
+        //         width: $footerMenuWidth - 5px;
+        //         height: $footerMenuHeight - 5px;
+
+        //         top: 2.5px;
+        //         left: 2.5px;
+        //     }
+        // }
+    }
+}

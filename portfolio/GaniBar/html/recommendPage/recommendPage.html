@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/commonStyle.css" />
+        <link rel="stylesheet" href="../../css/recommendPage/recommendPage.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans+Condensed:700|Teko|Titillium+Web&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 id="mainTitleButton" class="mainTitle">가니 포차</h1>
+                <h2 class="subTitle subTitleColor">추천 소주</h2>
+                <h3 class="nowTitle nowTitleColor">추천 소주</h3>
+                <!-- 소주병 이미지 -->
+                <img class="sojuImage" src="../../images/sojuImage.png" alt="sojuImage">
+            </header>
+
+            <section class="mainSection">
+                <!-- 설문지 -->
+                <div class="surveyFormImg">
+                    <!-- 설문지 내용 -->
+                    <div id="surveyContents" class="surveyContents">
+                        <article>
+                            <h2 class="surveyArticleText">소주 종류 : </h2>
+                            <p id="kindOriginalButton" class="kindButton kindOriginal">기본</p>
+                            <p id="kindFruitButton" class="kindButton kindFruit">과일</p>
+                        </article>
+    
+                        <article class="subSurveyContents">
+                            <!-- 소주 종류 선택 전 설문지 -->
+                            <div id="defaultSubSurvey">
+                                <p class="defaultText">소주 종류를 선택해 주세요.</p>
+                            </div>
+
+                            <form>
+                                <!-- 기본 소주 종류 선택 후 설문지 -->
+                                <article id="kindOriginalSubSurvey">
+                                    <article class="subSurveyContentBox">
+                                        <h3 class="surveyArticleText">풍미 정도 : </h3>
+                                        <div class="rangeBox">
+                                            <input id="flavorRange" class="rangeBar" type="range" min="0" max="2" value="1" name="flavorRange">
+                                            <p class="rangeText1">은은</p>
+                                            <p class="rangeText2">중간</p>
+                                            <p class="rangeText3">진한</p>
+                                        </div>
+                                    </article>
+                                    <article class="subSurveyContentBox">
+                                        <h3 class="surveyArticleText"> 목 넘김 : </h3>
+                                        <div class="rangeBox">
+                                            <input id="gulpRange" class="rangeBar" type="range" min="0" max="2" value="1" name="gulpRange">
+                                            <p class="rangeText1">약한</p>
+                                            <p class="rangeText2">중간</p>
+                                            <p class="rangeText3">강한</p>
+                                        </div>
+                                    </article>
+                                    <article class="subSurveyContentBox">
+                                        <h3 class="surveyArticleText">도수 정도 : </h3>
+                                        <div class="rangeBox">
+                                            <input id="alcoholRange" class="rangeBar" type="range" min="0" max="2" value="1" name="alcoholRange">
+                                            <p class="rangeText1">낮은</p>
+                                            <p class="rangeText2">중간</p>
+                                            <p class="rangeText3">높은</p>
+                                        </div>
+                                    </article>
+            
+                                    <input id="submitOriginalButton" class="submitOriginalButton" type="button" value="추천 &gt;&gt;">
+                                </article>
+                            </form>
+
+                            <!-- 과일 소주 종류 선택 후 설문지 -->
+                            <form>
+                                <article id="kindFruitSubSurvey">
+                                    <article class="subSurveyContentBox">
+                                        <h3 class="surveyArticleText">당도 정도 : </h3>
+                                        <div class="rangeBox">
+                                            <input id="sweetRange" class="rangeBar" type="range" min="0" max="2" value="1" name="sweetRange">
+                                            <p class="rangeText1">상큼</p>
+                                            <p class="rangeText2">중간</p>
+                                            <p class="rangeText3">달콤</p>
+                                        </div>
+                                    </article>
+                                    <article class="subSurveyContentBox">
+                                        <h3 class="surveyArticleText">도수 정도 : </h3>
+                                        <div class="rangeBox">
+                                            <input id="alcoholFruitRange" class="rangeBar" type="range" min="0" max="2" value="1" name="alcoholRange">
+                                            <p class="rangeText1">낮은</p>
+                                            <p class="rangeText2">중간</p>
+                                            <p class="rangeText3">높은</p>
+                                        </div>
+                                    </article>
+            
+                                    <input id="submitFruitButton" class="submitFruitButton" type="button" value="추천 &gt;&gt;">
+                                </article>
+                            </form>
+                        </article>
+                    </div>
+
+                    <!-- 소주 추천 -->
+                    <article id="recommendContentsBox" class="recommendContentsBox">
+                        <h3 id="recommendOriginalContents" class="recommendTitle"><strong class="originalSojuText">기본소주</strong>에 <strong class="flavorText">은은</strong>한 풍미, <strong class="gulpText">약한</strong> 목넘김, <strong class="alcoholText">낮은</strong> 도수인 소주는?</h3>
+                        <h3 id="recommendFruitContents" class="recommendTitle"><strong class="fruitSojuText">과일소주</strong>에 <strong class="sweetText">상큼</strong>한 당도, <strong class="alcoholFruitText">낮은</strong> 도수인 소주는?</h3>
+                        
+                        <!-- 맞는 추천소주가 없을 때 -->
+                        <article id="noRecommendContents">
+                            <p class="noRecommendContentsText">죄송합니다, 맞는 추천 소주가 없습니다.</p>
+                            <button class="returnButton">&lt;&lt; 다시 추천받기</button>
+                        </article>
+                        
+                        <!-- 맞는 추천소주가 있을 때 -->
+                        <article id="recommendContents">
+                            <img id="sojuLogoImg" class="sojuLogoImg" src="../../images/originalPage/chamFreshLogo.png" alt="참이슬 후레쉬">
+                            <p id="sojuText" class="recommendContentsText">참이슬 후레쉬</p>
+                            <button class="returnButton">&lt;&lt; 다시 추천받기</button>
+                        </article>
+                    </article>
+                </div>
+            </section>     
+        </div>
+    </body>
+    <script type="text/javascript" src="../../js/commonJS.js"></script>
+    <script type="text/javascript" src="../../js/recommendPage/recommendPage.js"></script>
+</html>

@@ -1,0 +1,190 @@
+html {
+  scroll-behavior: smooth; }
+
+#wrap {
+  width: 100%;
+  background-color: #fff; }
+  #wrap header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: rgba(248, 248, 248, 0.9); }
+    #wrap header .leftMenuBox {
+      width: 650px;
+      height: 80px;
+      float: left;
+      display: inline-block; }
+    #wrap header .leftMenuBox a:hover
+    {
+      color: #6d8d48;
+      font-weight: bold;
+    }
+      #wrap header .leftMenuBox .leftMenu {
+        width: 130px;
+        height: 80px;
+        float: left;
+        text-align: center;
+        display: inline-block; }
+        #wrap header .leftMenuBox .leftMenu .leftMenuText {
+          font-size: 19px;
+          line-height: 78px; }
+    #wrap header .logoImg {
+      width: 105px;
+      height: 70px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 5px 0 0 -40px;
+      display: inline-block; }
+    #wrap header .rightButtonMenuBox {
+      width: 600px;
+      height: 80px;
+      display: inline-block;
+      float: right; }
+      #wrap header .rightButtonMenuBox .buttonMenu {
+        width: 150px;
+        height: 80px;
+        display: inline-block;
+        text-align: center;
+        float: left;
+        cursor: pointer; }
+      #wrap header .rightButtonMenuBox .loginIcon {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 17px;
+        right: 250px; }
+      #wrap header .rightButtonMenuBox .loginButton {
+        font-size: 19px;
+        line-height: 78px; }
+        #wrap header .rightButtonMenuBox .loginButton:hover
+        {
+          color:  #6d8d48;
+          font-weight: bold;
+        }
+      #wrap header .rightButtonMenuBox .reservationButton {
+        font-size: 17px;
+        background-color: #a19385;
+        color: #fff; }
+        #wrap header .rightButtonMenuBox .reservationButton:hover
+        {
+          background-color: #3f3222;
+        }
+      #wrap header .rightButtonMenuBox .helloMember {
+        display: inline-block;
+        float: left;
+        width: 300px;
+        height: 80px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 78px; }
+      #wrap header .myPageBox {
+        position: absolute;
+        right: 0px;
+        top: 80px;
+        display: inline-block;
+        background-color: #a0a38e;
+        float: right;
+        width: 150px;
+        height: 80px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        line-height: 78px; }
+      #wrap header .myPage {
+        cursor: pointer;
+        font-size: 20px;
+        color: #f8f8f8;
+        line-height: 78px; }
+        #wrap .modal {
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 200;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: none; }
+          #wrap .modal .login_box {
+            width: 500px;
+            height: 550px;
+            background-color: rgba(248, 248, 248, 0.9);
+            position: relative;
+            z-index: 300;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+            #wrap .modal .login_box .exit_box {
+              width: 400px;
+              height: 24px;
+              margin: auto;
+              margin-top: 5px; }
+              #wrap .modal .login_box .exit_box .exit_icon {
+                float: right;
+                font-size: 20px;
+                cursor: pointer; }
+            #wrap .modal .login_box .title_box {
+              width: 400px;
+              height: 140px;
+              margin: auto;
+              margin-top: 20px; }
+              #wrap .modal .login_box .title_box h1 {
+                font-size: 30px; }
+              #wrap .modal .login_box .title_box h4 {
+                font-size: 17px;
+                color: #aaa;
+                font-weight: 300;
+                margin-top: 5px; }
+            #wrap .modal .login_box .input_box {
+              width: 400px;
+              height: 260px;
+              margin: auto;
+              position: relative; }
+              #wrap .modal .login_box .input_box form input {
+                width: 400px;
+                height: 40px;
+                background-color: #e5ddd3;
+                border-bottom: 2px solid #ccc; }
+              #wrap .modal .login_box .input_box form input:last-child {
+                width: 195px;
+                height: 50px;
+                margin-top: 50px;
+                cursor: pointer;
+                border: 0;
+                color: #fff;
+                background-color: #66605d; }
+                #wrap .modal .login_box .input_box form input:last-child:hover
+                {
+                  background-color: #3f3222;
+                }
+              #wrap .modal .login_box .input_box > button {
+                width: 195px;
+                height: 50px;
+                position: absolute;
+                top: 206px;
+                right: 0;
+                background-color: #66605d;
+                cursor: pointer; }
+                #wrap .modal .login_box .input_box > button > a {
+                  color: #fff; }
+                  #wrap .modal .login_box .input_box > button:hover
+                  {
+                    background-color: #3f3222;
+                  }
+              #wrap .modal .login_box .input_box .find_user {
+                width: 400px;
+                height: 30px;
+                margin: auto;
+                margin-top: 30px; }
+                #wrap .modal .login_box .input_box .find_user > button {
+                  text-decoration: underline;
+                  cursor: pointer; }
+                #wrap .modal .login_box .input_box .find_user > :first-child {
+                  margin-left: 105px; }
+                #wrap .modal .login_box .input_box .find_user > :last-child {
+                  margin-left: 20px; }
+              
+/*# sourceMappingURL=header.css.map */

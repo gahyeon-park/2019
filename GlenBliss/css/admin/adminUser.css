@@ -1,0 +1,30 @@
+
+table{
+    width: 1500px;
+    margin: auto; margin-top: 70px;
+    border-collapse: collapse;
+  }
+
+tr{ height: 50px; text-align: center; }
+
+tr:first-child { background-color: #a19385; }
+
+tr>td{ color: #fff; text-align: center; border: 1px solid #bdbdbd;}
+
+.id{ width: 60px; margin: auto; text-align: center; }
+.userid{ width: 120px; margin: auto; text-align: center; }
+.name{ width: 120px; margin: auto; text-align: center; }
+.sex{ width: 80px; margin: auto; text-align: center; }
+.birth{ width: 170px; margin: auto; text-align: center; }
+.nick{ width: 140px; margin: auto; text-align: center; }
+.phone{ width: 150px; margin: auto; text-align: center; }
+.addr{ width: 370px; margin: auto; text-align: center; }
+.email{ width: 190px; margin: auto; text-align: center; }
+.user_update{
+    padding: 10px; color: #fff; width: 70px;
+    background-color: #9e8e79; text-align: center;
+}
+.user_delete{
+    padding: 10px; color: #fff; width: 70px;
+    background-color: #3f3222; text-align: center;
+}

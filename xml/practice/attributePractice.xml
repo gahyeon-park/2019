@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attributeExample>
+	<image>
+		<src>./star.png</src>
+		<width>230</width>
+		<height>219</height>
+		<alt>내 별 히 히 히</alt>
+	</image>
+</attributeExample>
